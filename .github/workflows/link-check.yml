@@ -1,0 +1,31 @@
+name: Link check
+
+on:
+  schedule:
+    - cron: '0 14 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --no-progress --exclude-mail --exclude '^https://localhost' './**/*.html' './**/*.md'
+          fail: false
+          output: ./lychee-report.md
+
+      - name: Create issue on failure
+        if: failure()
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: Broken links detected
+          content-filepath: ./lychee-report.md
+          labels: bug, automated
