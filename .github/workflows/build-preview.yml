@@ -1,0 +1,32 @@
+name: Build preview
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: false
+
+      - name: Install Jekyll
+        run: gem install jekyll bundler
+
+      - name: Build site
+        run: jekyll build --strict_front_matter --safe --verbose
+
+      - name: HTML5 validation
+        uses: Cyb3r-Jak3/html5validator-action@v7
+        with:
+          root: _site/
+          log_level: WARNING
