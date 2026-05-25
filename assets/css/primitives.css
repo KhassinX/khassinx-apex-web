@@ -1,0 +1,431 @@
+/*
+ * khassinx-primitives.css — Layer 3 (Shared) component primitives
+ *
+ * Component structures usables cross-project. Apps theme estos con sus Layer 2 colors,
+ * pero la estructura HTML/CSS es la misma para consistency.
+ *
+ * Source: ~/KhassinX/_template/BRAND_SYSTEM.md §8
+ *
+ * Depends on: tokens.css (Layer 1) or per-app tokens (Layer 2 mapping a --khassinx-* names)
+ *
+ * Created 2026-05-25.
+ */
+
+/* ─── Reset + base ─── */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-stack);
+  font-size: var(--fs-body);
+  line-height: 1.55;
+  color: var(--khassinx-text-primary);
+  background: var(--khassinx-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* ─── Typography ─── */
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--khassinx-text-primary);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); font-weight: 600; }
+
+p { margin-bottom: var(--space-md); }
+p:last-child { margin-bottom: 0; }
+
+a {
+  color: var(--khassinx-accent);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+a:hover {
+  color: var(--khassinx-accent-strong);
+  text-decoration: underline;
+}
+
+strong { font-weight: 600; }
+em { font-style: italic; }
+
+code, pre {
+  font-family: var(--font-mono);
+  font-size: var(--fs-small);
+}
+
+pre {
+  background: var(--khassinx-bg-elevated);
+  border: 1px solid var(--khassinx-border);
+  border-radius: var(--radius-m);
+  padding: var(--space-md);
+  overflow-x: auto;
+  line-height: 1.5;
+}
+
+code {
+  background: var(--khassinx-bg-elevated);
+  padding: 2px 6px;
+  border-radius: var(--radius-s);
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+}
+
+/* ─── Focus visible (a11y) ─── */
+
+:focus-visible {
+  outline: 2px solid var(--khassinx-accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-s);
+}
+
+/* Skip-to-content link (a11y) */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--khassinx-accent);
+  color: var(--khassinx-bg);
+  padding: var(--space-s) var(--space-md);
+  z-index: 999;
+}
+.skip-link:focus {
+  left: var(--space-md);
+  top: var(--space-md);
+}
+
+/* ─── Container ─── */
+
+.container {
+  width: 100%;
+  max-width: var(--container-default);
+  margin: 0 auto;
+  padding: 0 var(--space-xl);
+}
+
+.container-narrow { max-width: var(--container-narrow); }
+.container-wide { max-width: var(--container-wide); }
+
+@media (min-width: 768px) {
+  .container { padding: 0 var(--space-2xl); }
+}
+
+/* ─── Header / Nav ─── */
+
+.site-header {
+  padding: var(--space-lg) 0;
+  border-bottom: 1px solid var(--khassinx-border);
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-s);
+  font-weight: 700;
+  font-size: var(--fs-body);
+  letter-spacing: -0.01em;
+  color: var(--khassinx-text-primary);
+  text-decoration: none;
+}
+
+.logo:hover { text-decoration: none; color: var(--khassinx-text-primary); }
+.logo img { height: 28px; width: auto; }
+
+.site-nav {
+  display: flex;
+  gap: var(--space-lg);
+  align-items: center;
+}
+
+.site-nav a {
+  color: var(--khassinx-text-secondary);
+  font-size: var(--fs-small);
+  font-weight: 500;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+.site-nav a:hover {
+  color: var(--khassinx-text-primary);
+  text-decoration: none;
+}
+
+@media (max-width: 520px) {
+  .site-header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .site-nav {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+  }
+}
+
+/* ─── Hero ─── */
+
+.hero {
+  padding: var(--space-5xl) 0 var(--space-3xl);
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin-bottom: var(--space-lg);
+}
+
+.hero .lead {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: var(--khassinx-text-secondary);
+  max-width: 640px;
+  margin: 0 auto var(--space-2xl);
+  line-height: 1.5;
+}
+
+.hero .cta {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+/* ─── Buttons ─── */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-s);
+  min-height: 44px;
+  padding: var(--space-m) var(--space-xl);
+  font-size: var(--fs-body);
+  font-weight: 600;
+  border-radius: var(--radius-m);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--khassinx-accent);
+  color: var(--khassinx-bg);
+}
+.btn-primary:hover {
+  background: var(--khassinx-accent-strong);
+  text-decoration: none;
+  color: var(--khassinx-bg);
+}
+
+.btn-secondary {
+  background: var(--khassinx-bg-card);
+  color: var(--khassinx-text-primary);
+  border-color: var(--khassinx-border-strong);
+}
+.btn-secondary:hover {
+  background: var(--khassinx-bg-elevated);
+  text-decoration: none;
+  color: var(--khassinx-text-primary);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--khassinx-text-primary);
+}
+.btn-ghost:hover {
+  background: var(--khassinx-bg-card);
+  text-decoration: none;
+  color: var(--khassinx-text-primary);
+}
+
+/* ─── Card ─── */
+
+.card {
+  background: var(--khassinx-bg-card);
+  border: 1px solid var(--khassinx-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+}
+
+.card h3 {
+  margin-bottom: var(--space-m);
+  color: var(--khassinx-accent);
+  font-size: var(--fs-h3);
+}
+
+.card p {
+  color: var(--khassinx-text-secondary);
+  font-size: var(--fs-small);
+}
+
+/* Grid of cards */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-lg);
+}
+
+/* ─── List divided (legal docs friendly) ─── */
+
+.list-divided > * + * {
+  border-top: 1px solid var(--khassinx-border);
+  padding-top: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+/* ─── Footer ─── */
+
+.site-footer {
+  padding: var(--space-2xl) 0;
+  border-top: 1px solid var(--khassinx-border);
+  color: var(--khassinx-text-secondary);
+  font-size: var(--fs-small);
+}
+
+.site-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.site-footer nav a {
+  color: var(--khassinx-text-secondary);
+  margin-left: var(--space-md);
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+.site-footer nav a:first-child { margin-left: 0; }
+.site-footer nav a:hover {
+  color: var(--khassinx-text-primary);
+  text-decoration: none;
+}
+
+.site-footer small {
+  display: block;
+  width: 100%;
+  margin-top: var(--space-md);
+  font-size: var(--fs-caption);
+  color: var(--khassinx-text-tertiary);
+}
+
+/* ─── Article prose (for legal docs, blog posts) ─── */
+
+.prose {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.prose h2 {
+  margin-top: var(--space-3xl);
+  margin-bottom: var(--space-md);
+  font-size: var(--fs-h2);
+}
+
+.prose h3 {
+  margin-top: var(--space-2xl);
+  margin-bottom: var(--space-m);
+}
+
+.prose p,
+.prose ul,
+.prose ol {
+  margin-bottom: var(--space-md);
+  color: var(--khassinx-text-primary);
+}
+
+.prose ul,
+.prose ol {
+  padding-left: var(--space-xl);
+}
+
+.prose li {
+  margin-bottom: var(--space-s);
+}
+
+.prose blockquote {
+  border-left: 3px solid var(--khassinx-accent);
+  padding-left: var(--space-md);
+  margin: var(--space-lg) 0;
+  color: var(--khassinx-text-secondary);
+  font-style: italic;
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--space-md) 0;
+  font-size: var(--fs-small);
+}
+
+.prose th,
+.prose td {
+  padding: var(--space-s) var(--space-md);
+  text-align: left;
+  border-bottom: 1px solid var(--khassinx-border);
+}
+
+.prose th {
+  font-weight: 600;
+  color: var(--khassinx-text-primary);
+}
+
+.prose td {
+  color: var(--khassinx-text-secondary);
+}
+
+/* ─── Utility classes ─── */
+
+.text-center { text-align: center; }
+.text-secondary { color: var(--khassinx-text-secondary); }
+.text-tertiary { color: var(--khassinx-text-tertiary); }
+.text-accent { color: var(--khassinx-accent); }
+
+.mt-0 { margin-top: 0; }
+.mt-md { margin-top: var(--space-md); }
+.mt-lg { margin-top: var(--space-lg); }
+.mt-xl { margin-top: var(--space-xl); }
+.mt-2xl { margin-top: var(--space-2xl); }
+.mt-3xl { margin-top: var(--space-3xl); }
+
+.mb-0 { margin-bottom: 0; }
+.mb-md { margin-bottom: var(--space-md); }
+.mb-lg { margin-bottom: var(--space-lg); }
+.mb-xl { margin-bottom: var(--space-xl); }

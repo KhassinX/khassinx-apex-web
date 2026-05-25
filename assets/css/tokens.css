@@ -1,0 +1,122 @@
+/*
+ * khassinx-tokens.css — Layer 1 (Umbrella) design tokens
+ *
+ * KhassinX umbrella brand. NOT for per-app sites (those use their Layer 2 tokens).
+ * Source of truth: ~/KhassinX/_template/BRAND_SYSTEM.md §2
+ *
+ * Auto-switches dark/light via prefers-color-scheme. Dark is default.
+ *
+ * Created 2026-05-25. Custodian: khassinx-brand-warden agent universal.
+ */
+
+:root {
+  /* ─── Dark theme (default) ─── */
+
+  /* Backgrounds */
+  --khassinx-bg: #0E0E11;
+  --khassinx-bg-card: #16171B;
+  --khassinx-bg-elevated: #1C1D22;
+
+  /* Text */
+  --khassinx-text-primary: #F5F5F0;
+  --khassinx-text-secondary: #A8A8A0;
+  --khassinx-text-tertiary: #6E6E68;
+  --khassinx-text-disabled: #3F3F3D;
+
+  /* Accents */
+  --khassinx-accent: #D4AF7F;        /* warm gold */
+  --khassinx-accent-soft: #A88860;
+  --khassinx-accent-strong: #E8C794;
+  --khassinx-blue: #88A2B4;          /* steel blue secondary */
+
+  /* Borders */
+  --khassinx-border: rgba(255, 255, 255, 0.08);
+  --khassinx-border-strong: rgba(255, 255, 255, 0.16);
+
+  /* Status (muted variants) */
+  --khassinx-success: #7AB098;
+  --khassinx-warning: #D9A86C;
+  --khassinx-danger: #C97A7A;
+
+  /* Spacing scale (8-baseline) */
+  --space-xs: 4px;
+  --space-s: 8px;
+  --space-m: 12px;
+  --space-md: 16px;
+  --space-lg: 20px;
+  --space-xl: 24px;
+  --space-2xl: 32px;
+  --space-3xl: 48px;
+  --space-4xl: 64px;
+  --space-5xl: 96px;
+
+  /* Container max-widths */
+  --container-narrow: 640px;
+  --container-default: 920px;
+  --container-wide: 1200px;
+
+  /* Border radius */
+  --radius-s: 6px;
+  --radius-m: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 20px;
+  --radius-pill: 999px;
+
+  /* Typography */
+  --font-stack: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "SF Mono", Menlo, Consolas, monospace;
+
+  --fs-display-xl: 64px;
+  --fs-display-l: 48px;
+  --fs-display-m: 36px;
+  --fs-h1: 32px;
+  --fs-h2: 24px;
+  --fs-h3: 20px;
+  --fs-body-l: 18px;
+  --fs-body: 16px;
+  --fs-small: 14px;
+  --fs-caption: 12px;
+
+  /* Transitions */
+  --transition-fast: 120ms ease;
+  --transition-base: 200ms ease;
+  --transition-slow: 320ms ease;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /* ─── Light theme override ─── */
+    --khassinx-bg: #FAFAF7;
+    --khassinx-bg-card: #FFFFFF;
+    --khassinx-bg-elevated: #FFFFFF;
+
+    --khassinx-text-primary: #16171B;
+    --khassinx-text-secondary: #4A4A48;
+    --khassinx-text-tertiary: #7A7A78;
+    --khassinx-text-disabled: #C5C5C2;
+
+    --khassinx-accent: #9B7E4F;
+    --khassinx-accent-soft: #7A6240;
+    --khassinx-accent-strong: #B89263;
+    --khassinx-blue: #5A7488;
+
+    --khassinx-border: rgba(0, 0, 0, 0.08);
+    --khassinx-border-strong: rgba(0, 0, 0, 0.16);
+
+    --khassinx-success: #4A8870;
+    --khassinx-warning: #B0843D;
+    --khassinx-danger: #A85A5A;
+  }
+}
+
+/* Respect prefers-reduced-motion (universal a11y) */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
