@@ -29,5 +29,5 @@ The landing page and site assets are proprietary to KhassinX.
 
 ## Contact
 
-- **Founder**: Chief Designer · <entidad>, FL · USA
-- **Email**: hello@khassinx.com
+- **General**: hello@khassinx.com
+- **Security**: see `/.well-known/security.txt` or `security@khassinx.com`
