@@ -1,14 +1,13 @@
 /*
- * khassinx-primitives.css — Layer 3 (Shared) component primitives
+ * khassinx-primitives.css — Layer 3 (Shared) component primitives — Apple-grade
  *
  * Component structures usables cross-project. Apps theme estos con sus Layer 2 colors,
  * pero la estructura HTML/CSS es la misma para consistency.
  *
  * Source: ~/KhassinX/_template/BRAND_SYSTEM.md §8
+ * Refactor 2026-05-25 PM: Apple-grade typography + spacing + restraint.
  *
  * Depends on: tokens.css (Layer 1) or per-app tokens (Layer 2 mapping a --khassinx-* names)
- *
- * Created 2026-05-25.
  */
 
 /* ─── Reset + base ─── */
@@ -22,12 +21,14 @@
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  font-size: 100%;
 }
 
 body {
   font-family: var(--font-stack);
   font-size: var(--fs-body);
-  line-height: 1.55;
+  font-weight: 400;
+  line-height: 1.47;
   color: var(--khassinx-text-primary);
   background: var(--khassinx-bg);
   -webkit-font-smoothing: antialiased;
@@ -35,26 +36,42 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  letter-spacing: -0.003em;
 }
 
 main {
   flex: 1;
 }
 
-/* ─── Typography ─── */
+/* ─── Typography — Apple canon ─── */
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--khassinx-text-primary);
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.012em;
+  line-height: 1.15;
 }
 
-h1 { font-size: var(--fs-h1); }
-h2 { font-size: var(--fs-h2); }
-h3 { font-size: var(--fs-h3); font-weight: 600; }
+h1 {
+  font-size: clamp(2rem, 5vw, var(--fs-h1));
+  letter-spacing: -0.012em;
+}
+h2 {
+  font-size: clamp(1.75rem, 4vw, var(--fs-h2));
+  letter-spacing: -0.008em;
+  line-height: 1.2;
+}
+h3 {
+  font-size: var(--fs-h3);
+  font-weight: 600;
+  letter-spacing: -0.003em;
+  line-height: 1.27;
+}
 
-p { margin-bottom: var(--space-md); }
+p {
+  margin-bottom: var(--space-md);
+  color: var(--khassinx-text-primary);
+}
 p:last-child { margin-bottom: 0; }
 
 a {
@@ -65,6 +82,7 @@ a {
 a:hover {
   color: var(--khassinx-accent-strong);
   text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 strong { font-weight: 600; }
@@ -76,18 +94,19 @@ code, pre {
 }
 
 pre {
-  background: var(--khassinx-bg-elevated);
+  background: var(--khassinx-bg-section);
   border: 1px solid var(--khassinx-border);
-  border-radius: var(--radius-m);
+  border-radius: var(--radius-md);
   padding: var(--space-md);
   overflow-x: auto;
   line-height: 1.5;
 }
 
 code {
-  background: var(--khassinx-bg-elevated);
+  background: var(--khassinx-bg-section);
   padding: 2px 6px;
   border-radius: var(--radius-s);
+  font-size: 0.92em;
 }
 
 pre code {
@@ -95,11 +114,11 @@ pre code {
   padding: 0;
 }
 
-/* ─── Focus visible (a11y) ─── */
+/* ─── Focus visible (a11y) — Apple style ─── */
 
 :focus-visible {
   outline: 2px solid var(--khassinx-accent);
-  outline-offset: 2px;
+  outline-offset: 3px;
   border-radius: var(--radius-s);
 }
 
@@ -108,14 +127,17 @@ pre code {
   position: absolute;
   left: -9999px;
   top: 0;
-  background: var(--khassinx-accent);
+  background: var(--khassinx-text-primary);
   color: var(--khassinx-bg);
   padding: var(--space-s) var(--space-md);
   z-index: 999;
+  font-size: var(--fs-small);
+  font-weight: 500;
+  border-radius: 0 0 var(--radius-m) 0;
 }
 .skip-link:focus {
-  left: var(--space-md);
-  top: var(--space-md);
+  left: 0;
+  top: 0;
 }
 
 /* ─── Container ─── */
@@ -134,11 +156,21 @@ pre code {
   .container { padding: 0 var(--space-2xl); }
 }
 
-/* ─── Header / Nav ─── */
+/* ─── Header / Nav — Apple-style minimal ─── */
 
 .site-header {
-  padding: var(--space-lg) 0;
+  padding: var(--space-md) 0;
   border-bottom: 1px solid var(--khassinx-border);
+  background: var(--khassinx-bg);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: saturate(180%) blur(20px);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+@media (prefers-color-scheme: dark) {
+  .site-header { background: rgba(0, 0, 0, 0.72); }
 }
 
 .site-header .container {
@@ -153,32 +185,33 @@ pre code {
   display: flex;
   align-items: center;
   gap: var(--space-s);
-  font-weight: 700;
+  font-weight: 600;
   font-size: var(--fs-body);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.012em;
   color: var(--khassinx-text-primary);
   text-decoration: none;
 }
 
 .logo:hover { text-decoration: none; color: var(--khassinx-text-primary); }
-.logo img { height: 28px; width: auto; }
+.logo img { height: 24px; width: auto; }
 
 .site-nav {
   display: flex;
-  gap: var(--space-lg);
+  gap: var(--space-xl);
   align-items: center;
 }
 
 .site-nav a {
-  color: var(--khassinx-text-secondary);
+  color: var(--khassinx-text-primary);
   font-size: var(--fs-small);
-  font-weight: 500;
+  font-weight: 400;
   min-height: 44px;
   display: inline-flex;
   align-items: center;
+  letter-spacing: -0.003em;
 }
 .site-nav a:hover {
-  color: var(--khassinx-text-primary);
+  color: var(--khassinx-accent);
   text-decoration: none;
 }
 
@@ -194,27 +227,34 @@ pre code {
   }
 }
 
-/* ─── Hero ─── */
+/* ─── Hero — Apple-grade generous ─── */
 
 .hero {
-  padding: var(--space-5xl) 0 var(--space-3xl);
+  padding: var(--space-6xl) 0 var(--space-5xl);
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .hero { padding: var(--space-7xl) 0 var(--space-6xl); }
+}
+
 .hero h1 {
-  font-size: clamp(2rem, 5vw, 3.25rem);
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  line-height: 1.1;
+  font-size: clamp(2.5rem, 7vw, var(--fs-display-xl));
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.05;
   margin-bottom: var(--space-lg);
+  color: var(--khassinx-text-primary);
 }
 
 .hero .lead {
-  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-size: clamp(1.125rem, 2.5vw, var(--fs-body-l));
+  font-weight: 400;
   color: var(--khassinx-text-secondary);
   max-width: 640px;
   margin: 0 auto var(--space-2xl);
-  line-height: 1.5;
+  line-height: 1.38;
+  letter-spacing: -0.003em;
 }
 
 .hero .cta {
@@ -222,9 +262,10 @@ pre code {
   justify-content: center;
   gap: var(--space-md);
   flex-wrap: wrap;
+  margin-top: var(--space-xl);
 }
 
-/* ─── Buttons ─── */
+/* ─── Buttons — Apple-style ─── */
 
 .btn {
   display: inline-flex;
@@ -233,34 +274,38 @@ pre code {
   gap: var(--space-s);
   min-height: 44px;
   padding: var(--space-m) var(--space-xl);
+  font-family: var(--font-stack);
   font-size: var(--fs-body);
-  font-weight: 600;
-  border-radius: var(--radius-m);
+  font-weight: 500;
+  letter-spacing: -0.003em;
+  border-radius: var(--radius-pill);
   border: 1px solid transparent;
   cursor: pointer;
   transition: all var(--transition-base);
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .btn-primary {
   background: var(--khassinx-accent);
-  color: var(--khassinx-bg);
+  color: #FFFFFF;
 }
 .btn-primary:hover {
   background: var(--khassinx-accent-strong);
   text-decoration: none;
-  color: var(--khassinx-bg);
+  color: #FFFFFF;
+  transform: translateY(-1px);
 }
 
 .btn-secondary {
-  background: var(--khassinx-bg-card);
-  color: var(--khassinx-text-primary);
-  border-color: var(--khassinx-border-strong);
+  background: transparent;
+  color: var(--khassinx-accent);
+  border-color: var(--khassinx-accent);
 }
 .btn-secondary:hover {
-  background: var(--khassinx-bg-elevated);
+  background: var(--khassinx-accent);
+  color: #FFFFFF;
   text-decoration: none;
-  color: var(--khassinx-text-primary);
 }
 
 .btn-ghost {
@@ -268,39 +313,71 @@ pre code {
   color: var(--khassinx-text-primary);
 }
 .btn-ghost:hover {
-  background: var(--khassinx-bg-card);
+  background: var(--khassinx-bg-section);
   text-decoration: none;
   color: var(--khassinx-text-primary);
 }
 
-/* ─── Card ─── */
+/* ─── Card — Apple-style soft ─── */
 
 .card {
-  background: var(--khassinx-bg-card);
-  border: 1px solid var(--khassinx-border);
+  background: var(--khassinx-bg-section);
   border-radius: var(--radius-lg);
-  padding: var(--space-xl);
+  padding: var(--space-2xl);
+  transition: transform var(--transition-base);
 }
 
 .card h3 {
   margin-bottom: var(--space-m);
-  color: var(--khassinx-accent);
+  color: var(--khassinx-text-primary);
   font-size: var(--fs-h3);
+  letter-spacing: -0.003em;
 }
 
 .card p {
   color: var(--khassinx-text-secondary);
-  font-size: var(--fs-small);
+  font-size: var(--fs-body);
+  line-height: 1.47;
 }
 
-/* Grid of cards */
+/* Grid of cards — Apple-style 3-up */
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: 1fr;
   gap: var(--space-lg);
+  margin-top: var(--space-2xl);
 }
 
-/* ─── List divided (legal docs friendly) ─── */
+@media (min-width: 768px) {
+  .cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ─── Section ─── */
+
+.section {
+  padding: var(--space-6xl) 0;
+}
+
+@media (min-width: 768px) {
+  .section { padding: var(--space-7xl) 0; }
+}
+
+.section-tinted {
+  background: var(--khassinx-bg-section);
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+  font-size: clamp(2rem, 4.5vw, var(--fs-display-m));
+  font-weight: 600;
+  letter-spacing: -0.018em;
+  line-height: 1.1;
+}
+
+/* ─── List divided (legal docs) ─── */
 
 .list-divided > * + * {
   border-top: 1px solid var(--khassinx-border);
@@ -308,11 +385,12 @@ pre code {
   margin-top: var(--space-md);
 }
 
-/* ─── Footer ─── */
+/* ─── Footer — Apple-style minimal ─── */
 
 .site-footer {
   padding: var(--space-2xl) 0;
   border-top: 1px solid var(--khassinx-border);
+  background: var(--khassinx-bg-section);
   color: var(--khassinx-text-secondary);
   font-size: var(--fs-small);
 }
@@ -325,14 +403,18 @@ pre code {
   gap: var(--space-md);
 }
 
+.site-footer nav {
+  display: flex;
+  gap: var(--space-md);
+}
+
 .site-footer nav a {
   color: var(--khassinx-text-secondary);
-  margin-left: var(--space-md);
   min-height: 44px;
   display: inline-flex;
   align-items: center;
+  font-size: var(--fs-small);
 }
-.site-footer nav a:first-child { margin-left: 0; }
 .site-footer nav a:hover {
   color: var(--khassinx-text-primary);
   text-decoration: none;
@@ -346,29 +428,38 @@ pre code {
   color: var(--khassinx-text-tertiary);
 }
 
-/* ─── Article prose (for legal docs, blog posts) ─── */
+/* ─── Article prose (for legal docs, blog posts) — Apple-canonical reading ─── */
 
 .prose {
   max-width: 720px;
   margin: 0 auto;
+  font-size: var(--fs-body);
+  line-height: 1.47;
+  color: var(--khassinx-text-primary);
+}
+
+.prose h1 {
+  font-size: clamp(2rem, 5vw, var(--fs-h1));
+  margin-bottom: var(--space-lg);
 }
 
 .prose h2 {
   margin-top: var(--space-3xl);
   margin-bottom: var(--space-md);
   font-size: var(--fs-h2);
+  text-align: left;
 }
 
 .prose h3 {
   margin-top: var(--space-2xl);
   margin-bottom: var(--space-m);
+  font-size: var(--fs-h3);
 }
 
 .prose p,
 .prose ul,
 .prose ol {
   margin-bottom: var(--space-md);
-  color: var(--khassinx-text-primary);
 }
 
 .prose ul,
@@ -408,7 +499,13 @@ pre code {
 }
 
 .prose td {
-  color: var(--khassinx-text-secondary);
+  color: var(--khassinx-text-primary);
+}
+
+.prose hr {
+  border: none;
+  border-top: 1px solid var(--khassinx-border);
+  margin: var(--space-2xl) 0;
 }
 
 /* ─── Utility classes ─── */
@@ -429,3 +526,4 @@ pre code {
 .mb-md { margin-bottom: var(--space-md); }
 .mb-lg { margin-bottom: var(--space-lg); }
 .mb-xl { margin-bottom: var(--space-xl); }
+.mb-2xl { margin-bottom: var(--space-2xl); }
