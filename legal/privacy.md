@@ -3,6 +3,9 @@ layout: prose
 title: Privacy Policy
 description: Privacy policy for khassinx.com — the umbrella marketing site. Per-app privacy policies live on each app's site.
 permalink: /legal/privacy/
+lang: en
+canonical_en: /legal/privacy/
+canonical_es: /es/legal/privacy/
 updated: 2026-05-25
 ---
 

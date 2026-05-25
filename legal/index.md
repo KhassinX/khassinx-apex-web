@@ -3,6 +3,9 @@ layout: prose
 title: Legal
 description: Privacy, terms, and contact for KhassinX as a studio. Per-app legal documents live on each app's site.
 permalink: /legal/
+lang: en
+canonical_en: /legal/
+canonical_es: /es/legal/
 updated: 2026-05-25
 ---
 
