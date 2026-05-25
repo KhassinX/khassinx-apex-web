@@ -3,6 +3,9 @@ layout: prose
 title: Terms of Use
 description: Terms governing your use of khassinx.com. Per-app terms of service live on each app's site.
 permalink: /legal/terms/
+lang: en
+canonical_en: /legal/terms/
+canonical_es: /es/legal/terms/
 updated: 2026-05-25
 ---
 
