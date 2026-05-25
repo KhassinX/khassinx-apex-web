@@ -31,3 +31,8 @@ exclude:
   - README.md
   - .gitignore
   - LICENSE
+
+# Jekyll por default ignora dotfiles/dotdirs. .well-known DEBE servirse
+# (RFC 9116 security.txt requiere path exacto /.well-known/security.txt).
+include:
+  - .well-known
