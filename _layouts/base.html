@@ -4,6 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  {%- comment -%}
+    CSP fallback via meta http-equiv. Real headers are injected upstream by
+    Cloudflare Transform Rules when proxy is ON; this meta provides defense
+    in depth if proxy is off or bypassed. 'unsafe-inline' on style-src is
+    needed by current inline styles; tighten once moved to primitives.css.
+  {%- endcomment -%}
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'">
+
   <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
 
