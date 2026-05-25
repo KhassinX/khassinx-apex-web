@@ -1,5 +1,5 @@
 title: KhassinX
-description: Indie studio building privacy-first apps for Apple platforms. ASVAB Coach, Khazen, and more — on-device AI, native Apple Watch, zero tracking.
+description: Independent studio building privacy-first apps for Apple platforms. ASVAB Coach, Khazen, and more — on-device AI, native Apple Watch, zero tracking.
 url: https://khassinx.com
 lang: en
 
@@ -17,6 +17,8 @@ nav:
     url: "mailto:hello@khassinx.com"
 
 footer_nav:
+  - title: Security
+    url: "/security/"
   - title: Contact
     url: "mailto:hello@khassinx.com"
 
