@@ -1,0 +1,29 @@
+title: KhassinX
+description: Indie studio building privacy-first apps for Apple platforms. ASVAB Coach, Khazen, and more — on-device AI, native Apple Watch, zero tracking.
+url: https://khassinx.com
+lang: en
+
+# Layer 1 umbrella site: usa tokens.css (charcoal + warm gold)
+umbrella_tokens: true
+
+# Favicons (umbrella K monogram)
+favicon_svg: /assets/favicons/favicon.svg
+
+# Navigation
+nav:
+  - title: Apps
+    url: "#apps"
+  - title: Contact
+    url: "mailto:hello@khassinx.com"
+
+footer_nav:
+  - title: Contact
+    url: "mailto:hello@khassinx.com"
+
+# Jekyll config
+markdown: kramdown
+
+exclude:
+  - README.md
+  - .gitignore
+  - LICENSE
