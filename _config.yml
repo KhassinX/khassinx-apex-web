@@ -19,6 +19,8 @@ nav:
 footer_nav:
   - title: Security
     url: "/security/"
+  - title: Legal
+    url: "/legal/"
   - title: Contact
     url: "mailto:hello@khassinx.com"
 
