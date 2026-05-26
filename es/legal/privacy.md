@@ -33,7 +33,7 @@ Si nos escribís a cualquier dirección `@khassinx.com`, recibimos tu mensaje y 
 
 ## Tus derechos
 
-No nos diste datos personales a través de este sitio, así que no hay nada tuyo que borrar o exportar acá. Si nos escribiste por correo, podés pedirnos que borremos esa correspondencia en cualquier momento.
+No nos diste datos personales a través de este sitio, así que no hay nada tuyo que borrar o exportar aquí. Si nos escribiste por correo, puedes pedirnos que borremos esa correspondencia en cualquier momento.
 
 ## Cambios a esta política
 

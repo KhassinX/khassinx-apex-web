@@ -23,7 +23,7 @@ Al acceder a `khassinx.com`, aceptás estos términos. Si no estás de acuerdo, 
 
 Podés navegar el sitio para fines personales e informativos. Podés compartir enlaces a páginas públicas. Podés citar fragmentos cortos con atribución a KhassinX.
 
-No podés:
+No puedes:
 
 - Reproducir ni redistribuir porciones sustanciales del contenido del sitio sin permiso.
 - Usar sistemas automatizados para scrapear el sitio a un ritmo que cargue materialmente al host.
