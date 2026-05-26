@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   {%- comment -%}
-    CSP fallback via meta http-equiv. Real headers are injected upstream by
-    Cloudflare Transform Rules when proxy is ON; this meta provides defense
-    in depth if proxy is off or bypassed. 'unsafe-inline' on style-src is
-    needed by current inline styles; tighten once moved to primitives.css.
+    CSP fallback via meta http-equiv. Real headers vienen de Cloudflare Transform Rules.
   {%- endcomment -%}
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'">
 
@@ -47,16 +44,33 @@
   {% if page.extra_css %}{% for css in page.extra_css %}<link rel="stylesheet" href="{{ css | relative_url }}">{% endfor %}{% endif %}
 </head>
 <body>
-  <a href="#main" class="skip-link">Skip to main content</a>
+  {%- comment -%}
+    Locale-aware navigation:
+    - lang_key resuelve a 'en' o 'es' (fallback a 'en' si page.lang no está)
+    - site.nav y site.footer_nav están keyed por locale
+    - site.ui_strings provee strings cortos (skip link, "Part of ecosystem")
+    - logo_home apunta al home del locale actual
+  {%- endcomment -%}
+  {%- assign lang_key = page.lang | default: 'en' -%}
+  {%- assign nav_items = site.nav[lang_key] | default: site.nav.en -%}
+  {%- assign footer_items = site.footer_nav[lang_key] | default: site.footer_nav.en -%}
+  {%- assign ui = site.ui_strings[lang_key] | default: site.ui_strings.en -%}
+  {%- if lang_key == 'es' -%}
+    {%- assign logo_home = '/es/' -%}
+  {%- else -%}
+    {%- assign logo_home = '/' -%}
+  {%- endif -%}
+
+  <a href="#main" class="skip-link">{{ ui.skip_to_main }}</a>
 
   <header class="site-header">
     <div class="container">
-      <a href="{{ '/' | relative_url }}" class="logo">
+      <a href="{{ logo_home | relative_url }}" class="logo">
         {% if site.logo %}<img src="{{ site.logo | relative_url }}" alt="{{ site.title }} logo">{% endif %}
         <span>{{ site.title }}</span>
       </a>
       <nav class="site-nav" aria-label="Primary">
-        {% for item in site.nav %}
+        {% for item in nav_items %}
           <a href="{{ item.url | relative_url }}"{% if item.external %} target="_blank" rel="noopener"{% endif %}>{{ item.title }}</a>
         {% endfor %}
       </nav>
@@ -71,12 +85,12 @@
     <div class="container">
       <div>© {{ 'now' | date: '%Y' }} KhassinX</div>
       <nav aria-label="Footer">
-        {% for item in site.footer_nav %}
+        {% for item in footer_items %}
           <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
         {% endfor %}
       </nav>
       <div class="locale-switcher" aria-label="Language selector">
-        {%- if page.lang == 'es' -%}
+        {%- if lang_key == 'es' -%}
           <a href="{{ page.canonical_en | default: '/' | relative_url }}" hreflang="en" lang="en">EN</a>
           <span aria-hidden="true">·</span>
           <span aria-current="true" lang="es">ES</span>
@@ -86,7 +100,7 @@
           <a href="{{ page.canonical_es | default: '/es/' | relative_url }}" hreflang="es" lang="es">ES</a>
         {%- endif -%}
       </div>
-      <small>Part of the <a href="https://khassinx.com">KhassinX ecosystem</a></small>
+      <small>{{ ui.part_of_ecosystem_prefix }} <a href="{{ ui.ecosystem_url }}">{{ ui.part_of_ecosystem_label }}</a></small>
     </div>
   </footer>
 </body>
