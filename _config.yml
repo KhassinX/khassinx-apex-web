@@ -3,26 +3,53 @@ description: Independent studio building privacy-first apps for Apple platforms.
 url: https://khassinx.com
 lang: en
 
-# Layer 1 umbrella site: usa tokens.css (charcoal + warm gold)
+# Layer 1 umbrella site
 umbrella_tokens: true
 
 # Favicons (umbrella K monogram)
 favicon_svg: /assets/favicons/favicon.svg
 
-# Navigation
+# Navigation — keyed por locale. El layout selecciona via page.lang con fallback a 'en'.
 nav:
-  - title: Apps
-    url: "#apps"
-  - title: Contact
-    url: "mailto:hello@khassinx.com"
+  en:
+    - title: Apps
+      url: "#apps"
+    - title: Contact
+      url: "mailto:hello@khassinx.com"
+  es:
+    - title: Apps
+      url: "/es/#apps"
+    - title: Contacto
+      url: "mailto:hello@khassinx.com"
 
 footer_nav:
-  - title: Security
-    url: "/security/"
-  - title: Legal
-    url: "/legal/"
-  - title: Contact
-    url: "mailto:hello@khassinx.com"
+  en:
+    - title: Security
+      url: "/security/"
+    - title: Legal
+      url: "/legal/"
+    - title: Contact
+      url: "mailto:hello@khassinx.com"
+  es:
+    - title: Seguridad
+      url: "/es/security/"
+    - title: Legal
+      url: "/es/legal/"
+    - title: Contacto
+      url: "mailto:hello@khassinx.com"
+
+# Skip-link y "Part of ecosystem" copy por locale (lo consume base.html)
+ui_strings:
+  en:
+    skip_to_main: "Skip to main content"
+    part_of_ecosystem_prefix: "Part of the"
+    part_of_ecosystem_label: "KhassinX ecosystem"
+    ecosystem_url: "https://khassinx.com"
+  es:
+    skip_to_main: "Saltar al contenido principal"
+    part_of_ecosystem_prefix: "Parte del"
+    part_of_ecosystem_label: "ecosistema KhassinX"
+    ecosystem_url: "https://khassinx.com/es/"
 
 # Jekyll config
 markdown: kramdown
