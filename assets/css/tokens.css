@@ -98,7 +98,7 @@
 
     --khassinx-bg: #000000;                /* Pure black (OLED) */
     --khassinx-bg-section: #1D1D1F;        /* Apple section dark */
-    --khassinx-bg-card: #1D1D1F;           /* Cards same as section default */
+    --khassinx-bg-card: #2C2C2E;           /* Cards same as section default */
     --khassinx-bg-elevated: #2C2C2E;       /* Elevated modales */
 
     --khassinx-text-primary: #F5F5F7;      /* Apple dark mode white */

@@ -321,7 +321,7 @@ pre code {
 /* ─── Card — Apple-style soft ─── */
 
 .card {
-  background: var(--khassinx-bg-section);
+  background: var(--khassinx-bg-card);
   border-radius: var(--radius-lg);
   padding: var(--space-2xl);
   transition: transform var(--transition-base);
