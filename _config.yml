@@ -8,6 +8,29 @@ umbrella_tokens: true
 
 # Favicons (umbrella K monogram)
 favicon_svg: /assets/favicons/favicon.svg
+favicon_32: /assets/favicons/favicon-32.png
+favicon_16: /assets/favicons/favicon-16.png
+apple_touch_icon: /assets/favicons/apple-touch-icon.png
+
+# Social / Open Graph + Twitter
+og_site_name: KhassinX
+og_image: /assets/og/og-image.png
+og_image_width: 1200
+og_image_height: 630
+og_image_alt: "KhassinX — privacy-first apps for Apple platforms"
+twitter_card: summary_large_image
+
+# Organization (JSON-LD structured data + contact)
+org:
+  name: KhassinX
+  email: hello@khassinx.com
+  logo: /assets/favicons/favicon-512.png
+  same_as:
+    - https://github.com/KhassinX
+
+# SEO sitemap (GitHub Pages whitelisted plugin)
+plugins:
+  - jekyll-sitemap
 
 # Navigation — keyed por locale. El layout selecciona via page.lang con fallback a 'en'.
 nav:
