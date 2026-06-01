@@ -26,7 +26,7 @@ jobs:
         run: jekyll build --strict_front_matter --safe --verbose
 
       - name: HTML5 validation
-        uses: Cyb3r-Jak3/html5validator-action@v7
+        uses: Cyb3r-Jak3/html5validator-action@v7.2.0
         with:
           root: _site/
           log_level: WARNING
