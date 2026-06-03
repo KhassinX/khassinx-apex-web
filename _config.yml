@@ -24,7 +24,7 @@ twitter_card: summary_large_image
 org:
   name: KhassinX
   email: hello@khassinx.com
-  logo: /assets/favicons/favicon-512.png
+  logo: /assets/favicons/icon-512.png
   same_as:
     - https://github.com/KhassinX
 
