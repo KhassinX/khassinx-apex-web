@@ -6,7 +6,7 @@ permalink: /legal/privacy/
 lang: en
 canonical_en: /legal/privacy/
 canonical_es: /es/legal/privacy/
-updated: 2026-05-25
+updated: 2026-06-03
 ---
 
 **This policy covers `khassinx.com` only** — the umbrella marketing site. Each KhassinX app publishes its own privacy policy on its subdomain (e.g., `asvab.khassinx.com`). For information about how a specific app handles your data, please refer to that app's policy.
@@ -14,6 +14,8 @@ updated: 2026-05-25
 ## Summary
 
 We do not collect personal data through this website. There are no analytics scripts, no cookies, no third-party trackers, no fingerprinting, and no account system. The site is static HTML served via GitHub Pages with Cloudflare as a network layer for performance and security.
+
+`khassinx.com` is operated by **KhassinX LLC**, a Florida limited liability company (United States) — the data controller for this site. You can reach us at [`hello@khassinx.com`](mailto:hello@khassinx.com).
 
 ## What we don't do
 
