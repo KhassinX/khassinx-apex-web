@@ -6,10 +6,10 @@ permalink: /legal/
 lang: en
 canonical_en: /legal/
 canonical_es: /es/legal/
-updated: 2026-05-25
+updated: 2026-06-03
 ---
 
-This page covers the legal terms for **khassinx.com** itself — the umbrella marketing site for KhassinX as a studio.
+This page covers the legal terms for **khassinx.com** itself — the umbrella marketing site for KhassinX, the studio operated by **KhassinX LLC** (a Florida limited liability company, United States).
 
 Each KhassinX app publishes its **own** privacy policy and terms of service on its dedicated subdomain. Those documents govern the app, its data handling, and any subscriptions or purchases.
 

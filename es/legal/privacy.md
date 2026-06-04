@@ -6,7 +6,7 @@ permalink: /es/legal/privacy/
 lang: es
 canonical_en: /legal/privacy/
 canonical_es: /es/legal/privacy/
-updated: 2026-05-25
+updated: 2026-06-03
 ---
 
 **Esta política cubre solo `khassinx.com`** — el sitio marketing umbrella. Cada app KhassinX publica su propia política de privacidad en su subdominio (ej. `asvab.khassinx.com`). Para información sobre cómo una app específica maneja tus datos, consultá la política de esa app.
@@ -14,6 +14,8 @@ updated: 2026-05-25
 ## Resumen
 
 No recopilamos datos personales a través de este sitio. No hay scripts de analytics, ni cookies, ni trackers de terceros, ni fingerprinting, ni sistema de cuentas. El sitio es HTML estático servido vía GitHub Pages con Cloudflare como capa de red para performance y seguridad.
+
+`khassinx.com` es operado por **KhassinX LLC**, una sociedad de responsabilidad limitada de Florida (Estados Unidos) — responsable del tratamiento de datos de este sitio. Podés escribirnos a [`hello@khassinx.com`](mailto:hello@khassinx.com).
 
 ## Lo que NO hacemos
 

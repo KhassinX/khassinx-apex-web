@@ -6,7 +6,7 @@ permalink: /legal/terms/
 lang: en
 canonical_en: /legal/terms/
 canonical_es: /es/legal/terms/
-updated: 2026-05-25
+updated: 2026-06-03
 ---
 
 **These terms cover `khassinx.com` only** — the umbrella marketing site. Each KhassinX app publishes its own terms of service governing app use, subscriptions, and purchases. See the app's subdomain for those terms.
@@ -17,7 +17,7 @@ By accessing `khassinx.com`, you agree to these terms. If you do not agree, plea
 
 ## What the site is
 
-`khassinx.com` is the marketing website for **KhassinX**, an independent software studio. The site lists our apps and explains our approach. It does not provide services, accounts, purchases, or downloads directly — those happen on the Apple App Store or on per-app subdomains.
+`khassinx.com` is the marketing website for **KhassinX**, an independent software studio operated by **KhassinX LLC**, a Florida limited liability company. The site lists our apps and explains our approach. It does not provide services, accounts, purchases, or downloads directly — those happen on the Apple App Store or on per-app subdomains.
 
 ## Use of the site
 
@@ -34,11 +34,11 @@ For security research, see [`/security/`](/security/). Good-faith research withi
 
 ## Trademarks
 
-"KhassinX" and the KhassinX logo are trademarks of the studio. Apple, App Store, iPhone, iPad, Apple Watch, Mac, and related marks are trademarks of Apple Inc. used here for descriptive purposes only.
+"KhassinX" and the KhassinX logo are trademarks of KhassinX LLC. Apple, App Store, iPhone, iPad, Apple Watch, Mac, and related marks are trademarks of Apple Inc. used here for descriptive purposes only.
 
 ## Intellectual property
 
-The site's design, code, text, and graphic assets are owned by KhassinX. Source code for the site is in a public GitHub repository; the source is provided for transparency and is not licensed for reuse without separate written permission.
+The site's design, code, text, and graphic assets are owned by KhassinX LLC. Source code for the site is in a public GitHub repository; the source is provided for transparency and is not licensed for reuse without separate written permission.
 
 ## No warranty
 
@@ -46,7 +46,7 @@ The site is provided "as is" without warranties of any kind, express or implied.
 
 ## Limitation of liability
 
-To the extent permitted by applicable law, KhassinX is not liable for any indirect, incidental, consequential, or punitive damages arising from your use of the site.
+To the extent permitted by applicable law, KhassinX LLC is not liable for any indirect, incidental, consequential, or punitive damages arising from your use of the site.
 
 ## Third-party links
 
@@ -58,7 +58,7 @@ We may update these terms. Material changes will be reflected in the "Last updat
 
 ## Governing law
 
-These terms are governed by the laws of the operator's registered place of business in the United States. Disputes will be resolved under those laws.
+These terms are governed by the laws of the State of Florida, United States. Disputes will be resolved under those laws.
 
 ## Contact
 

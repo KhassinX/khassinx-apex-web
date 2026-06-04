@@ -54,7 +54,8 @@
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": {{ site.org.name | default: site.title | jsonify }},
+    "name": {{ site.org.name | default: site.title | jsonify }},{% if site.org.legal_name %}
+    "legalName": {{ site.org.legal_name | jsonify }},{% endif %}
     "url": {{ site.url | jsonify }},
     "logo": {{ site.url | append: site.org.logo | jsonify }},
     "description": {{ site.description | jsonify }},
@@ -114,7 +115,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <div>© {{ 'now' | date: '%Y' }} KhassinX</div>
+      <div>© {{ 'now' | date: '%Y' }} KhassinX LLC</div>
       <nav aria-label="Footer">
         {% for item in footer_items %}
           <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
