@@ -23,6 +23,7 @@ twitter_card: summary_large_image
 # Organization (JSON-LD structured data + contact)
 org:
   name: KhassinX
+  legal_name: KhassinX LLC
   email: hello@khassinx.com
   logo: /assets/favicons/icon-512.png
   same_as:
