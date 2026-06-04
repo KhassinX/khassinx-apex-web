@@ -55,7 +55,8 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": {{ site.org.name | default: site.title | jsonify }},{% if site.org.legal_name %}
-    "legalName": {{ site.org.legal_name | jsonify }},{% endif %}
+    "legalName": {{ site.org.legal_name | jsonify }},{% endif %}{% if site.org.founding_date %}
+    "foundingDate": {{ site.org.founding_date | jsonify }},{% endif %}
     "url": {{ site.url | jsonify }},
     "logo": {{ site.url | append: site.org.logo | jsonify }},
     "description": {{ site.description | jsonify }},
