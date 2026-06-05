@@ -15,7 +15,7 @@ updated: 2026-06-03
 
 We do not collect personal data through this website. There are no analytics scripts, no cookies, no third-party trackers, no fingerprinting, and no account system. The site is static HTML served via GitHub Pages with Cloudflare as a network layer for performance and security.
 
-`khassinx.com` is operated by **KhassinX LLC**, a Florida limited liability company (United States) — the data controller for this site. You can reach us at [`hello@khassinx.com`](mailto:hello@khassinx.com).
+`khassinx.com` is operated by **KHASSINX LLC**, a Florida limited liability company (United States) — the data controller for this site. You can reach us at [`hello@khassinx.com`](mailto:hello@khassinx.com).
 
 ## What we don't do
 

@@ -17,7 +17,7 @@ By accessing `khassinx.com`, you agree to these terms. If you do not agree, plea
 
 ## What the site is
 
-`khassinx.com` is the marketing website for **KhassinX**, an independent software studio operated by **KhassinX LLC**, a Florida limited liability company. The site lists our apps and explains our approach. It does not provide services, accounts, purchases, or downloads directly — those happen on the Apple App Store or on per-app subdomains.
+`khassinx.com` is the marketing website for **KhassinX**, an independent software studio operated by **KHASSINX LLC**, a Florida limited liability company. The site lists our apps and explains our approach. It does not provide services, accounts, purchases, or downloads directly — those happen on the Apple App Store or on per-app subdomains.
 
 ## Use of the site
 
@@ -34,11 +34,11 @@ For security research, see [`/security/`](/security/). Good-faith research withi
 
 ## Trademarks
 
-"KhassinX" and the KhassinX logo are trademarks of KhassinX LLC. Apple, App Store, iPhone, iPad, Apple Watch, Mac, and related marks are trademarks of Apple Inc. used here for descriptive purposes only.
+"KhassinX" and the KhassinX logo are trademarks of KHASSINX LLC. Apple, App Store, iPhone, iPad, Apple Watch, Mac, and related marks are trademarks of Apple Inc. used here for descriptive purposes only.
 
 ## Intellectual property
 
-The site's design, code, text, and graphic assets are owned by KhassinX LLC. Source code for the site is in a public GitHub repository; the source is provided for transparency and is not licensed for reuse without separate written permission.
+The site's design, code, text, and graphic assets are owned by KHASSINX LLC. Source code for the site is in a public GitHub repository; the source is provided for transparency and is not licensed for reuse without separate written permission.
 
 ## No warranty
 
@@ -46,7 +46,7 @@ The site is provided "as is" without warranties of any kind, express or implied.
 
 ## Limitation of liability
 
-To the extent permitted by applicable law, KhassinX LLC is not liable for any indirect, incidental, consequential, or punitive damages arising from your use of the site.
+To the extent permitted by applicable law, KHASSINX LLC is not liable for any indirect, incidental, consequential, or punitive damages arising from your use of the site.
 
 ## Third-party links
 
