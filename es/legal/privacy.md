@@ -15,7 +15,7 @@ updated: 2026-06-03
 
 No recopilamos datos personales a través de este sitio. No hay scripts de analytics, ni cookies, ni trackers de terceros, ni fingerprinting, ni sistema de cuentas. El sitio es HTML estático servido vía GitHub Pages con Cloudflare como capa de red para performance y seguridad.
 
-`khassinx.com` es operado por **KhassinX LLC**, una sociedad de responsabilidad limitada de Florida (Estados Unidos) — responsable del tratamiento de datos de este sitio. Podés escribirnos a [`hello@khassinx.com`](mailto:hello@khassinx.com).
+`khassinx.com` es operado por **KHASSINX LLC**, una sociedad de responsabilidad limitada de Florida (Estados Unidos) — responsable del tratamiento de datos de este sitio. Podés escribirnos a [`hello@khassinx.com`](mailto:hello@khassinx.com).
 
 ## Lo que NO hacemos
 
