@@ -1,4 +1,5 @@
 title: KhassinX
+short_name: KhassinX   # nombre bajo el icono en Add-to-Home (apple-mobile-web-app-title / manifest short_name) — NO el <title> largo
 description: Independent studio building privacy-first apps for Apple platforms — on-device AI, native across iPhone, iPad, Mac and Apple Watch, zero tracking.
 url: https://khassinx.com
 lang: en
