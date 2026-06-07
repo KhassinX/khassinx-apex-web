@@ -19,6 +19,7 @@ og_image: /assets/og/og-image.png
 og_image_width: 1200
 og_image_height: 630
 og_image_alt: "KhassinX — privacy-first apps for Apple platforms"
+og_image_alt_es: "KhassinX — apps privacy-first para las plataformas Apple"
 twitter_card: summary_large_image
 
 # Organization (JSON-LD structured data + contact)
@@ -29,7 +30,7 @@ org:
   email: hello@khassinx.com
   logo: /assets/favicons/icon-512.png
   same_as:
-    - https://github.com/KhassinX
+    - https://github.com/khassinx
 
 # SEO sitemap (GitHub Pages whitelisted plugin)
 plugins:
