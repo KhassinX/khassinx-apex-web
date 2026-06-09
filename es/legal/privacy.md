@@ -19,7 +19,7 @@ updated: 2026-06-09
 - **Sin cookies.** El sitio no coloca cookies propias. Cloudflare puede colocar una única cookie de seguridad de corta duración; no te identifica (consulta nuestra página de [Cookies](/es/legal/cookies/)).
 - **Sin scripts de terceros.** Sin incrustaciones sociales, sin widgets de chat, sin píxeles publicitarios.
 - **Sin cuentas.** Aquí no hay nada que registrar.
-- **Sin venta ni cesión de datos.** No hay datos que vender ni ceder.
+- **Sin venta ni uso compartido de datos.** No hay datos que vender ni compartir.
 
 ## Lo que registran nuestros proveedores de alojamiento
 
@@ -27,7 +27,7 @@ updated: 2026-06-09
 
 ## Cómo maneja los datos el estudio en nuestras apps
 
-Todo lo que hacemos está construido de la misma forma: **tus datos viven en tu dispositivo y en tu propia cuenta de iCloud, no en servidores que nosotros controlemos.** No incrustamos SDK de rastreo de terceros y no vendemos ni cedemos tu información. Las apps que necesitan un servicio de backend funcionan sin retener tus datos personales (por ejemplo, usando tokens temporales de un proveedor en lugar de almacenar tus datos). Para saber exactamente qué guarda una app concreta, lee la política de privacidad de esa app en su subdominio.
+Todo lo que hacemos está construido de la misma forma: **tus datos viven en tu dispositivo y en tu propia cuenta de iCloud, no en servidores que nosotros controlemos.** No incrustamos SDK de rastreo de terceros y no vendemos ni compartimos tu información. Las apps que necesitan un servicio de backend funcionan sin retener tus datos personales (por ejemplo, usando tokens temporales de un proveedor en lugar de almacenar tus datos). Para saber exactamente qué guarda una app concreta, lee la política de privacidad de esa app en su subdominio.
 
 ## Responsable del tratamiento
 

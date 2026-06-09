@@ -9,9 +9,9 @@ canonical_es: /es/legal/your-rights/
 updated: 2026-06-09
 ---
 
-Somos privacy-first por diseño: la mayoría de las solicitudes de derechos sobre datos no aplican porque no guardamos tus datos personales — viven en tu dispositivo y en tu propio iCloud. Aun así, estos son los derechos que te corresponden según las leyes que puedan aplicarte, y cómo ejercerlos.
+Somos privacy-first por diseño: la mayoría de las solicitudes de derechos sobre datos quedan sin objeto porque no guardamos tus datos personales — viven en tu dispositivo y en tu propio iCloud. Aun así, estos son los derechos que te corresponden según las leyes que puedan aplicarte, y cómo ejercerlos.
 
-Esta página es a nivel del estudio. Para una app concreta, consulta la política de privacidad de esa app en su subdominio, que describe exactamente qué trata (si es que trata algo).
+Esta página es a nivel del estudio. Para una app concreta, consulta la política de privacidad de esa app en su subdominio, que describe exactamente qué datos trata (si es que trata alguno).
 
 ## Unión Europea y Espacio Económico Europeo — RGPD {#eu-eea-gdpr}
 
@@ -48,17 +48,17 @@ Si resides en California, la CCPA (modificada por la CPRA) te da derecho a:
 - **Conocer** y **acceder** a la información personal que tengamos sobre ti;
 - **Eliminarla**;
 - **Corregir** información inexacta;
-- **Rechazar** la venta o cesión de información personal;
+- **Rechazar** la venta o el uso compartido de tu información personal;
 - **Limitar** el uso de información personal sensible; y
 - No sufrir **discriminación** por ejercer tus derechos.
 
-**No vendemos ni cedemos tu información personal, y no lo hemos hecho en los últimos 12 meses.**
+**No vendemos ni compartimos tu información personal, y no lo hemos hecho en los últimos 12 meses.**
 
 **Plazo de respuesta:** Respondemos en un plazo de 45 días, prorrogable una vez cuando sea razonablemente necesario.
 
 ## Otros estados de EE. UU. {#other-us-states}
 
-Si vives en Virginia, Colorado, Connecticut, Utah, Texas, Oregón, Florida u otro estado de EE. UU. con una ley integral de privacidad del consumidor, por lo general tienes derecho a acceder, eliminar, corregir y obtener una copia portable de tus datos personales, y a rechazar la publicidad dirigida, la venta de tus datos y ciertos perfiles.
+Si vives en Virginia, Colorado, Connecticut, Utah, Texas, Oregón, Florida u otro estado de EE. UU. con una ley integral de privacidad del consumidor, por lo general tienes derecho a acceder a tus datos personales, eliminarlos, corregirlos y obtenerlos en un formato portátil, y a oponerte a la publicidad dirigida, a la venta de tus datos y a ciertas formas de elaboración de perfiles.
 
 La mayoría de estas leyes solo aplican por encima de umbrales de tamaño de empresa que no alcanzamos — pero respetamos estos derechos con independencia de que una ley concreta nos obligue técnicamente.
 
