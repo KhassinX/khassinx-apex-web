@@ -6,7 +6,7 @@ permalink: /legal/terms/
 lang: en
 canonical_en: /legal/terms/
 canonical_es: /es/legal/terms/
-updated: 2026-06-03
+updated: 2026-06-09
 ---
 
 **These terms cover `khassinx.com` only** — the umbrella marketing site. Each KhassinX app publishes its own terms of service governing app use, subscriptions, and purchases. See the app's subdomain for those terms.
@@ -52,6 +52,10 @@ To the extent permitted by applicable law, KHASSINX LLC is not liable for any in
 
 The site links to third-party sites (Apple App Store, GitHub, individual app subdomains). Those sites have their own terms and we are not responsible for their content.
 
+## Privacy
+
+For how we handle data on this site and the privacy rights you have under GDPR, the UK, Spain's LOPDGDD, California's CCPA, and other laws, see our [Privacy Policy](/legal/privacy/) and [Your Privacy Rights](/legal/your-rights/).
+
 ## Changes
 
 We may update these terms. Material changes will be reflected in the "Last updated" date at the top. Continued use after a change indicates acceptance.
@@ -62,4 +66,4 @@ These terms are governed by the laws of the State of Florida, United States. Dis
 
 ## Contact
 
-Questions: [`hello@khassinx.com`](mailto:hello@khassinx.com).
+Questions: [`legal@khassinx.com`](mailto:legal@khassinx.com).
