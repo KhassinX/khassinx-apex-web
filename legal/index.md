@@ -11,7 +11,7 @@ updated: 2026-06-09
 
 This page covers the legal terms for **khassinx.com** itself — the umbrella marketing site for KhassinX, the studio operated by **KHASSINX LLC** (a Florida limited liability company, United States).
 
-Each KhassinX app publishes its **own** privacy policy and terms of service on its dedicated subdomain. Those documents govern the app, its data handling, and any subscriptions or purchases.
+Each KhassinX app publishes its **own** privacy policy and terms of service on its own site — those govern the app itself, its data handling, and any purchases or subscriptions. You'll find each app, with a link to its site, on our [home page](/).
 
 ## Documents on this site
 
@@ -20,12 +20,6 @@ Each KhassinX app publishes its **own** privacy policy and terms of service on i
 - [Terms of Use](/legal/terms/) — terms governing your use of this website
 - [Accessibility](/legal/accessibility/) — our WCAG 2.1 AA commitment and how to report a barrier
 - [Cookies](/legal/cookies/) — why there's no cookie banner here
-
-## Per-app legal
-
-- **ASVAB Coach** — [asvab.khassinx.com/legal/](https://asvab.khassinx.com/legal/)
-- **Khazen** — published at `khazen.khassinx.com/legal` when the app launches
-- Other apps — see the respective subdomain under `khassinx.com`
 
 ## Contact
 
