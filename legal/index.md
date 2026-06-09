@@ -23,7 +23,7 @@ Each KhassinX app publishes its **own** privacy policy and terms of service on i
 
 ## Per-app legal
 
-- **ASVAB Coach** — [asvab.khassinx.com/legal](https://asvab.khassinx.com)
+- **ASVAB Coach** — [asvab.khassinx.com/legal/](https://asvab.khassinx.com/legal/)
 - **Khazen** — published at `khazen.khassinx.com/legal` when the app launches
 - Other apps — see the respective subdomain under `khassinx.com`
 
