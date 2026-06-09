@@ -51,17 +51,25 @@ nav:
 
 footer_nav:
   en:
-    - title: Security
-      url: "/security/"
+    - title: Privacy
+      url: "/legal/privacy/"
+    - title: Terms
+      url: "/legal/terms/"
     - title: Legal
       url: "/legal/"
+    - title: Security
+      url: "/security/"
     - title: Contact
       url: "mailto:hello@khassinx.com"
   es:
-    - title: Seguridad
-      url: "/es/security/"
+    - title: Privacidad
+      url: "/es/legal/privacy/"
+    - title: Términos
+      url: "/es/legal/terms/"
     - title: Legal
       url: "/es/legal/"
+    - title: Seguridad
+      url: "/es/security/"
     - title: Contacto
       url: "mailto:hello@khassinx.com"
 
