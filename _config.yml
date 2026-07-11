@@ -60,7 +60,7 @@ footer_nav:
     - title: Security
       url: "/security/"
     - title: Contact
-      url: "mailto:hello@khassinx.com"
+      url: "/contact/"
   es:
     - title: Privacidad
       url: "/es/legal/privacy/"
@@ -71,7 +71,7 @@ footer_nav:
     - title: Seguridad
       url: "/es/security/"
     - title: Contacto
-      url: "mailto:hello@khassinx.com"
+      url: "/es/contact/"
 
 # Skip-link y "Part of ecosystem" copy por locale (lo consume base.html)
 ui_strings:
