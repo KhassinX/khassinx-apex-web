@@ -17,7 +17,7 @@ By accessing `khassinx.com`, you agree to these terms. If you do not agree, plea
 
 ## What the site is
 
-`khassinx.com` is the marketing website for **KhassinX**, an independent software studio operated by **KHASSINX LLC**, a Florida limited liability company. The site lists our apps and explains our approach. It does not provide services, accounts, purchases, or downloads directly — those happen on the Apple App Store or on per-app subdomains.
+`khassinx.com` is the marketing website for **KhassinX**, an independent software studio operated by **KHASSINX LLC**, a Florida limited liability company. The site lists our apps and explains our approach. It does not provide services, accounts, purchases, or downloads directly — those happen on the App Store or on per-app subdomains.
 
 ## Use of the site
 
@@ -50,7 +50,7 @@ To the extent permitted by applicable law, KHASSINX LLC is not liable for any in
 
 ## Third-party links
 
-The site links to third-party sites (Apple App Store, GitHub, individual app subdomains). Those sites have their own terms and we are not responsible for their content.
+The site links to third-party sites (the App Store, GitHub, individual app subdomains). Those sites have their own terms and we are not responsible for their content.
 
 ## Privacy
 
@@ -62,7 +62,7 @@ We may update these terms. Material changes will be reflected in the "Last updat
 
 ## Governing law
 
-These terms are governed by the laws of the State of Florida, United States. Disputes will be resolved under those laws.
+These terms are governed by the laws of the State of Florida, United States, and disputes will be resolved in the state or federal courts located in Florida.
 
 ## Contact
 

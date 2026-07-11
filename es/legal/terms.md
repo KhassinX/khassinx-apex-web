@@ -17,7 +17,7 @@ Al acceder a `khassinx.com`, aceptas estos términos. Si no estás de acuerdo, n
 
 ## Qué es este sitio
 
-`khassinx.com` es el sitio del estudio independiente de software **KhassinX**, operado por **KHASSINX LLC**, una sociedad de responsabilidad limitada de Florida (Estados Unidos). El sitio presenta nuestras apps y explica nuestro enfoque. No ofrece servicios, cuentas, compras ni descargas directamente — eso ocurre en la App Store de Apple o en los subdominios de cada app.
+`khassinx.com` es el sitio del estudio independiente de software **KhassinX**, operado por **KHASSINX LLC**, una sociedad de responsabilidad limitada de Florida (Estados Unidos). El sitio presenta nuestras apps y explica nuestro enfoque. No ofrece servicios, cuentas, compras ni descargas directamente — eso ocurre en el App Store o en los subdominios de cada app.
 
 ## Uso del sitio
 
@@ -50,7 +50,7 @@ En la máxima medida permitida por la ley aplicable, KHASSINX LLC no se hace res
 
 ## Enlaces a terceros
 
-El sitio enlaza a sitios de terceros (App Store de Apple, GitHub, subdominios de apps individuales). Esos sitios tienen sus propios términos y no somos responsables de su contenido.
+El sitio enlaza a sitios de terceros (App Store, GitHub, subdominios de apps individuales). Esos sitios tienen sus propios términos y no somos responsables de su contenido.
 
 ## Privacidad
 
@@ -62,7 +62,7 @@ Podemos actualizar estos términos. Los cambios sustanciales se reflejarán en l
 
 ## Ley aplicable
 
-Estos términos se rigen por las leyes del estado de Florida, Estados Unidos. Las controversias se resolverán conforme a esas leyes.
+Estos términos se rigen por las leyes del Estado de Florida, Estados Unidos, y las controversias se resolverán en los tribunales estatales o federales ubicados en Florida.
 
 ## Contacto
 
