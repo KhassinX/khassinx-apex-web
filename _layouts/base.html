@@ -143,7 +143,7 @@
           <a href="{{ page.canonical_es | default: '/es/' | relative_url }}" hreflang="es" lang="es">ES</a>
         {%- endif -%}
       </div>
-      <small>{{ ui.part_of_ecosystem_prefix }} <a href="{{ ui.ecosystem_url }}">{{ ui.part_of_ecosystem_label }}</a></small>
+      {%- comment -%} Sin nota "Part of the KhassinX ecosystem" en el APEX: es el ecosistema — el self-link era un bug (WEB_PROPERTY_SPEC §4; la nota es solo para sites per-app propios). {%- endcomment -%}
     </div>
   </footer>
 </body>
