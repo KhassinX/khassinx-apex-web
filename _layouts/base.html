@@ -11,6 +11,7 @@
 
   <title>{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta name="robots" content="{{ page.robots | default: 'index,follow' }}">
 
   <meta name="theme-color" content="#0E0E11" media="(prefers-color-scheme: dark)">
   <meta name="theme-color" content="#FAFAF7" media="(prefers-color-scheme: light)">
@@ -49,6 +50,7 @@
   {% if site.favicon_16 %}<link rel="icon" type="image/png" sizes="16x16" href="{{ site.favicon_16 }}">{% endif %}
   {% if site.apple_touch_icon %}<link rel="apple-touch-icon" sizes="180x180" href="{{ site.apple_touch_icon }}">{% endif %}
   <link rel="manifest" href="/site.webmanifest">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 
   {%- comment -%} Apple Web Clip / Add-to-Home-Screen: el NAME bajo el icono = apple-mobile-web-app-title (si falta, iOS cae al <title> largo). {%- endcomment -%}
   <meta name="apple-mobile-web-app-capable" content="yes">

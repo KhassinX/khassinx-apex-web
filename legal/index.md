@@ -6,7 +6,7 @@ permalink: /legal/
 lang: en
 canonical_en: /legal/
 canonical_es: /es/legal/
-updated: 2026-06-09
+updated: 2026-07-11
 ---
 
 This page covers the legal terms for **khassinx.com** itself — the umbrella marketing site for KhassinX, the studio operated by **KHASSINX LLC** (a Florida limited liability company, United States).
@@ -26,3 +26,7 @@ Each KhassinX app publishes its **own** privacy policy and terms of service on i
 For legal inquiries, copyright concerns, or DMCA notices: [`legal@khassinx.com`](mailto:legal@khassinx.com).
 
 For security disclosures: see [`/security/`](/security/) or [`security@khassinx.com`](mailto:security@khassinx.com).
+
+## Trademarks
+
+Apple, iPhone, iPad, Mac, Apple Watch, App Store, iCloud, iPadOS, macOS, and watchOS are trademarks of Apple Inc., registered in the U.S. and other countries. Apple Intelligence and Liquid Glass are trademarks of Apple Inc. IOS is a trademark or registered trademark of Cisco in the U.S. and other countries and is used under license. KhassinX is a trademark of KHASSINX LLC. All other trademarks are the property of their respective owners.
