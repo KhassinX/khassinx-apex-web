@@ -110,7 +110,8 @@
     <div class="container">
       <a href="{{ logo_home | relative_url }}" class="logo">
         {% if site.logo %}<img src="{{ site.logo | relative_url }}" alt="{{ site.title }} logo">{% endif %}
-        <span>{{ site.title }}</span>
+        {%- comment -%} ™ en el wordmark VISIBLE (norma BRAND_SYSTEM §7); NUNCA en site.title/alt/metadata {%- endcomment -%}
+        <span>{{ site.title }}™</span>
       </a>
       <nav class="site-nav" aria-label="Primary">
         {% for item in nav_items %}
