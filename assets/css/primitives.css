@@ -1,3 +1,23 @@
+/* Geist Sans y Geist Mono — SIL Open Font License 1.1.
+   Licencia completa en /assets/fonts/OFL.txt, que debe viajar con los archivos.
+   Fuentes variables: un archivo cubre los pesos 100-900.
+   Sólo se usan fuera de Apple: en macOS e iOS gana `-apple-system` en el stack y
+   el sistema provee San Francisco, que nunca se sirve desde acá. */
+@font-face {
+  font-family: "Geist Sans";
+  src: url("/assets/fonts/geist-variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url("/assets/fonts/geist-mono-variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
 /*
  * khassinx-primitives.css — Layer 3 (Shared) component primitives — Apple-grade
  *
