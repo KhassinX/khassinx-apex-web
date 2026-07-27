@@ -81,6 +81,7 @@
     For per-app sites: skip Layer 1 (set site.umbrella_tokens = false). For umbrella sites
     (apex khassinx.com): include Layer 1 (set site.umbrella_tokens = true).
   {% endcomment %}
+  <link rel="preload" href="/assets/fonts/geist-variable.woff2" as="font" type="font/woff2" crossorigin>
   {% if site.umbrella_tokens %}<link rel="stylesheet" href="{{ '/assets/css/tokens.css' | relative_url }}">{% endif %}
   <link rel="stylesheet" href="{{ '/assets/css/primitives.css' | relative_url }}">
   {% if site.app_tokens_css %}<link rel="stylesheet" href="{{ site.app_tokens_css | relative_url }}">{% endif %}
