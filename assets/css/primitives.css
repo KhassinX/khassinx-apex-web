@@ -215,6 +215,16 @@ pre code {
 .logo:hover { text-decoration: none; color: var(--khassinx-text-primary); }
 .logo img { height: 24px; width: auto; }
 
+/* Trademark mark on the header wordmark (BRAND_SYSTEM §7 / WEB_PROPERTY_SPEC §4.6). Small superscript,
+   muted — a quiet assertion of an unregistered mark, not a shout. aria-hidden in the markup. */
+.tm {
+  font-size: 0.62em;
+  vertical-align: 0.35em;
+  opacity: 0.7;
+  font-weight: 500;
+  margin-left: 0.04em;
+}
+
 .site-nav {
   display: flex;
   gap: var(--space-xl);

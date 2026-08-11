@@ -111,8 +111,15 @@
     <div class="container">
       <a href="{{ logo_home | relative_url }}" class="logo">
         {% if site.logo %}<img src="{{ site.logo | relative_url }}" alt="{{ site.title }} logo">{% endif %}
-        {%- comment -%} ™ en el wordmark VISIBLE (norma BRAND_SYSTEM §7); NUNCA en site.title/alt/metadata {%- endcomment -%}
-        <span>{{ site.title }}™</span>
+        {%- comment -%}
+          ™ en el wordmark VISIBLE del header (BRAND_SYSTEM.md §7, norma 2026-07-17) — la
+          aparición más prominente por página. `site.title` sigue alimentando <title>, og:*,
+          JSON-LD y alt sin el símbolo. El ™ va en un `<span class="tm" aria-hidden="true">`
+          separado (no pegado al texto plano): así un screen reader dice sólo el nombre, y el
+          símbolo hereda el estilo pequeño/atenuado de `.tm` en vez de heredar el tamaño del
+          wordmark. Nunca ® (sin registro federal = false marking).
+        {%- endcomment -%}
+        <span>{{ site.title }}<span class="tm" aria-hidden="true">™</span></span>
       </a>
       <nav class="site-nav" aria-label="Primary">
         {% for item in nav_items %}
