@@ -39,13 +39,16 @@ plugins:
 # Navigation — keyed por locale. El layout selecciona via page.lang con fallback a 'en'.
 nav:
   en:
-    - title: Apps
-      url: "#apps"
+    # OCULTO 2026-08-17 por decisión de Abraham: enlace a la sección de apps del home,
+    # comentada en index.html/es/index.html. Ver la nota ahí para el porqué.
+    # - title: Apps
+    #   url: "#apps"
     - title: Contact
       url: "mailto:hello@khassinx.com"
   es:
-    - title: Apps
-      url: "/es/#apps"
+    # OCULTO 2026-08-17 (ver nota arriba en nav.en)
+    # - title: Apps
+    #   url: "/es/#apps"
     - title: Contacto
       url: "mailto:hello@khassinx.com"
 
