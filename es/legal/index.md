@@ -21,6 +21,12 @@ Cada app de KhassinX publica su **propia** política de privacidad y términos d
 - [Accesibilidad](/es/legal/accessibility/) — nuestro compromiso con WCAG 2.1 AA y cómo informar una barrera
 - [Cookies](/es/legal/cookies/) — por qué aquí no hay aviso de cookies
 
+## Políticas de apps alojadas aquí
+
+Kalyx todavía no tiene su propio sitio en un subdominio, así que su política de privacidad se aloja aquí mientras tanto:
+
+- [Política de privacidad de Kalyx](/es/legal/kalyx-privacy/) — qué datos recoge Kalyx (ninguno), dónde viven y cómo borrarlos
+
 ## Contacto
 
 Para consultas legales, reclamos de copyright o avisos DMCA: [`legal@khassinx.com`](mailto:legal@khassinx.com).
