@@ -19,11 +19,19 @@ updated: 2026-07-28
 
 Tus capturas —su texto, su historial y las grabaciones de voz— viven en el almacenamiento de Kalyx dentro de tu dispositivo. Si activas la sincronización, viven además en **tu** cuenta de iCloud, bajo tu cuenta de Apple y sujetas a la [política de privacidad de Apple](https://www.apple.com/legal/privacy/). Nunca pasan por servidores nuestros.
 
-Puedes llevarte todo cuando quieras: en **Ajustes → Exportar todo** se genera un archivo de texto con tus capturas, incluido el texto original de cada una. Se abre en cualquier editor, con Kalyx o sin él.
+Puedes llevarte todo cuando quieras: en **Ajustes → Exportar todo** se genera un paquete con un archivo de texto que contiene tus capturas —incluido el texto original de cada una— y una carpeta con todas las grabaciones de voz. Si una grabación está referenciada pero falta en el disco, la exportación lo dice en su propio apartado en lugar de omitirla en silencio. Se abre en cualquier editor, con Kalyx o sin él.
 
 ## Notas de voz y transcripción
 
 Si dictas una nota, el audio se guarda en tu dispositivo y la transcripción corre **en el dispositivo**, con el motor de voz de Apple. La grabación nunca se sube a ningún lado nuestro. La primera vez que dictes en un idioma, el sistema de Apple puede descargar un modelo de idioma desde Apple: esa petición va a Apple, no a nosotros, y no lleva nada de tu contenido.
+
+## Cámara y fotos
+
+Si capturas con la cámara, el reconocimiento de texto corre **en el dispositivo**, con el motor Vision de Apple, y **la foto se guarda en tu dispositivo** junto a la captura; nunca se sube a ningún lado nuestro. La foto se conserva incluso cuando la lectura sale mal o no lee nada, por el mismo motivo por el que una grabación se guarda pase lo que pase con su transcripción: el original es el dato, y lo que una máquina hizo con él es una interpretación.
+
+Cuando el escaneo en vivo no está disponible, Kalyx puede leer el texto de una foto que elijas. Usa el selector del sistema, que le entrega a la app **sólo la imagen que elegiste**: Kalyx nunca accede a tu fototeca ni escribe nada en ella.
+
+El acceso a la cámara y a las fotos se pide en el momento en que los usas, no al arrancar, y negar cualquiera de los dos deja el resto de la app funcionando.
 
 ## Funciones de inteligencia
 

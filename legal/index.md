@@ -23,9 +23,10 @@ Each KhassinX app publishes its **own** privacy policy and terms of service on i
 
 ## App policies hosted here
 
-Kalyx does not yet have its own subdomain site, so its privacy policy is hosted here in the meantime:
+Kalyx does not yet have its own subdomain site, so its privacy policy and terms of use are hosted here in the meantime:
 
 - [Kalyx Privacy Policy](/legal/kalyx-privacy/) — what data Kalyx collects (nothing), where it lives, and how to delete it
+- [Kalyx Terms of Use](/legal/kalyx-terms/) — terms governing your use of Kalyx
 
 ## Contact
 
