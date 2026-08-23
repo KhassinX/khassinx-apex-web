@@ -21,6 +21,13 @@ Each KhassinX app publishes its **own** privacy policy and terms of service on i
 - [Accessibility](/legal/accessibility/) — our WCAG 2.1 AA commitment and how to report a barrier
 - [Cookies](/legal/cookies/) — why there's no cookie banner here
 
+## App policies hosted here
+
+Kalyx does not yet have its own subdomain site, so its privacy policy and terms of use are hosted here in the meantime:
+
+- [Kalyx Privacy Policy](/legal/kalyx-privacy/) — what data Kalyx collects (nothing), where it lives, and how to delete it
+- [Kalyx Terms of Use](/legal/kalyx-terms/) — terms governing your use of Kalyx
+
 ## Contact
 
 For legal inquiries, copyright concerns, or DMCA notices: [`legal@khassinx.com`](mailto:legal@khassinx.com).
