@@ -308,12 +308,12 @@ pre code {
 
 .btn-primary {
   background: var(--khassinx-accent);
-  color: #FFFFFF;
+  color: var(--khassinx-on-accent, #FFFFFF);
 }
 .btn-primary:hover {
   background: var(--khassinx-accent-strong);
   text-decoration: none;
-  color: #FFFFFF;
+  color: var(--khassinx-on-accent, #FFFFFF);
   transform: translateY(-1px);
 }
 
@@ -324,7 +324,7 @@ pre code {
 }
 .btn-secondary:hover {
   background: var(--khassinx-accent);
-  color: #FFFFFF;
+  color: var(--khassinx-on-accent, #FFFFFF);
   text-decoration: none;
 }
 
@@ -445,7 +445,7 @@ pre code {
   width: 100%;
   margin-top: var(--space-md);
   font-size: var(--fs-caption);
-  color: var(--khassinx-text-tertiary);
+  color: var(--khassinx-text-secondary);   /* tertiary is 3.33:1 on bg-section */
 }
 
 /* ─── Article prose (for legal docs, blog posts) — Apple-canonical reading ─── */
