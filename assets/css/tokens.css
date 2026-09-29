@@ -42,6 +42,9 @@
   --khassinx-warning: #FF9500;           /* Apple system orange */
   --khassinx-danger: #FF3B30;            /* Apple system red */
 
+  /* Label on accent fills (.btn-primary, .btn-secondary:hover). White: 5.57:1 on #0066CC */
+  --khassinx-on-accent: #FFFFFF;
+
   /* Spacing scale — 8-baseline, Apple-grade generous */
   --space-xs: 4px;
   --space-s: 8px;
@@ -116,6 +119,10 @@
     --khassinx-success: #30D158;
     --khassinx-warning: #FF9F0A;
     --khassinx-danger: #FF453A;
+
+    /* Dark accent lightens, so its label darkens: black is 6.96:1 on #2997FF and 11:1 on
+       #5AC8FA (hover). White was 3.02:1 and 1.9:1 - below WCAG AA 4.5:1. */
+    --khassinx-on-accent: #000000;
   }
 }
 
