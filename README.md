@@ -1,31 +1,18 @@
-# khassinx-www
+# khassinx-apex-web
 
-Source for **[khassinx.com](https://khassinx.com)** — the umbrella marketing landing for the KhassinX indie studio ecosystem.
+Source for **[khassinx.com](https://khassinx.com)**, the KHASSINX umbrella site. Built with Jekyll and served by GitHub Pages.
 
 ## What lives here
 
-- `index.html` — apex landing with apps directory + philosophy + contact
-- `_layouts/base.html` — Jekyll layout (head, header, footer, skip-link)
-- `_layouts/prose.html` — layout for legal docs / blog posts (if needed)
-- `assets/css/tokens.css` — **Layer 1** umbrella tokens (charcoal + warm gold)
-- `assets/css/primitives.css` — **Layer 3** shared component primitives
-- `assets/favicons/favicon.svg` — K monogram
-
-## Brand layer
-
-This is the **only** site that uses **Layer 1** umbrella tokens (charcoal + warm gold). Per-app sites (`asvab.khassinx.com`, future `khazen.khassinx.com`, etc.) use their own Layer 2 brand and share Layer 3 primitives.
-
-See `~/KhassinX/_template/BRAND_SYSTEM.md` for the full convention.
-
-## Hosting
-
-Served via **GitHub Pages** with custom domain `khassinx.com`. DNS managed in Cloudflare:
-- Apex: A records → GitHub Pages IPs `185.199.108-111.153` + AAAA IPv6 (proxy off)
-- `www.khassinx.com` CNAME → `khassinx.github.io` (proxy off)
-
-## License
-
-The landing page and site assets are proprietary to KhassinX.
+- `index.html`, `es/index.html` — home page in English and Spanish
+- `_layouts/base.html` — head, header, footer and skip link
+- `_layouts/prose.html` — legal, contact and security pages
+- `_includes/logotype.svg` — the KHASSINX wordmark
+- `assets/css/tokens.css` — color, type and spacing tokens for the light and dark themes
+- `assets/css/primitives.css` — shared components
+- `assets/css/home.css` — home page layout
+- `assets/js/theme.js` — System / Light / Dark theme selector
+- `assets/favicons/` — favicons and web app icons
 
 ## Contact
 
