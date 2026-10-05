@@ -7,6 +7,12 @@ lang: en
 canonical_en: /legal/accessibility/
 canonical_es: /es/legal/accessibility/
 updated: 2026-06-09
+summary:
+  - "In our apps: full VoiceOver and screen-reader support, text that scales with Dynamic Type, and Reduce Motion support."
+  - "In our apps, color contrast meets AA, we don't rely on color alone, and there is visible focus and full keyboard navigation where applicable."
+  - "This site has semantic landmarks and headings, a skip-to-content link and AA contrast."
+  - "We don't claim perfect conformance; we fix issues as we find them and as standards evolve."
+  - "If something is hard or impossible to use, email legal@khassinx.com or hello@khassinx.com with the app or page, your device and what happened."
 ---
 
 We want our apps and this website to be usable by everyone. We design to the **Web Content Accessibility Guidelines (WCAG) 2.1, Level AA**.

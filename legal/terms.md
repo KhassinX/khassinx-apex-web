@@ -7,6 +7,12 @@ lang: en
 canonical_en: /legal/terms/
 canonical_es: /es/legal/terms/
 updated: 2026-06-09
+summary:
+  - "By accessing the site you agree to these terms. The site provides no services, accounts, purchases or downloads directly."
+  - "You may browse for personal and informational purposes, share links to public pages and quote short excerpts with attribution."
+  - "Not allowed: reproducing substantial content without permission, scraping that materially burdens the host, attempting to bypass its security, misrepresenting KhassinX."
+  - "The site is provided \"as is\"; to the extent the law permits, KHASSINX LLC is not liable for indirect, incidental, consequential or punitive damages."
+  - "Florida law governs, disputes go to Florida state or federal courts, and questions go to legal@khassinx.com."
 ---
 
 **These terms cover `khassinx.com` only** — the umbrella marketing site. Each KhassinX app publishes its own terms of service governing app use, subscriptions, and purchases. See the app's subdomain for those terms.
