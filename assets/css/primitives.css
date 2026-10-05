@@ -149,8 +149,17 @@ nav a { justify-content: center; }
 .prose li + li { margin-top: var(--khassinx-s-2); }
 .prose strong { font-weight: 600; }
 .prose code { font-family: var(--font-mono); font-size: 0.9em; overflow-wrap: anywhere; }
-.prose table { display: block; overflow-x: auto; border-collapse: collapse; font-size: var(--khassinx-t-small); }
+.prose table { border-collapse: collapse; font-size: var(--khassinx-t-small); }
 .prose th, .prose td { padding: var(--khassinx-s-2) var(--khassinx-s-3); text-align: left; vertical-align: top; border-bottom: 1px solid var(--khassinx-rule); }
+
+@media (max-width: 30em) {
+  .prose table, .prose tbody, .prose tr, .prose td { display: block; }
+  .prose thead { display: none; }
+  .prose tr { padding-block: var(--khassinx-s-3); border-bottom: 1px solid var(--khassinx-rule); }
+  .prose td { padding: 0; border: 0; }
+  .prose td + td { margin-top: var(--khassinx-s-1); }
+  .prose td::before { content: attr(data-label) ": "; font-weight: 600; }
+}
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
