@@ -72,11 +72,11 @@
   }
   </script>
 
-  {% if site.umbrella_tokens %}<link rel="stylesheet" href="/assets/css/tokens.css">{% endif %}
-  <link rel="stylesheet" href="/assets/css/primitives.css">
-  {% if site.app_tokens_css %}<link rel="stylesheet" href="{{ site.app_tokens_css }}">{% endif %}
-  {% for css in page.extra_css %}<link rel="stylesheet" href="{{ css }}">{% endfor %}
-  <script src="/assets/js/theme.js"></script>
+  {% if site.umbrella_tokens %}<link rel="stylesheet" href="/assets/css/tokens.css?v={{ site.time | date: '%s' }}">{% endif %}
+  <link rel="stylesheet" href="/assets/css/primitives.css?v={{ site.time | date: '%s' }}">
+  {% if site.app_tokens_css %}<link rel="stylesheet" href="{{ site.app_tokens_css }}?v={{ site.time | date: '%s' }}">{% endif %}
+  {% for css in page.extra_css %}<link rel="stylesheet" href="{{ css }}?v={{ site.time | date: '%s' }}">{% endfor %}
+  <script src="/assets/js/theme.js?v={{ site.time | date: '%s' }}"></script>
 </head>
 <body>
 <a class="skip" href="#main">{{ ui.skip_to_main }}</a>
