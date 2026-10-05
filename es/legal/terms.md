@@ -68,7 +68,7 @@ Para saber cómo manejamos los datos en este sitio y los derechos de privacidad 
 
 ## Cambios
 
-Podemos actualizar estos términos. Los cambios sustanciales se reflejarán en la fecha de "Última actualización" indicada arriba. El uso continuado tras un cambio indica aceptación.
+Podemos actualizar estos términos. Los cambios sustanciales se reflejarán en la fecha de vigencia indicada arriba. El uso continuado tras un cambio indica aceptación.
 
 ## Ley aplicable
 

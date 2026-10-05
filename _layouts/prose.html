@@ -13,8 +13,6 @@ layout: base
   {%- capture day %}{{ page.updated | date: "%-d %B %Y" }}{% endcapture -%}
   {%- endif %}
   <p class="meta">{{ ui.effective }} {{ day }} · {{ ui.version }} {{ page.version }}</p>
-  {%- elsif page.updated %}
-  <p class="meta">{{ ui.last_updated }}: {{ page.updated | date: "%Y-%m-%d" }}</p>
   {%- endif %}
   {%- if page.summary %}
   <section class="brief" aria-labelledby="brief-h">

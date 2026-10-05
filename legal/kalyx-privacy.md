@@ -75,4 +75,4 @@ Kalyx is published by **KHASSINX LLC**, a Florida limited liability company (Uni
 
 ## Changes
 
-Material changes are reflected in the "Last updated" date above. Because Kalyx collects nothing, any change that started collecting something would be announced in the app before it took effect.
+Material changes are reflected in the effective date shown above. Because Kalyx collects nothing, any change that started collecting something would be announced in the app before it took effect.
