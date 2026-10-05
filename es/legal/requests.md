@@ -7,6 +7,10 @@ lang: es
 canonical_en: /legal/requests/
 canonical_es: /es/legal/requests/
 updated: 2026-10-05
+summary:
+  - "Respondemos con la verdad a todo requerimiento legal válido sobre lo que de verdad tenemos, y tenemos muy poco."
+  - "Los datos de las apps viven en tu dispositivo y en tu propio iCloud; un requerimiento sobre datos de iCloud le corresponde a Apple."
+  - "Una autoridad puede pedirnos retirar una app en su país escribiendo a legal@khassinx.com; antes de actuar lo verificamos por su canal oficial."
 ---
 
 Una autoridad puede enviarnos dos tipos de solicitud, y cada uno se trata de forma distinta. Esta página cubre khassinx.com y el estudio. El sitio de cada app agrega lo propio de esa app.
