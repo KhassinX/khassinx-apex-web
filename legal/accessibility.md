@@ -6,35 +6,26 @@ permalink: /legal/accessibility/
 lang: en
 canonical_en: /legal/accessibility/
 canonical_es: /es/legal/accessibility/
-updated: 2026-06-09
+updated: 2026-10-05
 summary:
-  - "In our apps: full VoiceOver and screen-reader support, text that scales with Dynamic Type, and Reduce Motion support."
-  - "In our apps, color contrast meets AA, we don't rely on color alone, and there is visible focus and full keyboard navigation where applicable."
-  - "This site has semantic landmarks and headings, a skip-to-content link and AA contrast."
-  - "We don't claim perfect conformance; we fix issues as we find them and as standards evolve."
+  - "In our apps we design for VoiceOver, Dynamic Type, Reduce Motion and AA color contrast, and test for them before each release."
+  - "This site targets WCAG 2.1 Level AA, with semantic headings, a skip-to-content link and AA contrast."
+  - "We don't claim perfect conformance; we fix issues as we find them."
   - "If something is hard or impossible to use, email legal@khassinx.com or hello@khassinx.com with the app or page, your device and what happened."
 ---
 
-We want our apps and this website to be usable by everyone. We design to the **Web Content Accessibility Guidelines (WCAG) 2.1, Level AA**.
+We want our apps and this website to be usable by everyone.
 
 ## What we do
 
-**In our apps:**
+**In our apps**, we design for VoiceOver, Dynamic Type, Reduce Motion and AA color contrast, and we don't rely on color alone to convey meaning. We test for these before each release.
 
-- Full **VoiceOver** and screen-reader support;
-- **Dynamic Type**, so text scales to your preferred size;
-- Color contrast that meets AA, and we don't rely on color alone to convey meaning;
-- **Reduce Motion** support for animations;
-- Visible focus and full keyboard navigation where applicable.
-
-**On this site:**
-
-- Semantic landmarks and headings, a skip-to-content link, and AA contrast.
+**On this site:** semantic landmarks and headings, a skip-to-content link, and AA contrast, with the Web Content Accessibility Guidelines (WCAG) 2.1, Level AA, as the target.
 
 ## Ongoing work
 
-Accessibility is continuous, not a one-time checkbox. We don't claim perfect conformance — we fix issues as we find them and as standards evolve.
+Accessibility is continuous, not a one-time checkbox. We don't claim perfect conformance: we fix issues as we find them and as standards evolve.
 
 ## Tell us about a barrier
 
-If something is hard or impossible to use, we want to know — we treat accessibility reports as a priority. Email [`legal@khassinx.com`](mailto:legal@khassinx.com) (or [`hello@khassinx.com`](mailto:hello@khassinx.com)) with the app or page, your device, and what happened, and we'll respond quickly.
+If something is hard or impossible to use, we want to know, and we treat accessibility reports as a priority. Email [`legal@khassinx.com`](mailto:legal@khassinx.com) (or [`hello@khassinx.com`](mailto:hello@khassinx.com)) with the app or page, your device, and what happened.

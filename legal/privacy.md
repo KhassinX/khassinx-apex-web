@@ -9,7 +9,7 @@ canonical_es: /es/legal/privacy/
 updated: 2026-10-05
 summary:
   - "The site has no analytics, no third-party scripts, no accounts, and no data sale or sharing."
-  - "The site sets no cookies of its own; Cloudflare may set one short-lived security cookie that identifies nothing about you."
+  - "A normal visit sets no cookies; if Cloudflare's protection steps in, it can set a strictly necessary security cookie."
   - "GitHub Pages and Cloudflare, our hosts, log IP address, user-agent, timestamp and requested URL to serve and protect the site."
   - "If you email us, we keep the correspondence to handle the conversation; you can ask us to delete it at any time."
   - "Our apps keep your data on your device and in your own iCloud; each app's policy details what it stores. Privacy questions: legal@khassinx.com."
@@ -22,7 +22,7 @@ summary:
 ## What this site does not do
 
 - **No analytics.** No Google Analytics, no Plausible, no Fathom — not even first-party analytics.
-- **No cookies.** The site sets no cookies of its own. Cloudflare may set a single short-lived security cookie; it identifies nothing about you (see our [Cookies](/legal/cookies/) page).
+- **No cookies.** The site sets no cookies of its own, and a normal visit sets none. Cloudflare's security layer can set a strictly necessary security cookie when its protection steps in (see our [Cookies](/legal/cookies/) page).
 - **No third-party scripts.** No social embeds, no chat widgets, no ad pixels.
 - **No accounts.** There is nothing to sign up for here.
 - **No data sale or sharing.** There is no data to sell or share.
