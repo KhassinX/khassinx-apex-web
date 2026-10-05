@@ -1,7 +1,7 @@
 ---
 layout: prose
 title: Accessibility
-description: KHASSINX targets WCAG 2.1 AA across its apps and website, with VoiceOver, Dynamic Type, sufficient contrast, and Reduce Motion support. Tell us about any barrier.
+description: KHASSINX targets WCAG 2.1 AA across its apps and site, with VoiceOver, Dynamic Type, sufficient contrast, and Reduce Motion support. Tell us about any barrier.
 permalink: /legal/accessibility/
 lang: en
 canonical_en: /legal/accessibility/

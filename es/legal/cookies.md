@@ -1,7 +1,7 @@
 ---
 layout: prose
 title: Política de cookies
-description: Una visita normal a khassinx.com no deja cookies. Cloudflare puede colocar una cookie de seguridad estrictamente necesaria cuando actúa su protección; nada te rastrea.
+description: Una visita normal a khassinx.com no deja cookies. Cloudflare puede poner una cookie de seguridad estrictamente necesaria si actúa su protección. Sin rastreo.
 permalink: /es/legal/cookies/
 lang: es
 canonical_en: /legal/cookies/
