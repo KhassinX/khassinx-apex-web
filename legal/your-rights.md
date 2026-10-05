@@ -6,7 +6,7 @@ permalink: /legal/your-rights/
 lang: en
 canonical_en: /legal/your-rights/
 canonical_es: /es/legal/your-rights/
-updated: 2026-06-09
+updated: 2026-10-05
 version: 1
 related:
   - /legal/privacy/

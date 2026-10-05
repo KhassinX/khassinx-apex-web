@@ -6,7 +6,8 @@ permalink: /es/legal/kalyx-terms/
 lang: es
 canonical_en: /legal/kalyx-terms/
 canonical_es: /es/legal/kalyx-terms/
-updated: 2026-07-28
+updated: 2026-10-05
+effective: 2026-07-28
 version: 1
 robots: noindex
 sitemap: false
