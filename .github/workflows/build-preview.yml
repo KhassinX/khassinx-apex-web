@@ -25,10 +25,13 @@ jobs:
           bundler-cache: false
 
       - name: Install Jekyll
-        run: gem install jekyll bundler
+        run: gem install jekyll bundler jekyll-sitemap
 
       - name: Build site
         run: jekyll build --strict_front_matter --safe --verbose
+
+      - name: Sitemap generated
+        run: test -s _site/sitemap.xml
 
       - name: HTML5 validation
         uses: Cyb3r-Jak3/html5validator-action@v7.2.0
