@@ -35,6 +35,8 @@ org:
 # SEO sitemap (GitHub Pages whitelisted plugin)
 plugins:
   - jekyll-sitemap
+whitelist:
+  - jekyll-sitemap
 
 # Navigation — keyed por locale. El layout selecciona via page.lang con fallback a 'en'.
 nav:
