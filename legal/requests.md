@@ -7,6 +7,10 @@ lang: en
 canonical_en: /legal/requests/
 canonical_es: /es/legal/requests/
 updated: 2026-10-05
+summary:
+  - "We answer valid legal process truthfully about what we actually hold, and we hold very little."
+  - "App data lives on your device and in your own iCloud; legal process about iCloud data is a matter for Apple."
+  - "An authority can ask us to make an app unavailable in its country at legal@khassinx.com; we verify it through the authority's official channel first."
 ---
 
 An authority can send us two kinds of request, and we treat them differently. This page covers khassinx.com and the studio. Each app's site adds what is specific to that app.
