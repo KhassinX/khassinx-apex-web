@@ -20,6 +20,8 @@ Each KhassinX app publishes its **own** privacy policy and terms of service on i
 - [Terms of Use](/legal/terms/) — terms governing your use of this website
 - [Accessibility](/legal/accessibility/) — our WCAG 2.1 AA commitment and how to report a barrier
 - [Cookies](/legal/cookies/) — why there's no cookie banner here
+- [Infrastructure Providers](/legal/subprocessors/) — every company whose infrastructure serves this site or carries our email
+- [Government & Legal Requests](/legal/requests/) — requests for data, and requests to make an app unavailable in a country
 
 ## App policies hosted here
 
