@@ -7,13 +7,18 @@ lang: es
 canonical_en: /legal/subprocessors/
 canonical_es: /es/legal/subprocessors/
 updated: 2026-10-05
+version: 1
+related:
+  - /es/legal/privacy/
+  - /es/legal/cookies/
+  - /es/legal/requests/
 summary:
   - "GitHub aloja este sitio y Cloudflare lo entrega; los dos manejan los datos estándar de cada solicitud, como tu dirección IP."
   - "El correo a cualquier dirección @khassinx.com lo gestiona Proton AG."
   - "Cada app publica su propia lista de proveedores en su sitio; Apple distribuye todas las apps y gestiona las compras."
 ---
 
-KhassinX no guarda ninguna base de datos de clientes, así que no hay una cadena de tratamiento en el sentido habitual. Aun así, esta página nombra cada empresa cuya infraestructura interviene, para que no tengas que adivinar.
+KHASSINX no guarda ninguna base de datos de clientes, así que no hay una cadena de tratamiento en el sentido habitual. Aun así, esta página nombra cada empresa cuya infraestructura interviene, para que no tengas que adivinar.
 
 ## Este sitio web
 

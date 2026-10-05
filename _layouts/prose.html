@@ -1,10 +1,55 @@
 ---
 layout: base
 ---
-
-<article class="container container-narrow prose" style="padding-top: var(--space-3xl); padding-bottom: var(--space-3xl);">
-  {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
-  {% if page.updated %}<p class="text-secondary">{%- assign ui = site.ui_strings[page.lang] | default: site.ui_strings.en -%}<small>{{ ui.last_updated }}: {{ page.updated }}</small></p>{% endif %}
-
-  {{ content }}
+{%- assign ui = site.ui_strings[page.lang] | default: site.ui_strings.en -%}
+<article class="doc wrap">
+  <h1>{{ page.title }}</h1>
+  {%- if page.version %}
+  {%- if page.lang == 'es' -%}
+  {%- assign months = "enero,febrero,marzo,abril,mayo,junio,julio,agosto,septiembre,octubre,noviembre,diciembre" | split: "," -%}
+  {%- assign m = page.updated | date: "%-m" | minus: 1 -%}
+  {%- capture day %}{{ page.updated | date: "%-d" }} de {{ months[m] }} de {{ page.updated | date: "%Y" }}{% endcapture -%}
+  {%- else -%}
+  {%- capture day %}{{ page.updated | date: "%-d %B %Y" }}{% endcapture -%}
+  {%- endif %}
+  <p class="meta">{{ ui.effective }} {{ day }} · {{ ui.version }} {{ page.version }}</p>
+  {%- elsif page.updated %}
+  <p class="meta">{{ ui.last_updated }}: {{ page.updated | date: "%Y-%m-%d" }}</p>
+  {%- endif %}
+  {%- if page.summary %}
+  <section class="brief" aria-labelledby="brief-h">
+    <h2 id="brief-h">{{ ui.in_short }}</h2>
+    <ul>
+      {%- for s in page.summary %}
+      <li>{{ s }}</li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+  {%- assign heads = content | split: '<h2 id="' -%}
+  {%- if page.version and heads.size > 2 %}
+  <nav class="toc" aria-labelledby="toc-h">
+    <h2 id="toc-h">{{ ui.on_this_page }}</h2>
+    <ol>
+      {%- for h in heads offset: 1 %}
+      {%- assign id = h | split: '"' | first %}
+      <li><a href="#{{ id }}">{{ h | split: '</h2>' | first | remove_first: id | remove_first: '">' | strip_html }}</a></li>
+      {%- endfor %}
+    </ol>
+  </nav>
+  {%- endif %}
+  <div class="doc-body prose">
+{{ content }}
+  </div>
+  {%- if page.related %}
+  <nav class="related" aria-labelledby="related-h">
+    <h2 id="related-h">{{ ui.related }}</h2>
+    <ul>
+      {%- for u in page.related %}
+      {%- assign r = site.pages | where: "url", u | first %}
+      <li><a href="{{ u }}">{{ r.title }}</a></li>
+      {%- endfor %}
+    </ul>
+  </nav>
+  {%- endif %}
 </article>

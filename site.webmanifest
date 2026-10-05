@@ -1,11 +1,12 @@
 {
-  "name": "KhassinX",
-  "short_name": "KhassinX",
+  "name": "KHASSINX",
+  "short_name": "KHASSINX",
   "description": "Independent studio building privacy-first apps for Apple platforms",
+  "id": "/",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#FFFFFF",
-  "theme_color": "#1D1D1F",
+  "background_color": "#060607",
+  "theme_color": "#060607",
   "icons": [
     { "src": "/assets/favicons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
     { "src": "/assets/favicons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },

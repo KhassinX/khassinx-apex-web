@@ -7,6 +7,10 @@ lang: es
 canonical_en: /legal/kalyx-privacy/
 canonical_es: /es/legal/kalyx-privacy/
 updated: 2026-07-28
+version: 1
+related:
+  - /es/legal/kalyx-terms/
+  - /es/legal/your-rights/
 ---
 
 **Kalyx es privado de origen, y es fácil de comprobar.** Todo lo que capturas se queda en tu dispositivo y, si activas la sincronización, en tu propia cuenta de iCloud. No tenemos servidores que guarden tu contenido, así que de nuestro lado no hay nada que se pueda filtrar, entregar por orden judicial ni vender.
@@ -59,7 +63,7 @@ Desinstalar la app también elimina lo que está en el dispositivo, pero **no** 
 
 ## Tus derechos
 
-Los derechos que te dan el RGPD (UE/EEE), el Reino Unido, la LOPDGDD española, la CCPA de California y otras leyes —y cómo ejercerlos— están en [Derechos de privacidad](/es/legal/your-rights/) de KhassinX. Como no guardamos ningún dato tuyo, la forma práctica de ejercerlos con Kalyx es desde la app: **Ajustes → Exportar todo** te lleva una copia, y **Ajustes → Borrar todo** elimina tus capturas de este dispositivo y de tu iCloud. Para hablar con una persona: [`legal@khassinx.com`](mailto:legal@khassinx.com).
+Los derechos que te dan el RGPD (UE/EEE), el Reino Unido, la LOPDGDD española, la CCPA de California y otras leyes —y cómo ejercerlos— están en [Derechos de privacidad](/es/legal/your-rights/) de KHASSINX. Como no guardamos ningún dato tuyo, la forma práctica de ejercerlos con Kalyx es desde la app: **Ajustes → Exportar todo** te lleva una copia, y **Ajustes → Borrar todo** elimina tus capturas de este dispositivo y de tu iCloud. Para hablar con una persona: [`legal@khassinx.com`](mailto:legal@khassinx.com).
 
 ## Menores
 

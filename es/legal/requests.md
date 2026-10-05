@@ -7,6 +7,11 @@ lang: es
 canonical_en: /legal/requests/
 canonical_es: /es/legal/requests/
 updated: 2026-10-05
+version: 1
+related:
+  - /es/legal/your-rights/
+  - /es/legal/subprocessors/
+  - /es/contact/
 summary:
   - "Respondemos con la verdad a todo requerimiento legal válido sobre lo que de verdad tenemos, y tenemos muy poco."
   - "Los datos de las apps viven en tu dispositivo y en tu propio iCloud; un requerimiento sobre datos de iCloud le corresponde a Apple."

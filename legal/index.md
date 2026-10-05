@@ -1,7 +1,7 @@
 ---
 layout: prose
 title: Legal
-description: Privacy, terms, and contact for KhassinX as a studio. Per-app legal documents live on each app's site.
+description: Privacy, terms, and contact for KHASSINX as a studio. Per-app legal documents live on each app's site.
 permalink: /legal/
 lang: en
 canonical_en: /legal/
@@ -9,9 +9,9 @@ canonical_es: /es/legal/
 updated: 2026-10-05
 ---
 
-This page covers the legal terms for **khassinx.com** itself — the umbrella marketing site for KhassinX, the studio operated by **KHASSINX LLC** (a Florida limited liability company, United States).
+This page covers the legal terms for **khassinx.com** itself — the umbrella marketing site for KHASSINX, the studio operated by **KHASSINX LLC** (a Florida limited liability company, United States).
 
-Each KhassinX app publishes its **own** privacy policy and terms of service on its own site — those govern the app itself, its data handling, and any purchases or subscriptions. Our [home page](/) links to the site of each app it features.
+Each KHASSINX app publishes its **own** privacy policy and terms of service on its own site — those govern the app itself, its data handling, and any purchases or subscriptions. Our [home page](/) links to the site of each app it features.
 
 ## Documents on this site
 
@@ -38,4 +38,4 @@ For security disclosures: see [`/security/`](/security/) or [`security@khassinx.
 
 ## Trademarks
 
-Apple, iPhone, iPad, Mac, Apple Watch, App Store, iCloud, iPadOS, macOS, and watchOS are trademarks of Apple Inc., registered in the U.S. and other countries. Apple Intelligence and Liquid Glass are trademarks of Apple Inc. IOS is a trademark or registered trademark of Cisco in the U.S. and other countries and is used under license. KhassinX is a trademark of KHASSINX LLC. All other trademarks are the property of their respective owners.
+Apple, iPhone, iPad, Mac, Apple Watch, App Store, iCloud, iPadOS, macOS, and watchOS are trademarks of Apple Inc., registered in the U.S. and other countries. Apple Intelligence and Liquid Glass are trademarks of Apple Inc. IOS is a trademark or registered trademark of Cisco in the U.S. and other countries and is used under license. KHASSINX is a trademark of KHASSINX LLC. All other trademarks are the property of their respective owners.

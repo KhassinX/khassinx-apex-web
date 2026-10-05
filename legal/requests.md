@@ -7,6 +7,11 @@ lang: en
 canonical_en: /legal/requests/
 canonical_es: /es/legal/requests/
 updated: 2026-10-05
+version: 1
+related:
+  - /legal/your-rights/
+  - /legal/subprocessors/
+  - /contact/
 summary:
   - "We answer valid legal process truthfully about what we actually hold, and we hold very little."
   - "App data lives on your device and in your own iCloud; legal process about iCloud data is a matter for Apple."

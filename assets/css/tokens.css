@@ -1,137 +1,68 @@
-/*
- * khassinx-tokens.css — Layer 1 (Umbrella) design tokens — Apple-grade canon
- *
- * KhassinX umbrella brand. Apple canonical palette (observed apple.com).
- * NOT for per-app sites (those use their Layer 2 tokens).
- *
- * Source of truth: ~/KhassinX/_template/BRAND_SYSTEM.md §2
- *
- * Pivot 2026-05-25: from charcoal+gold to Apple-grade white minimalism.
- * Why: Apple Editor's Choice + Apple Design Award positioning requires
- * marketing surfaces that match the visual standards of apps Apple features.
- *
- * Auto-switches via prefers-color-scheme. Default LIGHT (Apple-canonical).
- */
-
 :root {
-  /* ─── Light theme (default — Apple canon) ─── */
+  color-scheme: dark;
+  --khassinx-ground: #060607;
+  --khassinx-surface: #131315;
+  --khassinx-ink: #F7F7F4;
+  --khassinx-ink-2: #A5A5A0;
+  --khassinx-rule: #2A2A2D;
+  --khassinx-accent: var(--khassinx-ink);
+  --khassinx-accent-ink: var(--khassinx-ground);
+  --khassinx-accent-text: var(--khassinx-ink);
+  --khassinx-focus: var(--khassinx-ink);
 
-  /* Backgrounds */
-  --khassinx-bg: #FFFFFF;                /* Pure white (Apple-canonical) */
-  --khassinx-bg-section: #F5F5F7;        /* Apple's exact section gray */
-  --khassinx-bg-card: #FBFBFD;           /* Subtle warm white cards */
-  --khassinx-bg-elevated: #FFFFFF;       /* Modales sobre section gray */
-
-  /* Text */
-  --khassinx-text-primary: #1D1D1F;      /* Apple's exact charcoal (NOT pure black) */
-  --khassinx-text-secondary: #6E6E73;    /* Apple's exact secondary */
-  --khassinx-text-tertiary: #86868B;     /* Apple's tertiary */
-  --khassinx-text-disabled: #C7C7CC;
-
-  /* Accents — Apple system blue, restraint */
-  --khassinx-accent: #0066CC;            /* Apple link blue (light) */
-  --khassinx-accent-strong: #0040A0;     /* Hover/active */
-  --khassinx-accent-soft: #4D94DB;       /* Subtle variant for backgrounds */
-
-  /* Borders — Apple hairline */
-  --khassinx-border: #D2D2D7;            /* Apple's exact hairline */
-  --khassinx-border-strong: #86868B;     /* Emphasis */
-
-  /* Status — Apple system colors */
-  --khassinx-success: #34C759;           /* Apple system green */
-  --khassinx-warning: #FF9500;           /* Apple system orange */
-  --khassinx-danger: #FF3B30;            /* Apple system red */
-
-  /* Label on accent fills (.btn-primary, .btn-secondary:hover). White: 5.57:1 on #0066CC */
-  --khassinx-on-accent: #FFFFFF;
-
-  /* Spacing scale — 8-baseline, Apple-grade generous */
-  --space-xs: 4px;
-  --space-s: 8px;
-  --space-m: 12px;
-  --space-md: 16px;
-  --space-lg: 20px;
-  --space-xl: 24px;
-  --space-2xl: 32px;
-  --space-3xl: 48px;
-  --space-4xl: 64px;
-  --space-5xl: 96px;        /* Apple section min */
-  --space-6xl: 128px;       /* Apple section default */
-  --space-7xl: 160px;       /* Apple section emphasis */
-  --space-8xl: 200px;       /* Apple hero max */
-
-  /* Container max-widths — Apple-canonical 980px */
-  --container-narrow: 640px;
-  --container-default: 980px;       /* Apple uses this */
-  --container-wide: 1280px;
-
-  /* Border radius — Apple's preferred soft corners */
-  --radius-s: 6px;
-  --radius-m: 8px;
-  --radius-md: 12px;
-  --radius-lg: 18px;        /* Apple cards use ~18px radius */
-  --radius-xl: 22px;        /* Apple product cards */
-  --radius-2xl: 28px;
-  --radius-pill: 999px;
-
-  /* Typography — Apple canonical */
   --font-stack: -apple-system, BlinkMacSystemFont, "Geist Sans", system-ui, "Helvetica Neue", Arial, sans-serif;
   --font-mono: ui-monospace, "Geist Mono", Menlo, Consolas, monospace;
 
-  --fs-display-xl: 80px;
-  --fs-display-l: 56px;
-  --fs-display-m: 40px;
-  --fs-h1: 32px;
-  --fs-h2: 28px;
-  --fs-h3: 22px;
-  --fs-body-l: 21px;
-  --fs-body: 17px;          /* Apple's preferred body */
-  --fs-small: 14px;
-  --fs-caption: 12px;
+  --khassinx-t-h1: clamp(2.75rem, 1.6rem + 3.4vw, 4.5rem);
+  --khassinx-t-title: clamp(2rem, 1.3rem + 2.6vw, 3.5rem);
+  --khassinx-t-h2: clamp(1.75rem, 1.3rem + 1.4vw, 2.5rem);
+  --khassinx-t-h3: 1.1875rem;
+  --khassinx-t-body: 1.1875rem;
+  --khassinx-t-small: 0.9375rem;
+  --khassinx-t-meta: 0.8125rem;
+  --khassinx-w-display: 700;
+  --khassinx-w-head: 600;
+  --khassinx-track-display: -0.045em;
+  --khassinx-lh-body: 1.5;
 
-  /* Transitions */
-  --transition-fast: 120ms cubic-bezier(0.32, 0, 0.67, 0);
-  --transition-base: 200ms cubic-bezier(0.32, 0, 0.67, 0);
-  --transition-slow: 320ms cubic-bezier(0.32, 0, 0.67, 0);
+  --khassinx-s-1: 4px;
+  --khassinx-s-2: 8px;
+  --khassinx-s-3: 12px;
+  --khassinx-s-4: 16px;
+  --khassinx-s-5: 24px;
+  --khassinx-s-6: 40px;
+  --khassinx-s-7: 64px;
+  --khassinx-s-8: 112px;
+
+  --khassinx-r-small: 4px;
+  --khassinx-r-action: 14px;
+
+  --khassinx-measure: 31rem;
+  --khassinx-doc: 40rem;
+  --khassinx-max: 1360px;
+  --khassinx-gutter: clamp(20px, 4.2vw, 64px);
+  --khassinx-head-h: 72px;
+
+  --khassinx-ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --khassinx-dur: 220ms;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* ─── Dark theme — Apple OLED-optimized ─── */
-
-    --khassinx-bg: #000000;                /* Pure black (OLED) */
-    --khassinx-bg-section: #1D1D1F;        /* Apple section dark */
-    --khassinx-bg-card: #2C2C2E;           /* Apple-canon one-step elevation (matches bg-elevated) */
-    --khassinx-bg-elevated: #2C2C2E;       /* Elevated modales */
-
-    --khassinx-text-primary: #F5F5F7;      /* Apple dark mode white */
-    --khassinx-text-secondary: #A1A1A6;
-    --khassinx-text-tertiary: #8E8E93;
-    --khassinx-text-disabled: #48484A;
-
-    --khassinx-accent: #2997FF;            /* Apple system blue dark */
-    --khassinx-accent-strong: #5AC8FA;
-    --khassinx-accent-soft: #1A6DCC;
-
-    --khassinx-border: #38383A;            /* Apple dark hairline */
-    --khassinx-border-strong: #48484A;
-
-    --khassinx-success: #30D158;
-    --khassinx-warning: #FF9F0A;
-    --khassinx-danger: #FF453A;
-
-    /* Dark accent lightens, so its label darkens: black is 6.96:1 on #2997FF and 11:1 on
-       #5AC8FA (hover). White was 3.02:1 and 1.9:1 - below WCAG AA 4.5:1. */
-    --khassinx-on-accent: #000000;
-  }
+:root[data-theme="light"] {
+  color-scheme: light;
+  --khassinx-ground: #F7F7F4;
+  --khassinx-surface: #ECECE7;
+  --khassinx-ink: #111113;
+  --khassinx-ink-2: #5A5A55;
+  --khassinx-rule: #D6D6D0;
 }
 
-/* Respect prefers-reduced-motion (universal a11y) */
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    color-scheme: light;
+    --khassinx-ground: #F7F7F4;
+    --khassinx-surface: #ECECE7;
+    --khassinx-ink: #111113;
+    --khassinx-ink-2: #5A5A55;
+    --khassinx-rule: #D6D6D0;
   }
 }

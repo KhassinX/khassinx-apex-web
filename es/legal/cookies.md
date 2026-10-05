@@ -7,6 +7,10 @@ lang: es
 canonical_en: /legal/cookies/
 canonical_es: /es/legal/cookies/
 updated: 2026-10-05
+version: 1
+related:
+  - /es/legal/privacy/
+  - /es/legal/subprocessors/
 summary:
   - "Una visita normal a este sitio no deja cookies."
   - "Si actúa la protección de Cloudflare, puede colocar una cookie de seguridad estrictamente necesaria (__cf_bm o cf_clearance), que nunca se usa para seguimiento ni publicidad."

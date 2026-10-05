@@ -1,12 +1,17 @@
 ---
 layout: prose
 title: Tus Derechos de Privacidad
-description: Derechos de privacidad por región (RGPD, Reino Unido, España/LOPDGDD, California/CCPA, otros estados de EE. UU. y el resto del mundo) y cómo ejercerlos con KhassinX.
+description: Derechos de privacidad por región (RGPD, Reino Unido, España/LOPDGDD, California/CCPA, otros estados de EE. UU. y el resto del mundo) y cómo ejercerlos con KHASSINX.
 permalink: /es/legal/your-rights/
 lang: es
 canonical_en: /legal/your-rights/
 canonical_es: /es/legal/your-rights/
 updated: 2026-06-09
+version: 1
+related:
+  - /es/legal/privacy/
+  - /es/legal/requests/
+  - /es/contact/
 summary:
   - "En la UE, el EEE y el Reino Unido puedes acceder a tus datos, rectificarlos, suprimirlos, portarlos y limitar u oponerte a su tratamiento."
   - "En California puedes acceder a tu información personal, eliminarla y corregirla. No la vendemos ni compartimos, ni lo hemos hecho en los últimos 12 meses."
