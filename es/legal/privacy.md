@@ -6,7 +6,7 @@ permalink: /es/legal/privacy/
 lang: es
 canonical_en: /legal/privacy/
 canonical_es: /es/legal/privacy/
-updated: 2026-06-09
+updated: 2026-10-05
 ---
 
 **No recopilamos datos personales a través de este sitio web.** Sin analítica, sin cookies, sin rastreadores, sin cuentas. Y las apps que creamos son privacy-first por diseño: tus datos permanecen en tu dispositivo y en tu propio iCloud, nunca en nuestros servidores.
@@ -39,7 +39,7 @@ Si escribes a cualquier dirección `@khassinx.com`, recibimos tu mensaje y tu di
 
 ## Tus derechos
 
-No nos diste datos personales a través de este sitio, así que aquí no hay nada tuyo que consultar o eliminar. Para conocer los derechos que te corresponden según tu legislación local —RGPD (UE/EEE), Reino Unido, la LOPDGDD de España, la CCPA de California, otros estados de EE. UU. y más— y cómo ejercerlos, consulta **[Tus Derechos de Privacidad](/es/legal/your-rights/)**.
+Navegar por este sitio no nos da datos personales, así que una visita no deja nada tuyo que consultar o eliminar. Si nos escribiste, puedes pedirnos ver o eliminar esa correspondencia (ver [Contacto por correo](#contacto-por-correo)). Para conocer los derechos que te corresponden según tu legislación local —RGPD (UE/EEE), Reino Unido, la LOPDGDD de España, la CCPA de California, otros estados de EE. UU. y más— y cómo ejercerlos, consulta **[Tus Derechos de Privacidad](/es/legal/your-rights/)**.
 
 ## Cambios en esta política
 
