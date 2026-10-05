@@ -14,10 +14,10 @@ related:
   - /contact/
 summary:
   - "The site has no analytics, no third-party scripts, no accounts, and no data sale or sharing."
-  - "A normal visit sets no cookies; if Cloudflare's protection steps in, it can set a strictly necessary security cookie."
+  - "A normal visit sets no cookies; if Cloudflare’s protection steps in, it can set a strictly necessary security cookie."
   - "GitHub Pages and Cloudflare, our hosts, log IP address, user-agent, timestamp and requested URL to serve and protect the site."
   - "If you email us, we keep the correspondence to handle the conversation; you can ask us to delete it at any time."
-  - "Our apps keep your data on your device and in your own iCloud; each app's policy details what it stores. Privacy questions: legal@khassinx.com."
+  - "Our apps keep your data on your device and in your own iCloud; each app’s policy details what it stores. Privacy questions: legal@khassinx.com."
 ---
 
 **We don't collect personal data through this website.** No analytics, no cookies, no trackers, no accounts. And the apps we build are privacy-first by design: your data stays on your device and in your own iCloud — never on our servers.
