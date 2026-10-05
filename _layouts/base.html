@@ -95,11 +95,11 @@
       <a href="{{ item.url }}">{{ item.title }}</a>
       {%- endfor %}
     </nav>
-    <p class="theme" hidden><label for="theme">{{ ui.theme }}</label><select id="theme"><option value="system">{{ ui.theme_system }}</option><option value="light">{{ ui.theme_light }}</option><option value="dark">{{ ui.theme_dark }}</option></select></p>
+    <p class="theme" hidden><label for="theme">{{ ui.theme }}</label><select id="theme" autocomplete="off"><option value="system">{{ ui.theme_system }}</option><option value="light">{{ ui.theme_light }}</option><option value="dark">{{ ui.theme_dark }}</option></select></p>
     {% if lang_key == 'es' -%}
-    <p><a href="{{ page.canonical_en | default: '/' }}" hreflang="en" lang="en">EN</a> · <span aria-current="true">ES</span></p>
+    <p class="lang"><a href="{{ page.canonical_en | default: '/' }}" hreflang="en" lang="en">EN</a> · <span aria-current="true">ES</span></p>
     {%- else -%}
-    <p><span aria-current="true">EN</span> · <a href="{{ page.canonical_es | default: '/es/' }}" hreflang="es" lang="es">ES</a></p>
+    <p class="lang"><span aria-current="true">EN</span> · <a href="{{ page.canonical_es | default: '/es/' }}" hreflang="es" lang="es">ES</a></p>
     {%- endif %}
   </div>
 </footer>

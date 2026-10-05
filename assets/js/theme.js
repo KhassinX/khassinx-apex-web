@@ -1,12 +1,17 @@
 (function () {
   var d = document.documentElement;
-  try {
-    var t = localStorage.getItem("theme");
-    if (t === "light" || t === "dark") d.dataset.theme = t;
-  } catch (e) {}
+  function sync() {
+    var t = null;
+    try { t = localStorage.getItem("theme"); } catch (e) {}
+    if (t === "light" || t === "dark") d.dataset.theme = t; else delete d.dataset.theme;
+    var s = document.getElementById("theme");
+    if (s) s.value = d.dataset.theme || "system";
+  }
+  sync();
+  window.addEventListener("pageshow", sync);
   document.addEventListener("DOMContentLoaded", function () {
     var s = document.getElementById("theme");
-    s.value = d.dataset.theme || "system";
+    sync();
     s.onchange = function () {
       if (s.value === "system") delete d.dataset.theme; else d.dataset.theme = s.value;
       try {

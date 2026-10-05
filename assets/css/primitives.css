@@ -110,7 +110,17 @@ a:hover { text-decoration-thickness: 2px; }
 .foot nav { display: flex; flex-wrap: wrap; gap: var(--khassinx-s-1) var(--khassinx-s-4); }
 .foot a { color: var(--khassinx-ink-2); }
 .foot a:hover { color: var(--khassinx-ink); }
-.theme select { min-height: 44px; margin-left: var(--khassinx-s-2); padding: 0 var(--khassinx-s-2); font: inherit; color: var(--khassinx-ink); background: var(--khassinx-ground); border: 1px solid var(--khassinx-ink-2); border-radius: var(--khassinx-r-small); }
+.theme select {
+  appearance: none;
+  min-height: 44px;
+  margin-left: var(--khassinx-s-2);
+  padding: 0 var(--khassinx-s-6) 0 var(--khassinx-s-3);
+  font: inherit;
+  color: var(--khassinx-ink);
+  background: linear-gradient(45deg, transparent 50%, currentColor 50%) calc(100% - 20px) 50% / 5px 5px no-repeat, linear-gradient(135deg, currentColor 50%, transparent 50%) calc(100% - 15px) 50% / 5px 5px no-repeat, var(--khassinx-ground);
+  border: 1px solid var(--khassinx-ink-2);
+  border-radius: var(--khassinx-r-small);
+}
 
 .wordmark, .head nav a, .foot a, .more, .toc a, .related a {
   display: inline-flex;
@@ -119,6 +129,8 @@ a:hover { text-decoration-thickness: 2px; }
   min-height: 44px;
 }
 nav a { justify-content: center; }
+.lang span { display: inline-block; min-width: 44px; }
+.lang > :last-child { justify-content: flex-end; text-align: right; }
 
 .doc { padding-block: var(--khassinx-s-7) var(--khassinx-s-8); }
 .doc h1 { max-width: 20em; font-size: var(--khassinx-t-title); line-height: 1.08; letter-spacing: -0.03em; overflow-wrap: break-word; }
