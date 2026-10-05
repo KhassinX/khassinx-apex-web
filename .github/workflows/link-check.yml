@@ -1,8 +1,6 @@
 name: Link check
 
 on:
-  schedule:
-    - cron: '0 14 * * 1'
   workflow_dispatch:
 
 permissions:
@@ -12,6 +10,7 @@ permissions:
 jobs:
   lychee:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
 
