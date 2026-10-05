@@ -1,0 +1,7 @@
+{%- if include.lang == 'es' -%}
+{%- assign months = "enero,febrero,marzo,abril,mayo,junio,julio,agosto,septiembre,octubre,noviembre,diciembre" | split: "," -%}
+{%- assign m = include.d | date: "%-m" | minus: 1 -%}
+{{ include.d | date: "%-d" }} de {{ months[m] }} de {{ include.d | date: "%Y" }}
+{%- else -%}
+{{ include.d | date: "%-d %B %Y" }}
+{%- endif -%}

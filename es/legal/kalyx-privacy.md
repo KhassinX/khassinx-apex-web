@@ -6,7 +6,8 @@ permalink: /es/legal/kalyx-privacy/
 lang: es
 canonical_en: /legal/kalyx-privacy/
 canonical_es: /es/legal/kalyx-privacy/
-updated: 2026-07-28
+updated: 2026-10-05
+effective: 2026-07-28
 version: 1
 robots: noindex
 sitemap: false

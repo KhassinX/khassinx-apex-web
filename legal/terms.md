@@ -6,7 +6,7 @@ permalink: /legal/terms/
 lang: en
 canonical_en: /legal/terms/
 canonical_es: /es/legal/terms/
-updated: 2026-06-09
+updated: 2026-10-05
 version: 1
 related:
   - /legal/privacy/
