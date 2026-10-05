@@ -7,6 +7,12 @@ lang: es
 canonical_en: /legal/privacy/
 canonical_es: /es/legal/privacy/
 updated: 2026-10-05
+summary:
+  - "Este sitio no tiene analítica, scripts de terceros ni cuentas, y no vende ni comparte datos."
+  - "El sitio no coloca cookies propias; Cloudflare puede colocar una única cookie de seguridad de corta duración, que no te identifica."
+  - "GitHub Pages y Cloudflare registran automáticamente dirección IP, agente de usuario, marca de tiempo y URL solicitada para servir y proteger el sitio."
+  - "Si nos escribes por correo, conservamos esa correspondencia para gestionar la conversación; puedes pedirnos que la eliminemos en cualquier momento."
+  - "Nuestras apps guardan tus datos en tu dispositivo y en tu propia cuenta de iCloud; la política de cada app detalla qué guarda. Consultas de privacidad: legal@khassinx.com."
 ---
 
 **No recopilamos datos personales a través de este sitio web.** Sin analítica, sin cookies, sin rastreadores, sin cuentas. Y las apps que creamos son privacy-first por diseño: tus datos permanecen en tu dispositivo y en tu propio iCloud, nunca en nuestros servidores.

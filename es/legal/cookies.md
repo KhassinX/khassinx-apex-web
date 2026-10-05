@@ -7,6 +7,11 @@ lang: es
 canonical_en: /legal/cookies/
 canonical_es: /es/legal/cookies/
 updated: 2026-06-09
+summary:
+  - "Cloudflare puede colocar una única cookie estrictamente necesaria para distinguir a las personas de los bots y mantener el sitio seguro."
+  - "Esa cookie no te identifica ni se usa para seguimiento o publicidad; según la Directiva ePrivacy de la UE, no requiere consentimiento."
+  - "No usamos localStorage, píxeles, fingerprinting ni tecnología similar para perfilarte o medir tu comportamiento."
+  - "Esta página trata sobre el sitio web; cada app explica su manejo de datos en su propia política de privacidad. Consultas: legal@khassinx.com."
 ---
 
 **Aquí no hay aviso de cookies porque no hay nada que consentir.** No usamos cookies de seguimiento, analítica ni publicidad en este sitio.

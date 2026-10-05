@@ -7,6 +7,12 @@ lang: en
 canonical_en: /legal/your-rights/
 canonical_es: /es/legal/your-rights/
 updated: 2026-06-09
+summary:
+  - "In the EU, EEA and UK you can access, rectify, erase and port your data, and restrict or object to its processing."
+  - "In California you can access, correct and delete your personal information. We neither sell nor share it, and haven't in the last 12 months."
+  - "Wherever you are, we hold as little of your data as possible; contact us and we'll work in good faith to honor your local rights."
+  - "Delete or export your data directly in our apps, or email legal@khassinx.com with your request and the app it concerns."
+  - "We reply within your law's deadline (for example one month under GDPR, 45 days under CCPA) and may ask you to verify your identity."
 ---
 
 We're privacy-first by design: most data-rights requests are moot because we don't hold your personal data — it lives on your device and in your own iCloud. Even so, here are the rights you have under the laws that may apply to you, and how to use them.

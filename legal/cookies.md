@@ -7,6 +7,11 @@ lang: en
 canonical_en: /legal/cookies/
 canonical_es: /es/legal/cookies/
 updated: 2026-06-09
+summary:
+  - "Cloudflare may set a single strictly necessary cookie to tell humans from bots and keep the site secure."
+  - "That cookie doesn't identify you and isn't used for tracking or advertising; under the EU ePrivacy Directive it needs no consent."
+  - "We don't use localStorage, pixels, fingerprinting or similar technology to profile you or measure your behavior."
+  - "This page covers the website; each app explains its data handling in its own privacy policy. Questions: legal@khassinx.com."
 ---
 
 **There's no cookie banner here because there's nothing to consent to.** We don't use tracking, analytics, or advertising cookies on this site.

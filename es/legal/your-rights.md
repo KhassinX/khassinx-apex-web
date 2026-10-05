@@ -7,6 +7,12 @@ lang: es
 canonical_en: /legal/your-rights/
 canonical_es: /es/legal/your-rights/
 updated: 2026-06-09
+summary:
+  - "En la UE, el EEE y el Reino Unido puedes acceder a tus datos, rectificarlos, suprimirlos, portarlos y limitar u oponerte a su tratamiento."
+  - "En California puedes acceder a tu información personal, eliminarla y corregirla. No la vendemos ni compartimos, ni lo hemos hecho en los últimos 12 meses."
+  - "Estés donde estés, guardamos lo mínimo posible de tus datos; contáctanos y trabajaremos contigo de buena fe para respetar tus derechos locales."
+  - "Elimina o exporta tus datos directamente en nuestras apps, o escribe a legal@khassinx.com indicando tu solicitud y a qué app se refiere."
+  - "Respondemos dentro del plazo que exija tu legislación (por ejemplo, un mes por el RGPD o 45 días por la CCPA) y podemos pedirte que verifiques tu identidad."
 ---
 
 Somos privacy-first por diseño: la mayoría de las solicitudes de derechos sobre datos quedan sin objeto porque no guardamos tus datos personales — viven en tu dispositivo y en tu propio iCloud. Aun así, estos son los derechos que te corresponden según las leyes que puedan aplicarte, y cómo ejercerlos.
