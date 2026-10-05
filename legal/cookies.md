@@ -6,19 +6,24 @@ permalink: /legal/cookies/
 lang: en
 canonical_en: /legal/cookies/
 canonical_es: /es/legal/cookies/
-updated: 2026-06-09
+updated: 2026-10-05
 summary:
-  - "Cloudflare may set a single strictly necessary cookie to tell humans from bots and keep the site secure."
-  - "That cookie doesn't identify you and isn't used for tracking or advertising; under the EU ePrivacy Directive it needs no consent."
+  - "A normal visit to this site sets no cookies."
+  - "If Cloudflare's protection steps in, it can set a strictly necessary security cookie (__cf_bm or cf_clearance), never used for tracking or advertising."
   - "We don't use localStorage, pixels, fingerprinting or similar technology to profile you or measure your behavior."
   - "This page covers the website; each app explains its data handling in its own privacy policy. Questions: legal@khassinx.com."
 ---
 
 **There's no cookie banner here because there's nothing to consent to.** We don't use tracking, analytics, or advertising cookies on this site.
 
-## The one cookie there is
+## When Cloudflare sets a cookie
 
-Cloudflare, our network and security layer, may set a single **strictly necessary** cookie to tell humans from bots and keep the site secure. It doesn't identify you and isn't used for tracking or advertising. Under the EU ePrivacy Directive, strictly necessary cookies like this don't require consent.
+A normal visit to this site sets no cookies (we checked the response headers on 5 October 2026). Cloudflare, our network and security layer, can set a **strictly necessary** security cookie when its protection steps in:
+
+- `__cf_bm`, which Cloudflare describes as necessary for its bot protection to work. It expires after 30 minutes of inactivity.
+- `cf_clearance`, which stores proof that you passed a challenge, if Cloudflare shows you one.
+
+Neither is used for tracking or advertising. Under the EU ePrivacy Directive, strictly necessary cookies like these don't require consent. Names and durations are taken from [Cloudflare's cookie documentation](https://developers.cloudflare.com/fundamentals/reference/policies-compliances/cloudflare-cookies/), read on 5 October 2026.
 
 ## No tracking storage
 
