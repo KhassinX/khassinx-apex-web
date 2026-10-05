@@ -22,18 +22,28 @@ KHASSINX keeps no customer database, so there is no processing chain in the usua
 
 ## This website
 
-| Provider | Role | What it handles |
-|---|---|---|
-| **GitHub, Inc.** | Static hosting (GitHub Pages) for khassinx.com | Standard request data (IP address, user agent, time, page requested) needed to serve pages, under [GitHub's privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement) |
-| **Cloudflare, Inc.** | DNS, TLS, and content delivery for khassinx.com | The same request data, to route and protect the site, under [Cloudflare's privacy policy](https://www.cloudflare.com/privacypolicy/) |
+<table>
+  <thead>
+    <tr><th>Provider</th><th>Role</th><th>What it handles</th></tr>
+  </thead>
+  <tbody>
+    <tr><td data-label="Provider"><strong>GitHub, Inc.</strong></td><td data-label="Role">Static hosting (GitHub Pages) for khassinx.com</td><td data-label="What it handles">Standard request data (IP address, user agent, time, page requested) needed to serve pages, under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub’s privacy statement</a></td></tr>
+    <tr><td data-label="Provider"><strong>Cloudflare, Inc.</strong></td><td data-label="Role">DNS, TLS, and content delivery for khassinx.com</td><td data-label="What it handles">The same request data, to route and protect the site, under <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare’s privacy policy</a></td></tr>
+  </tbody>
+</table>
 
 We don't get user-level analytics from either. This site runs no analytics, no ad pixels, and no third-party scripts.
 
 ## Email
 
-| Provider | Role | What it handles |
-|---|---|---|
-| **Proton AG** | Email for every `@khassinx.com` address | The messages you send us and your reply address, under [Proton's privacy policy](https://proton.me/legal/privacy) |
+<table>
+  <thead>
+    <tr><th>Provider</th><th>Role</th><th>What it handles</th></tr>
+  </thead>
+  <tbody>
+    <tr><td data-label="Provider"><strong>Proton AG</strong></td><td data-label="Role">Email for every <code>@khassinx.com</code> address</td><td data-label="What it handles">The messages you send us and your reply address, under <a href="https://proton.me/legal/privacy">Proton’s privacy policy</a></td></tr>
+  </tbody>
+</table>
 
 We keep that correspondence to handle the conversation and any follow-up, and you can ask us to delete it. Details in the [Privacy Policy](/legal/privacy/#email-contact).
 

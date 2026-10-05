@@ -22,18 +22,28 @@ KHASSINX no guarda ninguna base de datos de clientes, así que no hay una cadena
 
 ## Este sitio web
 
-| Proveedor | Función | Qué maneja |
-|---|---|---|
-| **GitHub, Inc.** | Alojamiento estático (GitHub Pages) de khassinx.com | Los datos estándar de cada solicitud (dirección IP, agente de usuario, hora y página pedida) necesarios para servir las páginas, según la [declaración de privacidad de GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement) |
-| **Cloudflare, Inc.** | DNS, TLS y entrega de contenido de khassinx.com | Los mismos datos de solicitud, para dirigir y proteger el sitio, según la [política de privacidad de Cloudflare](https://www.cloudflare.com/privacypolicy/) |
+<table>
+  <thead>
+    <tr><th>Proveedor</th><th>Función</th><th>Qué maneja</th></tr>
+  </thead>
+  <tbody>
+    <tr><td data-label="Proveedor"><strong>GitHub, Inc.</strong></td><td data-label="Función">Alojamiento estático (GitHub Pages) de khassinx.com</td><td data-label="Qué maneja">Los datos estándar de cada solicitud (dirección IP, agente de usuario, hora y página pedida) necesarios para servir las páginas, según la <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">declaración de privacidad de GitHub</a></td></tr>
+    <tr><td data-label="Proveedor"><strong>Cloudflare, Inc.</strong></td><td data-label="Función">DNS, TLS y entrega de contenido de khassinx.com</td><td data-label="Qué maneja">Los mismos datos de solicitud, para dirigir y proteger el sitio, según la <a href="https://www.cloudflare.com/privacypolicy/">política de privacidad de Cloudflare</a></td></tr>
+  </tbody>
+</table>
 
 No obtenemos analítica a nivel de usuario de ninguno de los dos. Este sitio no usa analítica, ni píxeles publicitarios, ni scripts de terceros.
 
 ## Correo
 
-| Proveedor | Función | Qué maneja |
-|---|---|---|
-| **Proton AG** | Correo de todas las direcciones `@khassinx.com` | Los mensajes que nos envías y tu dirección de respuesta, según la [política de privacidad de Proton](https://proton.me/legal/privacy) |
+<table>
+  <thead>
+    <tr><th>Proveedor</th><th>Función</th><th>Qué maneja</th></tr>
+  </thead>
+  <tbody>
+    <tr><td data-label="Proveedor"><strong>Proton AG</strong></td><td data-label="Función">Correo de todas las direcciones <code>@khassinx.com</code></td><td data-label="Qué maneja">Los mensajes que nos envías y tu dirección de respuesta, según la <a href="https://proton.me/legal/privacy">política de privacidad de Proton</a></td></tr>
+  </tbody>
+</table>
 
 Conservamos esa correspondencia para gestionar la conversación y cualquier seguimiento, y puedes pedirnos que la eliminemos. Más detalle en la [Política de privacidad](/es/legal/privacy/#contacto-por-correo).
 
