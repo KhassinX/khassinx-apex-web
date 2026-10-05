@@ -24,13 +24,6 @@ Each KHASSINX app publishes its **own** privacy policy and terms of service on i
 - [Infrastructure Providers](/legal/subprocessors/) — every company whose infrastructure serves this site or carries our email
 - [Government & Legal Requests](/legal/requests/) — requests for data, and requests to make an app unavailable in a country
 
-## App policies hosted here
-
-Kalyx does not yet have its own subdomain site, so its privacy policy and terms of use are hosted here in the meantime:
-
-- [Kalyx Privacy Policy](/legal/kalyx-privacy/) — what data Kalyx collects (nothing), where it lives, and how to delete it
-- [Kalyx Terms of Use](/legal/kalyx-terms/) — terms governing your use of Kalyx
-
 ## Contact
 
 For legal inquiries, copyright concerns, or DMCA notices: [`legal@khassinx.com`](mailto:legal@khassinx.com).
