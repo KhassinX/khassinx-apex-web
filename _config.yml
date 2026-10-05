@@ -74,8 +74,10 @@ footer_nav:
 ui_strings:
   en:
     skip_to_main: "Skip to main content"
+    last_updated: "Last updated"
   es:
     skip_to_main: "Saltar al contenido principal"
+    last_updated: "Última actualización"
 
 # Jekyll config
 markdown: kramdown

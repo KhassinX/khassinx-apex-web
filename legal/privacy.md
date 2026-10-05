@@ -6,7 +6,7 @@ permalink: /legal/privacy/
 lang: en
 canonical_en: /legal/privacy/
 canonical_es: /es/legal/privacy/
-updated: 2026-06-09
+updated: 2026-10-05
 ---
 
 **We don't collect personal data through this website.** No analytics, no cookies, no trackers, no accounts. And the apps we build are privacy-first by design: your data stays on your device and in your own iCloud — never on our servers.
@@ -39,7 +39,7 @@ If you write to any `@khassinx.com` address, we receive your message and reply a
 
 ## Your rights
 
-You didn't give us personal data through this site, so there's nothing of yours to access or delete here. For the rights you have under your local law — GDPR (EU/EEA), the UK, Spain's LOPDGDD, California's CCPA, other US states, and elsewhere — and how to exercise them, see **[Your Privacy Rights](/legal/your-rights/)**.
+Browsing this site gives us no personal data, so a visit leaves nothing of yours to access or delete. If you emailed us, you can ask to see or delete that correspondence (see [Email contact](#email-contact)). For the rights you have under your local law — GDPR (EU/EEA), the UK, Spain's LOPDGDD, California's CCPA, other US states, and elsewhere — and how to exercise them, see **[Your Privacy Rights](/legal/your-rights/)**.
 
 ## Changes to this policy
 
