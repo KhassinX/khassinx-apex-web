@@ -24,13 +24,6 @@ Cada app de KHASSINX publica su **propia** política de privacidad y términos d
 - [Proveedores de infraestructura](/es/legal/subprocessors/) — cada empresa cuya infraestructura sirve este sitio o transporta nuestro correo
 - [Solicitudes de gobiernos y autoridades](/es/legal/requests/) — solicitudes de datos y solicitudes para retirar una app en un país
 
-## Políticas de apps alojadas aquí
-
-Kalyx todavía no tiene su propio sitio en un subdominio, así que su política de privacidad y sus términos de uso se alojan aquí mientras tanto:
-
-- [Política de privacidad de Kalyx](/es/legal/kalyx-privacy/) — qué datos recoge Kalyx (ninguno), dónde viven y cómo borrarlos
-- [Términos de uso de Kalyx](/es/legal/kalyx-terms/) — términos que rigen el uso de Kalyx
-
 ## Contacto
 
 Para consultas legales, reclamos de copyright o avisos DMCA: [`legal@khassinx.com`](mailto:legal@khassinx.com).

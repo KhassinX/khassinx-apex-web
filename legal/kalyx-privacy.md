@@ -8,6 +8,8 @@ canonical_en: /legal/kalyx-privacy/
 canonical_es: /es/legal/kalyx-privacy/
 updated: 2026-07-28
 version: 1
+robots: noindex
+sitemap: false
 related:
   - /legal/kalyx-terms/
   - /legal/your-rights/
