@@ -1,152 +1,107 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+{%- assign lang_key = page.lang | default: 'en' -%}
+{%- assign nav_items = site.nav[lang_key] | default: site.nav.en -%}
+{%- assign footer_items = site.footer_nav[lang_key] | default: site.footer_nav.en -%}
+{%- assign ui = site.ui_strings[lang_key] | default: site.ui_strings.en -%}
+{%- if page.seo_title -%}{%- assign full_title = page.seo_title -%}{%- elsif page.title -%}{%- assign full_title = page.title | append: ' · ' | append: site.title -%}{%- else -%}{%- assign full_title = site.title -%}{%- endif -%}
+{%- if lang_key == 'es' -%}{%- assign og_locale = 'es_ES' -%}{%- assign og_locale_alt = 'en_US' -%}{%- assign og_alt = site.og_image_alt_es -%}{%- assign logo_home = '/es/' -%}{%- else -%}{%- assign og_locale = 'en_US' -%}{%- assign og_locale_alt = 'es_ES' -%}{%- assign og_alt = site.og_image_alt -%}{%- assign logo_home = '/' -%}{%- endif -%}
+{%- assign og_image = site.og_image | replace: '{lang}', lang_key %}
+<html lang="{{ lang_key }}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'self'; form-action 'self'">
+  <meta name="color-scheme" content="dark light">
 
-  {%- comment -%}
-    CSP fallback via meta http-equiv. Real headers vienen de Cloudflare Transform Rules.
-  {%- endcomment -%}
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'">
-
-  <title>{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <title>{{ full_title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
   <meta name="robots" content="{{ page.robots | default: 'index,follow' }}">
 
-  <meta name="theme-color" content="#0E0E11" media="(prefers-color-scheme: dark)">
-  <meta name="theme-color" content="#FAFAF7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#060607" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#F7F7F4" media="(prefers-color-scheme: light)">
 
-  <meta property="og:title" content="{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:title" content="{{ full_title }}">
   <meta property="og:description" content="{{ page.description | default: site.description }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-  {% if site.og_site_name %}<meta property="og:site_name" content="{{ site.og_site_name }}">{% endif %}
-  {%- assign og_locale = 'en_US' -%}{%- assign og_locale_alt = 'es_ES' -%}
-  {%- if page.lang == 'es' -%}{%- assign og_locale = 'es_ES' -%}{%- assign og_locale_alt = 'en_US' -%}{%- endif -%}
+  <meta property="og:site_name" content="{{ site.og_site_name }}">
   <meta property="og:locale" content="{{ og_locale }}">
   <meta property="og:locale:alternate" content="{{ og_locale_alt }}">
-  {% if site.og_image %}<meta property="og:image" content="{{ site.url }}{{ site.og_image }}">
-  <meta property="og:image:width" content="{{ site.og_image_width | default: 1200 }}">
-  <meta property="og:image:height" content="{{ site.og_image_height | default: 630 }}">
-  <meta property="og:image:alt" content="{% if page.lang == 'es' %}{{ site.og_image_alt_es | default: site.og_image_alt | default: site.title }}{% else %}{{ site.og_image_alt | default: site.title }}{% endif %}">{% endif %}
+  <meta property="og:image" content="{{ site.url }}{{ og_image }}">
+  <meta property="og:image:width" content="{{ site.og_image_width }}">
+  <meta property="og:image:height" content="{{ site.og_image_height }}">
+  <meta property="og:image:alt" content="{{ og_alt }}">
 
-  {%- comment -%} Twitter / X Cards {%- endcomment -%}
-  <meta name="twitter:card" content="{{ site.twitter_card | default: 'summary_large_image' }}">
-  <meta name="twitter:title" content="{% if page.seo_title %}{{ page.seo_title }}{% elsif page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:card" content="{{ site.twitter_card }}">
+  <meta name="twitter:title" content="{{ full_title }}">
   <meta name="twitter:description" content="{{ page.description | default: site.description }}">
-  {% if site.og_image %}<meta name="twitter:image" content="{{ site.url }}{{ site.og_image }}">
-  <meta name="twitter:image:alt" content="{% if page.lang == 'es' %}{{ site.og_image_alt_es | default: site.og_image_alt | default: site.title }}{% else %}{{ site.og_image_alt | default: site.title }}{% endif %}">{% endif %}
+  <meta name="twitter:image" content="{{ site.url }}{{ og_image }}">
+  <meta name="twitter:image:alt" content="{{ og_alt }}">
 
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
-
-  {%- comment -%} hreflang alternates (see WEB_PROPERTY_SPEC.md §7.5) {%- endcomment -%}
   {% if page.canonical_en %}<link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.canonical_en }}">{% endif %}
   {% if page.canonical_es %}<link rel="alternate" hreflang="es" href="{{ site.url }}{{ page.canonical_es }}">{% endif %}
   {% if page.canonical_en %}<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ page.canonical_en }}">{% endif %}
 
   <link rel="icon" href="/assets/favicons/favicon.ico" sizes="any">
-  {% if site.favicon_svg %}<link rel="icon" type="image/svg+xml" href="{{ site.favicon_svg }}">{% endif %}
-  {% if site.favicon_32 %}<link rel="icon" type="image/png" sizes="32x32" href="{{ site.favicon_32 }}">{% endif %}
-  {% if site.favicon_16 %}<link rel="icon" type="image/png" sizes="16x16" href="{{ site.favicon_16 }}">{% endif %}
-  {% if site.apple_touch_icon %}<link rel="apple-touch-icon" sizes="180x180" href="{{ site.apple_touch_icon }}">{% endif %}
+  <link rel="icon" type="image/svg+xml" href="{{ site.favicon_svg }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.favicon_32 }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.favicon_16 }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.apple_touch_icon }}">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="sitemap" type="application/xml" href="/sitemap.xml">
 
-  {%- comment -%} Apple Web Clip / Add-to-Home-Screen: el NAME bajo el icono = apple-mobile-web-app-title (si falta, iOS cae al <title> largo). {%- endcomment -%}
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="{{ site.short_name | default: site.title }}">
-  <meta name="application-name" content="{{ site.short_name | default: site.title }}">
+  <meta name="apple-mobile-web-app-title" content="{{ site.short_name }}">
+  <meta name="application-name" content="{{ site.short_name }}">
 
-  {%- comment -%} JSON-LD structured data — Organization (rich results / knowledge panel) {%- endcomment -%}
-  {% if site.org %}<script type="application/ld+json">
+  <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": {{ site.org.name | default: site.title | jsonify }},{% if site.org.legal_name %}
-    "legalName": {{ site.org.legal_name | jsonify }},{% endif %}{% if site.org.founding_date %}
-    "foundingDate": {{ site.org.founding_date | jsonify }},{% endif %}
+    "name": {{ site.org.name | jsonify }},
+    "legalName": {{ site.org.legal_name | jsonify }},
+    "foundingDate": {{ site.org.founding_date | jsonify }},
     "url": {{ site.url | jsonify }},
     "logo": {{ site.url | append: site.org.logo | jsonify }},
     "description": {{ site.description | jsonify }},
-    "email": {{ site.org.email | jsonify }}{% if site.org.same_as %},
-    "sameAs": {{ site.org.same_as | jsonify }}{% endif %}
+    "email": {{ site.org.email | jsonify }},
+    "sameAs": {{ site.org.same_as | jsonify }}
   }
-  </script>{% endif %}
+  </script>
 
-  {% comment %}
-    CSS loading order matters: Layer 1 (umbrella tokens) optional → Layer 3 (primitives,
-    uses Layer 1 token names) → Layer 2 (per-app tokens, rebinds Layer 1 names to app palette).
-    For per-app sites: skip Layer 1 (set site.umbrella_tokens = false). For umbrella sites
-    (apex khassinx.com): include Layer 1 (set site.umbrella_tokens = true).
-  {% endcomment %}
-  <link rel="preload" href="/assets/fonts/geist-variable.woff2" as="font" type="font/woff2" crossorigin>
-  {% if site.umbrella_tokens %}<link rel="stylesheet" href="{{ '/assets/css/tokens.css' | relative_url }}">{% endif %}
-  <link rel="stylesheet" href="{{ '/assets/css/primitives.css' | relative_url }}">
-  {% if site.app_tokens_css %}<link rel="stylesheet" href="{{ site.app_tokens_css | relative_url }}">{% endif %}
-  {% if page.extra_css %}{% for css in page.extra_css %}<link rel="stylesheet" href="{{ css | relative_url }}">{% endfor %}{% endif %}
+  {% if site.umbrella_tokens %}<link rel="stylesheet" href="/assets/css/tokens.css">{% endif %}
+  <link rel="stylesheet" href="/assets/css/primitives.css">
+  {% if site.app_tokens_css %}<link rel="stylesheet" href="{{ site.app_tokens_css }}">{% endif %}
+  {% for css in page.extra_css %}<link rel="stylesheet" href="{{ css }}">{% endfor %}
+  <script src="/assets/js/theme.js"></script>
 </head>
 <body>
-  {%- comment -%}
-    Locale-aware navigation:
-    - lang_key resuelve a 'en' o 'es' (fallback a 'en' si page.lang no está)
-    - site.nav y site.footer_nav están keyed por locale
-    - site.ui_strings provee strings cortos (skip link, "Part of ecosystem")
-    - logo_home apunta al home del locale actual
-  {%- endcomment -%}
-  {%- assign lang_key = page.lang | default: 'en' -%}
-  {%- assign nav_items = site.nav[lang_key] | default: site.nav.en -%}
-  {%- assign footer_items = site.footer_nav[lang_key] | default: site.footer_nav.en -%}
-  {%- assign ui = site.ui_strings[lang_key] | default: site.ui_strings.en -%}
-  {%- if lang_key == 'es' -%}
-    {%- assign logo_home = '/es/' -%}
-  {%- else -%}
-    {%- assign logo_home = '/' -%}
-  {%- endif -%}
-
-  <a href="#main" class="skip-link">{{ ui.skip_to_main }}</a>
-
-  <header class="site-header">
-    <div class="container">
-      <a href="{{ logo_home | relative_url }}" class="logo">
-        {% if site.logo %}<img src="{{ site.logo | relative_url }}" alt="{{ site.title }} logo">{% endif %}
-        {%- comment -%} ™ en el wordmark VISIBLE (norma BRAND_SYSTEM §7); NUNCA en site.title/alt/metadata {%- endcomment -%}
-        <span>{{ site.title }}™</span>
-      </a>
-      <nav class="site-nav" aria-label="Primary">
-        {% for item in nav_items %}
-          <a href="{{ item.url | relative_url }}"{% if item.external %} target="_blank" rel="noopener"{% endif %}>{{ item.title }}</a>
-        {% endfor %}
-      </nav>
-    </div>
-  </header>
-
-  <main id="main">
-    {{ content }}
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div>© {{ 'now' | date: '%Y' }} KHASSINX LLC</div>
-      <nav aria-label="Footer">
-        {% for item in footer_items %}
-          <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
-        {% endfor %}
-      </nav>
-      <div class="locale-switcher" aria-label="Language selector">
-        {%- if lang_key == 'es' -%}
-          <a href="{{ page.canonical_en | default: '/' | relative_url }}" hreflang="en" lang="en">EN</a>
-          <span aria-hidden="true">·</span>
-          <span aria-current="true" lang="es">ES</span>
-        {%- else -%}
-          <span aria-current="true" lang="en">EN</span>
-          <span aria-hidden="true">·</span>
-          <a href="{{ page.canonical_es | default: '/es/' | relative_url }}" hreflang="es" lang="es">ES</a>
-        {%- endif -%}
-      </div>
-      {%- comment -%} Sin nota "Part of the KhassinX ecosystem" en el APEX: es el ecosistema — el self-link era un bug (WEB_PROPERTY_SPEC §4; la nota es solo para sites per-app propios). {%- endcomment -%}
-    </div>
-  </footer>
+<a class="skip" href="#main">{{ ui.skip_to_main }}</a>
+<header class="head wrap">
+  <a class="wordmark" href="{{ logo_home }}">{% include logotype.svg %}</a>
+  <nav aria-label="{{ ui.nav_primary }}">{% for item in nav_items %}<a href="{{ item.url }}">{{ item.title }}</a>{% endfor %}</nav>
+</header>
+<main id="main">
+{{ content }}
+</main>
+<footer class="foot">
+  <div class="wrap foot-row">
+    <p>© {{ 'now' | date: '%Y' }} KHASSINX LLC</p>
+    <nav aria-label="{{ ui.nav_footer }}">
+      {%- for item in footer_items %}
+      <a href="{{ item.url }}">{{ item.title }}</a>
+      {%- endfor %}
+    </nav>
+    <p class="theme" hidden><label for="theme">{{ ui.theme }}</label><select id="theme"><option value="system">{{ ui.theme_system }}</option><option value="light">{{ ui.theme_light }}</option><option value="dark">{{ ui.theme_dark }}</option></select></p>
+    {% if lang_key == 'es' -%}
+    <p><a href="{{ page.canonical_en | default: '/' }}" hreflang="en" lang="en">EN</a> · <span aria-current="true">ES</span></p>
+    {%- else -%}
+    <p><span aria-current="true">EN</span> · <a href="{{ page.canonical_es | default: '/es/' }}" hreflang="es" lang="es">ES</a></p>
+    {%- endif %}
+  </div>
+</footer>
 </body>
 </html>

@@ -1,19 +1,24 @@
 ---
 layout: prose
 title: Infrastructure Providers
-description: "Every company whose infrastructure serves khassinx.com or carries email sent to KhassinX. Each app lists its own on its site."
+description: "Every company whose infrastructure serves khassinx.com or carries email sent to KHASSINX. Each app lists its own on its site."
 permalink: /legal/subprocessors/
 lang: en
 canonical_en: /legal/subprocessors/
 canonical_es: /es/legal/subprocessors/
 updated: 2026-10-05
+version: 1
+related:
+  - /legal/privacy/
+  - /legal/cookies/
+  - /legal/requests/
 summary:
   - "GitHub hosts this website and Cloudflare delivers it; both handle standard request data such as your IP address."
   - "Email to any @khassinx.com address is handled by Proton AG."
   - "Each app lists its own providers on its site; Apple distributes every app and handles purchases."
 ---
 
-KhassinX keeps no customer database, so there is no processing chain in the usual sense. This page still names every company whose infrastructure is involved, so you don't have to guess.
+KHASSINX keeps no customer database, so there is no processing chain in the usual sense. This page still names every company whose infrastructure is involved, so you don't have to guess.
 
 ## This website
 

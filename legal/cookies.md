@@ -7,6 +7,10 @@ lang: en
 canonical_en: /legal/cookies/
 canonical_es: /es/legal/cookies/
 updated: 2026-10-05
+version: 1
+related:
+  - /legal/privacy/
+  - /legal/subprocessors/
 summary:
   - "A normal visit to this site sets no cookies."
   - "If Cloudflare's protection steps in, it can set a strictly necessary security cookie (__cf_bm or cf_clearance), never used for tracking or advertising."

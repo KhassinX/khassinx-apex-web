@@ -1,5 +1,5 @@
-title: KhassinX
-short_name: KhassinX   # nombre bajo el icono en Add-to-Home (apple-mobile-web-app-title / manifest short_name) — NO el <title> largo
+title: KHASSINX
+short_name: KHASSINX   # nombre bajo el icono en Add-to-Home (apple-mobile-web-app-title / manifest short_name) — NO el <title> largo
 description: Independent studio building privacy-first apps for Apple platforms — on-device AI, native across iPhone, iPad, Mac and Apple Watch, zero tracking.
 url: https://khassinx.com
 lang: en
@@ -14,17 +14,17 @@ favicon_16: /assets/favicons/favicon-16.png
 apple_touch_icon: /assets/favicons/apple-touch-icon.png
 
 # Social / Open Graph + Twitter
-og_site_name: KhassinX
-og_image: /assets/og/og-image.png
+og_site_name: KHASSINX
+og_image: /assets/og/og-image-{lang}.png
 og_image_width: 1200
 og_image_height: 630
-og_image_alt: "KhassinX — privacy-first apps for Apple platforms"
-og_image_alt_es: "KhassinX — apps privacy-first para las plataformas Apple"
+og_image_alt: "KHASSINX — apps that keep your data on your device and in your iCloud"
+og_image_alt_es: "KHASSINX — apps que guardan tus datos en tu dispositivo y en tu iCloud"
 twitter_card: summary_large_image
 
 # Organization (JSON-LD structured data + contact)
 org:
-  name: KhassinX
+  name: KHASSINX
   legal_name: KHASSINX LLC
   founding_date: "2026-06-01"
   email: hello@khassinx.com
@@ -39,11 +39,15 @@ plugins:
 # Navigation — keyed por locale. El layout selecciona via page.lang con fallback a 'en'.
 nav:
   en:
+    - title: Apps
+      url: "/#apps"
     - title: Contact
-      url: "mailto:hello@khassinx.com"
+      url: "/contact/"
   es:
+    - title: Apps
+      url: "/es/#apps"
     - title: Contacto
-      url: "mailto:hello@khassinx.com"
+      url: "/es/contact/"
 
 footer_nav:
   en:
@@ -69,15 +73,35 @@ footer_nav:
     - title: Contacto
       url: "/es/contact/"
 
-# Skip-link por locale (lo consume base.html). La nota "Part of the KhassinX ecosystem"
-# NO va en el apex (es el ecosistema; el self-link era un bug — WEB_PROPERTY_SPEC §4).
 ui_strings:
   en:
     skip_to_main: "Skip to main content"
+    nav_primary: "Primary"
+    nav_footer: "Footer"
     last_updated: "Last updated"
+    effective: "Effective"
+    version: "Version"
+    in_short: "In short"
+    on_this_page: "On this page"
+    related: "Related"
+    theme: "Theme"
+    theme_system: "System"
+    theme_light: "Light"
+    theme_dark: "Dark"
   es:
     skip_to_main: "Saltar al contenido principal"
+    nav_primary: "Principal"
+    nav_footer: "Pie de página"
     last_updated: "Última actualización"
+    effective: "Vigente desde el"
+    version: "Versión"
+    in_short: "En resumen"
+    on_this_page: "En esta página"
+    related: "Relacionado"
+    theme: "Tema"
+    theme_system: "Sistema"
+    theme_light: "Claro"
+    theme_dark: "Oscuro"
 
 # Jekyll config
 markdown: kramdown

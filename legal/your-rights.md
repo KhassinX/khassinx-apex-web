@@ -1,12 +1,17 @@
 ---
 layout: prose
 title: Your Privacy Rights
-description: Region-specific privacy rights (GDPR, UK, Spain/LOPDGDD, California/CCPA, other US states, and worldwide) and how to exercise them with KhassinX.
+description: Region-specific privacy rights (GDPR, UK, Spain/LOPDGDD, California/CCPA, other US states, and worldwide) and how to exercise them with KHASSINX.
 permalink: /legal/your-rights/
 lang: en
 canonical_en: /legal/your-rights/
 canonical_es: /es/legal/your-rights/
 updated: 2026-06-09
+version: 1
+related:
+  - /legal/privacy/
+  - /legal/requests/
+  - /contact/
 summary:
   - "In the EU, EEA and UK you can access, rectify, erase and port your data, and restrict or object to its processing."
   - "In California you can access, correct and delete your personal information. We neither sell nor share it, and haven't in the last 12 months."

@@ -1,12 +1,16 @@
 ---
 layout: prose
 title: Accesibilidad
-description: KhassinX apunta a WCAG 2.1 AA en sus apps y su sitio, con VoiceOver, Texto Dinámico, contraste suficiente y soporte de Reducir Movimiento. Cuéntanos cualquier barrera.
+description: KHASSINX apunta a WCAG 2.1 AA en sus apps y su sitio, con VoiceOver, Texto Dinámico, contraste suficiente y soporte de Reducir Movimiento. Cuéntanos cualquier barrera.
 permalink: /es/legal/accessibility/
 lang: es
 canonical_en: /legal/accessibility/
 canonical_es: /es/legal/accessibility/
 updated: 2026-10-05
+version: 1
+related:
+  - /es/contact/
+  - /es/legal/terms/
 summary:
   - "En nuestras apps diseñamos para VoiceOver, el tamaño de texto que elijas, Reducir movimiento y contraste AA, y lo probamos antes de cada versión."
   - "Este sitio tiene como objetivo WCAG 2.1 nivel AA, con encabezados semánticos, un enlace para saltar al contenido y contraste AA."

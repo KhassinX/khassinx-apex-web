@@ -7,6 +7,10 @@ lang: en
 canonical_en: /legal/kalyx-privacy/
 canonical_es: /es/legal/kalyx-privacy/
 updated: 2026-07-28
+version: 1
+related:
+  - /legal/kalyx-terms/
+  - /legal/your-rights/
 ---
 
 **Kalyx is privacy-first, and it is easy to verify.** Everything you capture stays on your device and, if you turn on syncing, in your own iCloud account. We operate no servers that hold your content, so there is nothing on our side to leak, subpoena or sell.
@@ -59,7 +63,7 @@ Deleting the app also removes what is on the device — but **not** what already
 
 ## Your rights
 
-For the rights you have under GDPR (EU/EEA), the UK, Spain's LOPDGDD, California's CCPA, other US states, and elsewhere — and how to exercise them — see KhassinX's [Privacy Rights](/legal/your-rights/). Because we hold no data about you, the practical way to exercise them for Kalyx is in the app: **Settings → Export everything** takes a copy with you, and **Settings → Delete everything** removes your captures from this device and from your iCloud. To reach a person, email [`legal@khassinx.com`](mailto:legal@khassinx.com).
+For the rights you have under GDPR (EU/EEA), the UK, Spain's LOPDGDD, California's CCPA, other US states, and elsewhere — and how to exercise them — see KHASSINX's [Privacy Rights](/legal/your-rights/). Because we hold no data about you, the practical way to exercise them for Kalyx is in the app: **Settings → Export everything** takes a copy with you, and **Settings → Delete everything** removes your captures from this device and from your iCloud. To reach a person, email [`legal@khassinx.com`](mailto:legal@khassinx.com).
 
 ## Children
 

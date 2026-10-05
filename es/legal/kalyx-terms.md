@@ -7,6 +7,10 @@ lang: es
 canonical_en: /legal/kalyx-terms/
 canonical_es: /es/legal/kalyx-terms/
 updated: 2026-07-28
+version: 1
+related:
+  - /es/legal/kalyx-privacy/
+  - /es/contact/
 ---
 
 ## Aceptación
@@ -43,7 +47,7 @@ No hagas ingeniería inversa, no revendas ni hagas mal uso de la app, y no la us
 
 ## Marcas
 
-«KhassinX» y «Kalyx» son marcas de KHASSINX LLC. Apple, App Store, iCloud, iPhone, iPad y Mac son marcas de Apple Inc., usadas de forma descriptiva.
+«KHASSINX» y «Kalyx» son marcas de KHASSINX LLC. Apple, App Store, iCloud, iPhone, iPad y Mac son marcas de Apple Inc., usadas de forma descriptiva.
 
 ## Sin garantías y límite de responsabilidad
 
@@ -55,4 +59,4 @@ Estos términos se rigen por las leyes del Estado de Florida, Estados Unidos.
 
 ## Contacto
 
-[`legal@khassinx.com`](mailto:legal@khassinx.com)
+[`legal@khassinx.com`](mailto:legal@khassinx.com){: .more}

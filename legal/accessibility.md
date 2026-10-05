@@ -1,12 +1,16 @@
 ---
 layout: prose
 title: Accessibility
-description: KhassinX targets WCAG 2.1 AA across its apps and website, with VoiceOver, Dynamic Type, sufficient contrast, and Reduce Motion support. Tell us about any barrier.
+description: KHASSINX targets WCAG 2.1 AA across its apps and website, with VoiceOver, Dynamic Type, sufficient contrast, and Reduce Motion support. Tell us about any barrier.
 permalink: /legal/accessibility/
 lang: en
 canonical_en: /legal/accessibility/
 canonical_es: /es/legal/accessibility/
 updated: 2026-10-05
+version: 1
+related:
+  - /contact/
+  - /legal/terms/
 summary:
   - "In our apps we design for VoiceOver, Dynamic Type, Reduce Motion and AA color contrast, and test for them before each release."
   - "This site targets WCAG 2.1 Level AA, with semantic headings, a skip-to-content link and AA contrast."

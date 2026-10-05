@@ -7,6 +7,11 @@ lang: es
 canonical_en: /legal/privacy/
 canonical_es: /es/legal/privacy/
 updated: 2026-10-05
+version: 1
+related:
+  - /es/legal/your-rights/
+  - /es/legal/cookies/
+  - /es/contact/
 summary:
   - "Este sitio no tiene analítica, scripts de terceros ni cuentas, y no vende ni comparte datos."
   - "Una visita normal no deja cookies; si actúa la protección de Cloudflare, puede colocar una cookie de seguridad estrictamente necesaria."
@@ -17,7 +22,7 @@ summary:
 
 **No recopilamos datos personales a través de este sitio web.** Sin analítica, sin cookies, sin rastreadores, sin cuentas. Y las apps que creamos son privacy-first por diseño: tus datos permanecen en tu dispositivo y en tu propio iCloud, nunca en nuestros servidores.
 
-**Esta política cubre únicamente `khassinx.com`** — el sitio paraguas del estudio. Cada app de KhassinX publica su propia política de privacidad en su subdominio (por ejemplo, `asvab.khassinx.com`). Para saber cómo trata tus datos una app concreta, consulta la política de esa app.
+**Esta política cubre únicamente `khassinx.com`** — el sitio paraguas del estudio. Cada app de KHASSINX publica su propia política de privacidad en su subdominio (por ejemplo, `asvab.khassinx.com`). Para saber cómo trata tus datos una app concreta, consulta la política de esa app.
 
 ## Lo que este sitio no hace
 
