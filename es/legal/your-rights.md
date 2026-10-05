@@ -1,6 +1,6 @@
 ---
 layout: prose
-title: Tus Derechos de Privacidad
+title: Tus derechos de privacidad
 description: Derechos de privacidad por región (RGPD, Reino Unido, España/LOPDGDD, California/CCPA, otros estados de EE. UU. y el resto del mundo) y cómo ejercerlos con KHASSINX.
 permalink: /es/legal/your-rights/
 lang: es

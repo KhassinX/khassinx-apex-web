@@ -35,7 +35,7 @@ No obtenemos analítica a nivel de usuario de ninguno de los dos. Este sitio no 
 |---|---|---|
 | **Proton AG** | Correo de todas las direcciones `@khassinx.com` | Los mensajes que nos envías y tu dirección de respuesta, según la [política de privacidad de Proton](https://proton.me/legal/privacy) |
 
-Conservamos esa correspondencia para gestionar la conversación y cualquier seguimiento, y puedes pedirnos que la eliminemos. Más detalle en la [Política de Privacidad](/es/legal/privacy/#contacto-por-correo).
+Conservamos esa correspondencia para gestionar la conversación y cualquier seguimiento, y puedes pedirnos que la eliminemos. Más detalle en la [Política de privacidad](/es/legal/privacy/#contacto-por-correo).
 
 ## Nuestras apps
 
