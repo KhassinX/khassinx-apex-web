@@ -1,6 +1,6 @@
 ---
 layout: prose
-title: Política de Privacidad
+title: Política de privacidad
 description: Cómo khassinx.com maneja los datos (prácticamente ninguno) y cómo el estudio diseña apps privacy-first. Cada app tiene su propia política en su subdominio.
 permalink: /es/legal/privacy/
 lang: es
@@ -50,7 +50,7 @@ Si escribes a cualquier dirección `@khassinx.com`, recibimos tu mensaje y tu di
 
 ## Tus derechos
 
-Navegar por este sitio no nos da datos personales, así que una visita no deja nada tuyo que consultar o eliminar. Si nos escribiste, puedes pedirnos ver o eliminar esa correspondencia (ver [Contacto por correo](#contacto-por-correo)). Para conocer los derechos que te corresponden según tu legislación local —RGPD (UE/EEE), Reino Unido, la LOPDGDD de España, la CCPA de California, otros estados de EE. UU. y más— y cómo ejercerlos, consulta **[Tus Derechos de Privacidad](/es/legal/your-rights/)**.
+Navegar por este sitio no nos da datos personales, así que una visita no deja nada tuyo que consultar o eliminar. Si nos escribiste, puedes pedirnos ver o eliminar esa correspondencia (ver [Contacto por correo](#contacto-por-correo)). Para conocer los derechos que te corresponden según tu legislación local —RGPD (UE/EEE), Reino Unido, la LOPDGDD de España, la CCPA de California, otros estados de EE. UU. y más— y cómo ejercerlos, consulta **[Tus derechos de privacidad](/es/legal/your-rights/)**.
 
 ## Cambios en esta política
 

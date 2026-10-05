@@ -1,6 +1,6 @@
 ---
 layout: prose
-title: Términos de Uso
+title: Términos de uso
 description: Términos que rigen el uso de khassinx.com. Los términos de servicio por app viven en sus respectivos subdominios.
 permalink: /es/legal/terms/
 lang: es
@@ -64,7 +64,7 @@ El sitio enlaza a sitios de terceros (App Store, GitHub, subdominios de apps ind
 
 ## Privacidad
 
-Para saber cómo manejamos los datos en este sitio y los derechos de privacidad que te corresponden conforme al RGPD, el Reino Unido, la LOPDGDD de España, la CCPA de California y otras leyes, consulta nuestra [Política de Privacidad](/es/legal/privacy/) y [Tus Derechos de Privacidad](/es/legal/your-rights/).
+Para saber cómo manejamos los datos en este sitio y los derechos de privacidad que te corresponden conforme al RGPD, el Reino Unido, la LOPDGDD de España, la CCPA de California y otras leyes, consulta nuestra [Política de privacidad](/es/legal/privacy/) y [Tus derechos de privacidad](/es/legal/your-rights/).
 
 ## Cambios
 
