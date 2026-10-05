@@ -1,7 +1,7 @@
 ---
 layout: prose
 title: Cookies
-description: We use no tracking, analytics, or advertising cookies on khassinx.com. The only cookie is a strictly necessary security cookie set by Cloudflare.
+description: A normal visit to khassinx.com sets no cookies. Cloudflare may set a strictly necessary security cookie when its protection steps in; nothing tracks you.
 permalink: /legal/cookies/
 lang: en
 canonical_en: /legal/cookies/

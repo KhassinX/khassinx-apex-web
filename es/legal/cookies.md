@@ -1,7 +1,7 @@
 ---
 layout: prose
 title: Cookies
-description: No usamos cookies de seguimiento, analítica ni publicidad en khassinx.com. La única cookie es una de seguridad estrictamente necesaria que coloca Cloudflare.
+description: Una visita normal a khassinx.com no deja cookies. Cloudflare puede colocar una cookie de seguridad estrictamente necesaria cuando actúa su protección; nada te rastrea.
 permalink: /es/legal/cookies/
 lang: es
 canonical_en: /legal/cookies/
