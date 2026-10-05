@@ -33,6 +33,8 @@ Neither is used for tracking or advertising. Under the EU ePrivacy Directive, st
 
 We don't use `localStorage`, pixels, fingerprinting, or any similar technology to profile you or measure your behavior.
 
+Your theme choice, at the bottom of the page, is saved on your device under the key `theme` and is not sent anywhere.
+
 ## Our apps
 
 This page is about the website. Each app explains its own data handling in its privacy policy on its subdomain — and, like the site, our apps are built to keep your data on your device, not on our servers.

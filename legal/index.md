@@ -7,6 +7,7 @@ lang: en
 canonical_en: /legal/
 canonical_es: /es/legal/
 updated: 2026-10-05
+version: 1
 ---
 
 This page covers the legal terms for **khassinx.com** itself — the umbrella marketing site for KHASSINX, the studio operated by **KHASSINX LLC** (a Florida limited liability company, United States).

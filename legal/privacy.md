@@ -54,7 +54,7 @@ Browsing this site gives us no personal data, so a visit leaves nothing of yours
 
 ## Changes to this policy
 
-We may update this policy as the site or our infrastructure changes. Material changes are reflected in the "Last updated" date above.
+We may update this policy as the site or our infrastructure changes. Material changes are reflected in the effective date shown above.
 
 ## Contact
 

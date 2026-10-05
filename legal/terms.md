@@ -68,7 +68,7 @@ For how we handle data on this site and the privacy rights you have under GDPR, 
 
 ## Changes
 
-We may update these terms. Material changes will be reflected in the "Last updated" date at the top. Continued use after a change indicates acceptance.
+We may update these terms. Material changes will be reflected in the effective date at the top. Continued use after a change indicates acceptance.
 
 ## Governing law
 

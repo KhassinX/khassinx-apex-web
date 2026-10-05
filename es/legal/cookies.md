@@ -1,6 +1,6 @@
 ---
 layout: prose
-title: Cookies
+title: Política de cookies
 description: Una visita normal a khassinx.com no deja cookies. Cloudflare puede colocar una cookie de seguridad estrictamente necesaria cuando actúa su protección; nada te rastrea.
 permalink: /es/legal/cookies/
 lang: es
@@ -32,6 +32,8 @@ Ninguna se usa para seguimiento ni publicidad. Conforme a la Directiva ePrivacy 
 ## Sin almacenamiento de seguimiento
 
 No usamos `localStorage`, píxeles, fingerprinting ni ninguna tecnología similar para perfilarte o medir tu comportamiento.
+
+Tu elección de tema, al pie de la página, se guarda en tu dispositivo con la clave `theme` y no se envía a ninguna parte.
 
 ## Nuestras apps
 

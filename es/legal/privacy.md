@@ -54,7 +54,7 @@ Navegar por este sitio no nos da datos personales, así que una visita no deja n
 
 ## Cambios en esta política
 
-Podemos actualizar esta política a medida que cambien el sitio o nuestra infraestructura. Los cambios sustanciales se reflejan en la fecha de "Última actualización" indicada arriba.
+Podemos actualizar esta política a medida que cambien el sitio o nuestra infraestructura. Los cambios sustanciales se reflejan en la fecha de vigencia indicada arriba.
 
 ## Contacto
 
