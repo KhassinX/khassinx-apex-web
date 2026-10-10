@@ -4,20 +4,23 @@
     var t = null;
     try { t = localStorage.getItem("theme"); } catch (e) {}
     if (t === "light" || t === "dark") d.dataset.theme = t; else delete d.dataset.theme;
-    var s = document.getElementById("theme");
-    if (s) s.value = d.dataset.theme || "system";
+    var v = d.dataset.theme || "system";
+    var r = document.querySelectorAll('input[name="theme"]');
+    for (var i = 0; i < r.length; i++) r[i].checked = r[i].value === v;
   }
   sync();
   window.addEventListener("pageshow", sync);
   document.addEventListener("DOMContentLoaded", function () {
-    var s = document.getElementById("theme");
+    var f = document.querySelector("fieldset.theme");
     sync();
-    s.onchange = function () {
-      if (s.value === "system") delete d.dataset.theme; else d.dataset.theme = s.value;
+    if (!f) return;
+    f.addEventListener("change", function (e) {
+      var v = e.target.value;
+      if (v === "system") delete d.dataset.theme; else d.dataset.theme = v;
       try {
-        if (s.value === "system") localStorage.removeItem("theme"); else localStorage.setItem("theme", s.value);
-      } catch (e) {}
-    };
-    s.parentNode.hidden = false;
+        if (v === "system") localStorage.removeItem("theme"); else localStorage.setItem("theme", v);
+      } catch (x) {}
+    });
+    f.hidden = false;
   });
 })();

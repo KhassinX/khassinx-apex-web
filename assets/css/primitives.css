@@ -110,17 +110,48 @@ a:hover { text-decoration-thickness: 2px; }
 .foot nav { display: flex; flex-wrap: wrap; gap: var(--khassinx-s-1) var(--khassinx-s-4); }
 .foot a { color: var(--khassinx-ink-2); }
 .foot a:hover { color: var(--khassinx-ink); }
-.theme select {
-  appearance: none;
-  min-height: 44px;
-  margin-left: var(--khassinx-s-2);
-  padding: 0 var(--khassinx-s-6) 0 var(--khassinx-s-3);
-  font: inherit;
-  color: var(--khassinx-ink);
-  background: linear-gradient(45deg, transparent 50%, currentColor 50%) calc(100% - 20px) 50% / 5px 5px no-repeat, linear-gradient(135deg, currentColor 50%, transparent 50%) calc(100% - 15px) 50% / 5px 5px no-repeat, var(--khassinx-ground);
-  border: 1px solid var(--khassinx-ink-2);
-  border-radius: var(--khassinx-r-small);
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
 }
+
+/* Theme control: three radios (System / Light / Dark) as a segmented pill; the checked one is raised. */
+.theme {
+  display: inline-flex;
+  gap: 2px;
+  margin: 0;
+  padding: 3px;
+  border: 1px solid var(--khassinx-rule);
+  border-radius: 999px;
+  background: var(--khassinx-ground);
+}
+.theme[hidden] { display: none; }
+.theme label {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  color: var(--khassinx-ink-2);
+  cursor: pointer;
+  transition: background-color var(--khassinx-dur) var(--khassinx-ease), color var(--khassinx-dur) var(--khassinx-ease);
+}
+.theme label:hover { color: var(--khassinx-ink); }
+.theme input { position: absolute; inset: 0; margin: 0; opacity: 0; cursor: pointer; }
+/* The ring carries the state at ≥3:1 (WCAG 1.4.11); the raised fill alone is ~1.4:1. */
+.theme label:has(input:checked) { background: var(--khassinx-surface); color: var(--khassinx-ink); box-shadow: inset 0 0 0 1px var(--khassinx-ink-2); }
+@media (forced-colors: active) { .theme label:has(input:checked) { outline: 2px solid CanvasText; outline-offset: -2px; } }
+.theme label:has(input:focus-visible) { outline: 2px solid var(--khassinx-focus); outline-offset: 2px; }
+.theme svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
 
 .wordmark, .head nav a, .foot a, .more, .toc a, .related a {
   display: inline-flex;
