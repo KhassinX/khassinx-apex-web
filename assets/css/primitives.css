@@ -77,8 +77,9 @@ a:hover { text-decoration-thickness: 2px; }
   min-height: var(--khassinx-head-h);
   padding-block: var(--khassinx-s-3);
 }
-.head nav { display: flex; gap: var(--khassinx-s-4) var(--khassinx-s-5); }
-.head nav a { color: var(--khassinx-ink); text-decoration: none; white-space: nowrap; font-size: var(--khassinx-t-small); }
+/* The visible rhythm comes from padding, not from centering short words in a 44px box. */
+.head nav { display: flex; gap: var(--khassinx-s-4) 0; margin-inline: calc(var(--khassinx-s-3) * -1); }
+.head nav a { padding-inline: var(--khassinx-s-3); color: var(--khassinx-ink); text-decoration: none; white-space: nowrap; font-size: var(--khassinx-t-small); }
 .head nav a:hover { text-decoration: underline; }
 
 .wordmark { color: var(--khassinx-ink); text-decoration: none; }
@@ -107,7 +108,8 @@ a:hover { text-decoration-thickness: 2px; }
   color: var(--khassinx-ink-2);
 }
 .foot-row { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: var(--khassinx-s-3) var(--khassinx-s-6); }
-.foot nav { display: flex; flex-wrap: wrap; gap: var(--khassinx-s-1) var(--khassinx-s-4); }
+.foot nav { display: flex; flex-wrap: wrap; gap: var(--khassinx-s-1) 0; margin-inline: calc(var(--khassinx-s-2) * -1); }
+.foot nav a { padding-inline: var(--khassinx-s-2); }
 .foot a { color: var(--khassinx-ink-2); }
 .foot a:hover { color: var(--khassinx-ink); }
 .visually-hidden {
@@ -161,7 +163,8 @@ a:hover { text-decoration-thickness: 2px; }
 }
 nav a { justify-content: center; }
 .lang span { display: inline-block; min-width: 44px; }
-.lang > :last-child { justify-content: flex-end; text-align: right; }
+/* Each code hugs the dot, so «EN · ES» reads as one unit; the 44px target grows outward. */
+.lang > :first-child { justify-content: flex-end; text-align: right; }
 
 .doc { padding-block: var(--khassinx-s-7) var(--khassinx-s-8); }
 .doc h1 { max-width: 20em; font-size: var(--khassinx-t-title); line-height: 1.08; letter-spacing: -0.03em; overflow-wrap: break-word; }
