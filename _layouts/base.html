@@ -82,25 +82,31 @@
 <a class="skip" href="#main">{{ ui.skip_to_main }}</a>
 <header class="head wrap">
   <a class="wordmark" href="{{ logo_home }}">{% include logotype.svg %}</a>
+  {%- if nav_items %}
   <nav aria-label="{{ ui.nav_primary }}">{% for item in nav_items %}<a href="{{ item.url }}">{{ item.title }}</a>{% endfor %}</nav>
+  {%- endif %}
 </header>
 <main id="main">
 {{ content }}
 </main>
 <footer class="foot">
-  <div class="wrap foot-row">
-    <p>© {{ 'now' | date: '%Y' }} KHASSINX LLC</p>
+  <div class="wrap">
     <nav aria-label="{{ ui.nav_footer }}">
       {%- for item in footer_items %}
       <a href="{{ item.url }}">{{ item.title }}</a>
       {%- endfor %}
     </nav>
-    {% include theme-switch.html t=ui %}
-    {% if lang_key == 'es' -%}
-    <p class="lang"><a href="{{ page.canonical_en | default: '/' }}" hreflang="en" lang="en">EN</a> · <span aria-current="true">ES</span></p>
-    {%- else -%}
-    <p class="lang"><span aria-current="true">EN</span> · <a href="{{ page.canonical_es | default: '/es/' }}" hreflang="es" lang="es">ES</a></p>
-    {%- endif %}
+    <div class="foot-row">
+      <p>© {{ 'now' | date: '%Y' }} KHASSINX LLC</p>
+      <div class="foot-prefs">
+        {% include theme-switch.html t=ui %}
+        {% if lang_key == 'es' -%}
+        <p class="lang"><a href="{{ page.canonical_en | default: '/' }}" hreflang="en" lang="en">EN</a> · <span aria-current="true">ES</span></p>
+        {%- else -%}
+        <p class="lang"><span aria-current="true">EN</span> · <a href="{{ page.canonical_es | default: '/es/' }}" hreflang="es" lang="es">ES</a></p>
+        {%- endif %}
+      </div>
+    </div>
   </div>
 </footer>
 </body>

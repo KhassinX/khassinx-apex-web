@@ -43,13 +43,9 @@ nav:
   en:
     - title: Apps
       url: "/#apps"
-    - title: Contact
-      url: "/contact/"
   es:
     - title: Apps
       url: "/es/#apps"
-    - title: Contacto
-      url: "/es/contact/"
 
 footer_nav:
   en:
