@@ -95,7 +95,7 @@
       <a href="{{ item.url }}">{{ item.title }}</a>
       {%- endfor %}
     </nav>
-    <p class="theme" hidden><label for="theme">{{ ui.theme }}</label><select id="theme" autocomplete="off"><option value="system">{{ ui.theme_system }}</option><option value="light">{{ ui.theme_light }}</option><option value="dark">{{ ui.theme_dark }}</option></select></p>
+    {% include theme-switch.html t=ui %}
     {% if lang_key == 'es' -%}
     <p class="lang"><a href="{{ page.canonical_en | default: '/' }}" hreflang="en" lang="en">EN</a> · <span aria-current="true">ES</span></p>
     {%- else -%}
