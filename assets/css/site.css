@@ -1,0 +1,398 @@
+/* KHASSINX site styles: one header, one footer and one set of tokens for every page. */
+@font-face {
+  font-family: Geist;
+  src: url("/assets/fonts/geist-variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Geist Mono";
+  src: url("/assets/fonts/geist-mono-variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+:root {
+  --ground: #060607;
+  --surface: #131315;
+  --ink: #f7f7f4;
+  --ink-2: #a5a5a0;
+  --rule: #2a2a2d;
+  /* accent = proof: the mark next to something you can check yourself. The studio is mono (BRAND_BOOK: colour lives
+     only in the Prisma symbol), so its proof mark is the ink; an app page swaps in its own colour. */
+  --accent: var(--ink);
+  --measure: 34rem;  /* rem, not em: a heading's em would make its measure wider than the text's */
+  --max: 1120px;
+  --gutter: clamp(20px, 4vw, 48px);
+  --header: 4.25rem;
+  --edge: max(var(--gutter), calc((100% - var(--max)) / 2));
+  color-scheme: dark;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: Geist, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.5;
+}
+.asvab { --accent: #e5c079; }
+
+:root[data-theme="light"] {
+  --ground: #f7f7f4;
+  --surface: #ecece7;
+  --ink: #111113;
+  --ink-2: #5a5a55;
+  --rule: #d6d6d0;
+  color-scheme: light;
+}
+:root[data-theme="light"] .asvab { --accent: #7f622a; }
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --ground: #f7f7f4;
+    --surface: #ecece7;
+    --ink: #111113;
+    --ink-2: #5a5a55;
+    --rule: #d6d6d0;
+    color-scheme: light;
+  }
+  :root:not([data-theme="dark"]) .asvab { --accent: #7f622a; }
+  :root:not([data-theme="dark"]) .on-dark { display: none; }
+  :root:not([data-theme="dark"]) .on-light { display: block; }
+}
+.on-light { display: none; }
+:root[data-theme="light"] .on-dark { display: none; }
+:root[data-theme="light"] .on-light { display: block; }
+
+*, *::before, *::after { box-sizing: border-box; }
+html { background: var(--ground); }
+body { margin: 0; min-height: 100svh; overflow-wrap: break-word; }
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-underline-offset: 0.18em; }
+a:hover { text-decoration-color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+::selection { background: var(--accent); color: var(--ground); }
+
+.skip {
+  position: absolute; left: var(--gutter); top: 0; z-index: 5;
+  transform: translateY(-120%);
+  background: var(--ink); color: var(--ground); padding: 0.6rem 1rem;
+}
+.skip:focus { transform: none; }
+
+/* ── Header: sticky bar, hairline, mark left, one link right. Content now on the 1120 column. */
+.bar {
+  position: sticky; top: 0; z-index: 3;
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  height: var(--header);
+  padding-inline: var(--edge);
+  background: var(--ground);
+  border-bottom: 1px solid var(--rule);
+}
+.mark {
+  display: inline-flex; align-items: center; gap: 0.7rem; min-height: 44px;
+  font-weight: 600; letter-spacing: 0.02em; text-decoration: none;
+}
+.mark img { width: 22px; height: 22px; }
+.mark .app-mark { width: 28px; height: 28px; border-radius: 22%; }
+.bar-link { min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; color: var(--ink-2); text-decoration: none; }
+.bar-link:hover { color: var(--ink); }
+
+/* ── Type */
+h1, h2, h3 { font-weight: 560; letter-spacing: -0.045em; line-height: 1.02; margin: 0; text-wrap: balance; }
+h1 { font-size: clamp(2.5rem, 1.2rem + 3.4vw, 4.25rem); letter-spacing: -0.048em; line-height: 0.98; }
+h2 { font-size: clamp(1.7rem, 1.2rem + 1.4vw, 2.4rem); }
+h3 { font-size: 1.0625rem; letter-spacing: -0.01em; line-height: 1.35; font-weight: 600; }
+p { margin: 0; }
+.lead { color: var(--ink-2); font-size: 1.125rem; max-width: 34rem; text-wrap: pretty; }
+.muted { color: var(--ink-2); }
+
+.wrap { padding-inline: var(--edge); }
+
+/* ── Hero: what it is + proof + action on the left; on the right, the claim drawn as data. No app screenshots:
+   nothing on these pages ages when an app's interface changes. */
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 27rem);
+  align-items: center;
+  gap: 2.5rem 4.5rem;
+  padding-block: 3.5rem 4.5rem;
+}
+.hero-text { display: grid; gap: 1.4rem; justify-items: start; }
+.hero h1 { max-width: 11.5em; }
+.hero-studio h1 { font-size: clamp(2.5rem, 1.2rem + 2.9vw, 3.75rem); }
+.app-icon { width: 5.5rem; height: 5.5rem; border-radius: 22%; }
+/* Studio hero, right column: the app of the moment. When another app leads,
+   only this block changes; the text on the left never names an app. */
+.featured { display: grid; gap: 1rem; justify-items: start; padding: 2rem; border-radius: 1.5rem; background: var(--surface); }
+.featured-label { font-size: 0.875rem; font-weight: 600; color: var(--ink-2); }
+.featured-icon { width: 6rem; height: 6rem; border-radius: 22%; }
+.featured h2 { font-size: 1.75rem; }
+.featured p:not(.featured-label) { color: var(--ink-2); max-width: 24rem; }
+.featured .act.link { padding-inline: 0; }
+
+.proof { display: flex; gap: 0.6rem; align-items: baseline; max-width: 34rem; }
+.proof::before, .facts li::before {
+  content: ""; flex: none;
+  width: 0.625rem; height: 0.625rem; border-radius: 50%;
+  background: var(--accent);
+  transform: translateY(-0.08em);
+}
+.facts { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem 1.4rem; color: var(--ink-2); font-size: 0.9375rem; }
+.facts li { display: inline-flex; align-items: baseline; gap: 0.5rem; }
+
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1rem; margin-top: 0.35rem; }
+.act {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 48px; padding: 0 1.35rem; border-radius: 999px;
+  background: var(--ink); color: var(--ground);
+  font-weight: 600; font-size: 0.975rem; text-decoration: none;
+}
+.act.quiet { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px var(--rule); }
+.act.quiet:hover { box-shadow: inset 0 0 0 1px var(--ink-2); }
+.act.link { background: none; color: var(--ink); padding: 0 0.35rem; text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 0.3em; }
+.act.link:hover { text-decoration-color: var(--accent); }
+.store { display: inline-flex; border: 1px solid transparent; border-radius: 10px; }
+.store img { width: 9rem; height: auto; }
+
+/* asvab hero: the nine scores the app covers; the four that make up the AFQT are the large quadrant. */
+.scores { margin: 0; display: grid; gap: 1.5rem; }
+.scores-label { font-size: 0.875rem; font-weight: 600; color: var(--ink-2); margin-bottom: 0.75rem; }
+.afqt, .line { margin: 0; }
+.afqt { display: grid; grid-template-columns: 1fr 1fr; }
+.afqt > div { padding: 0 1.5rem 1.25rem 0; }
+.afqt > div:nth-child(even) { padding-inline: 1.5rem 0; }
+.afqt > div:nth-child(n + 3) { padding-top: 1.25rem; padding-bottom: 0; }
+.afqt > :nth-child(1) { grid-area: 1 / 1; }
+.afqt > :nth-child(2) { grid-area: 1 / 2; }
+.afqt > :nth-child(3) { grid-area: 2 / 1; }
+.afqt > :nth-child(4) { grid-area: 2 / 2; }
+/* The cross is two pseudo-elements, so it can draw itself (asvab's signature); borders, so High Contrast keeps it. */
+.afqt::before, .afqt::after { content: ""; pointer-events: none; }
+.afqt::before { grid-area: 1 / 2 / 3 / 3; border-left: 1px solid var(--rule); }
+.afqt::after { grid-area: 2 / 1 / 3 / 3; border-top: 1px solid var(--rule); }
+.afqt dt { font-size: clamp(1.75rem, 1.6rem + 1.6vw, 3rem); font-weight: 560; letter-spacing: -0.04em; line-height: 1; }
+.afqt dd { margin: 0.45rem 0 0; color: var(--ink-2); font-size: 0.9375rem; line-height: 1.35; }
+/* Five line scores as rows: a grid of three left an empty sixth cell at every width. */
+.line > div { display: grid; grid-template-columns: 2.75rem minmax(0, 1fr); align-items: baseline; gap: 0 0.75rem; padding-block: 0.5rem; border-top: 1px solid var(--rule); }
+.line > div:first-child { border-top: 0; padding-top: 0; }
+.line dt { font-size: 1.0625rem; font-weight: 600; letter-spacing: -0.01em; }
+.line dd { margin: 0; color: var(--ink-2); font-size: 0.9375rem; line-height: 1.35; }
+.scores figcaption { color: var(--ink-2); font-size: 0.9375rem; padding-top: 1.1rem; border-top: 1px solid var(--rule); text-wrap: pretty; }
+
+/* ── Bands: heading left, content right; first lines share a baseline. */
+.band {
+  display: grid;
+  grid-template-columns: minmax(0, 17rem) minmax(0, 1fr);
+  align-items: start;
+  gap: 1.5rem 4rem;
+  padding-block: 4.5rem;
+  border-top: 1px solid var(--rule);
+}
+.band-head { display: grid; gap: 0.75rem; }
+.band-head p { color: var(--ink-2); max-width: 15rem; }
+.band-body { display: grid; gap: 1.5rem; min-width: 0; }
+.band-body > p { max-width: var(--measure); }
+.band-body > .aside { max-width: none; }
+
+.rules { display: grid; grid-template-columns: 1fr 1fr; gap: 0 2.5rem; margin: 0; }
+.rules > div { padding-block: 1.1rem; border-top: 1px solid var(--rule); }
+.rules > div:nth-child(-n + 2) { border-top: 0; padding-top: 0; }
+.rules dt { font-weight: 600; }
+.rules dd { margin: 0.35rem 0 0; color: var(--ink-2); }
+.rules .check { font-family: "Geist Mono", ui-monospace, monospace; font-size: 0.8125rem; }
+.rules .check span { color: var(--accent); font-weight: 600; }
+/* The aside continues the rules' grid: its hairline sits where the next row's would. */
+.aside { padding-top: 1.1rem; padding-right: max(0px, 100% - var(--measure)); border-top: 1px solid var(--rule); color: var(--ink-2); font-size: 0.9375rem; }
+.rules + .aside { margin-top: -1.5rem; }
+
+.app-row { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.5rem 1.5rem; }
+.app-row > img { width: 5rem; height: 5rem; border-radius: 22%; }
+.app-row h3 { font-size: 1.25rem; letter-spacing: -0.02em; }
+.app-row p { color: var(--ink-2); }
+
+.contact { display: grid; gap: 1rem; max-width: 40rem; }
+.links { display: flex; flex-wrap: wrap; gap: 0 1.5rem; }
+.links a { min-height: 44px; display: inline-flex; align-items: center; }
+
+.sign {
+  grid-column: 1 / -1;
+  display: flex; align-items: center; gap: clamp(1rem, 3vw, 2rem);
+  margin-top: 2.5rem; padding-top: 3rem;
+  border-top: 1px solid var(--rule);
+  font-size: clamp(2rem, 1rem + 2.6vw, 3.25rem);
+  font-weight: 560; letter-spacing: -0.045em; line-height: 1;
+}
+.sign img { width: clamp(3rem, 2rem + 2.6vw, 4rem); height: auto; flex: none; }
+
+/* ASVAB: definitions, feature rows, FAQ. */
+.defs { margin: 0; }
+.defs > div { display: grid; grid-template-columns: 14rem minmax(0, 1fr); align-items: baseline; gap: 0.25rem 1.5rem; padding-block: 0.9rem; border-top: 1px solid var(--rule); }
+.defs > div:first-child { border-top: 0; padding-top: 0; }
+.defs dt { font-weight: 600; }
+.defs dd { margin: 0; color: var(--ink-2); }
+.policy { display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; font-size: 0.9375rem; color: var(--ink-2); }
+.policy a { color: var(--ink); min-height: 44px; display: inline-flex; align-items: center; }
+.policy span { min-height: 44px; display: inline-flex; align-items: center; }
+
+.features > div { grid-template-columns: 14rem minmax(0, 1fr); }
+.features dd { max-width: var(--measure); }
+
+.faq { display: grid; gap: 0; }
+.faq > div { padding-block: 1.25rem; border-top: 1px solid var(--rule); display: grid; gap: 0.45rem; }
+.faq > div:first-child { border-top: 0; padding-top: 0; }
+.faq h3 { font-size: 1.125rem; }
+.faq p { color: var(--ink-2); max-width: var(--measure); }
+
+.note { padding-block: 0 3.5rem; color: var(--ink-2); font-size: 0.875rem; max-width: calc(var(--measure) + 2 * var(--edge)); }
+
+/* ── Inner pages: the published article as a band. Title on top; contents in the left column, sticky; summary, text
+   and related links on the right. Without contents, the text starts under the title. */
+.doc-head { display: grid; gap: 1rem; padding-block: 3.5rem 3rem; }
+.doc-head h1 { max-width: 14em; font-size: clamp(2.25rem, 1.3rem + 2.6vw, 3.5rem); }
+.doc .meta { color: var(--ink-2); font-size: 0.9375rem; text-wrap: balance; }
+.doc-main { row-gap: 2.5rem; padding-block: 3.5rem 4.5rem; }
+.doc-main.has-toc > :not(.toc) { grid-column: 2; }
+.doc-main.no-toc { grid-template-columns: minmax(0, 1fr); }
+.toc {
+  grid-column: 1; grid-row: 1 / span 3; align-self: start;
+  position: sticky; top: calc(var(--header) + 1.5rem);
+  max-height: calc(100svh - var(--header) - 3rem); overflow-y: auto;
+}
+.toc ol, .related ul { list-style: none; margin: 0.5rem 0 0; padding: 0; }
+.toc a, .related a {
+  display: flex; align-items: center; min-height: 44px; padding-block: 0.6rem;
+  color: var(--ink-2); font-size: 0.9375rem; line-height: 1.35; text-decoration: none;
+}
+.toc a:hover, .related a:hover { color: var(--ink); }
+.toc a, .related a { text-wrap: balance; }
+.brief, .related, .prose > :is(p, ul, ol, h2, h3) { max-width: var(--measure); }
+.brief { padding: 1.75rem; border-radius: 1.5rem; background: var(--surface); }
+.brief ul { margin: 0.75rem 0 0; padding-left: 1.1rem; }
+.brief li + li { margin-top: 0.5rem; }
+.brief h2, .toc h2, .related h2 { font-size: 0.875rem; font-weight: 600; letter-spacing: 0; line-height: 1.4; color: var(--ink-2); }
+.related { padding-top: 1.5rem; border-top: 1px solid var(--rule); }
+
+.prose { min-width: 0; }
+.prose > * + * { margin-top: 1.1rem; }
+.prose h2 { margin-top: 3rem; font-size: 1.5rem; letter-spacing: -0.03em; line-height: 1.15; }
+.prose h3 { margin-top: 2rem; }
+.prose h2 + *, .prose h3 + * { margin-top: 0.75rem; }
+.prose h2, .prose h3 { scroll-margin-top: calc(var(--header) + 1.5rem); }
+.prose ul, .prose ol { padding-left: 1.25rem; }
+.prose :is(p, li) { text-wrap: pretty; }
+.prose li + li { margin-top: 0.5rem; }
+.prose strong { font-weight: 600; }
+.prose code {
+  padding: 0.1em 0.35em; border-radius: 0.35em; background: var(--surface);
+  font-family: "Geist Mono", ui-monospace, monospace; font-size: 0.85em; overflow-wrap: anywhere;
+}
+.prose hr { margin-block: 2.5rem; border: 0; border-top: 1px solid var(--rule); }
+.table-wrap { overflow-x: auto; }
+.prose table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; }
+.prose th, .prose td { padding: 0.6rem 1rem 0.6rem 0; text-align: left; vertical-align: top; border-bottom: 1px solid var(--rule); }
+.prose th { color: var(--ink-2); font-size: 0.875rem; font-weight: 600; }
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+  overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0;
+}
+
+/* asvab's AFQT calculator, same classes as the published one. */
+.afqt-calc { max-width: var(--measure); margin-block: 2rem; padding: 1.5rem; border-radius: 1.5rem; background: var(--surface); }
+.afqt-calc fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
+.afqt-calc legend { padding: 0; font-weight: 600; }
+.afqt-calc__fields { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem; }
+.afqt-calc__field { display: flex; flex-direction: column; gap: 0.4rem; flex: 1 1 8rem; min-width: 7rem; }
+.afqt-calc__field label { color: var(--ink-2); font-size: 0.875rem; }
+.afqt-calc__field input {
+  margin-top: auto; min-height: 44px; padding: 0.5rem 0.75rem;
+  font: inherit; color: var(--ink); background: var(--ground);
+  border: 1px solid var(--ink-2); border-radius: 0.75rem;
+}
+.afqt-calc__hint { margin-top: 0.75rem; color: var(--ink-2); font-size: 0.875rem; }
+.afqt-calc__result { display: grid; gap: 0.75rem; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--rule); }
+.afqt-calc__result:empty { margin-top: 0; padding-top: 0; border-top: 0; }
+
+/* ── Footer: links on top; entity left, contact + language + theme right. Content on the 1120 column. */
+.foot { border-top: 1px solid var(--rule); padding: 1.25rem var(--edge) 1.5rem; }
+.foot-links { display: flex; flex-wrap: wrap; gap: 0 1.25rem; }
+.foot-links a { min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; color: var(--ink-2); text-decoration: none; }
+.foot-links a:hover { color: var(--ink); }
+.foot-meta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.75rem 1.5rem; margin-top: 0.25rem; }
+.foot-meta p { color: var(--ink-2); font-size: 0.875rem; }
+.foot-meta p a { min-height: 44px; display: inline-flex; align-items: center; }
+.tools { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+.tools > a { color: var(--ink-2); text-decoration: none; font-size: 0.875rem; min-height: 44px; display: inline-flex; align-items: center; }
+.tools > a:hover { color: var(--ink); }
+.lang, .theme { display: inline-flex; align-items: center; gap: 2px; }
+.lang { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.04em; }
+/* The box is the 44×44 target (UX-9.3); the pill you see is drawn 8px inside it, 28px tall, so neighbours never overlap. */
+.lang a, .lang span, .theme button {
+  position: relative; isolation: isolate;
+  min-width: 44px; height: 44px; padding: 0 8px; border: 0; border-radius: 8px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: transparent; color: color-mix(in srgb, var(--ink) 62%, transparent); text-decoration: none;
+  font: inherit; cursor: pointer;
+}
+.lang a::before, .lang span::before, .theme button::before { content: ""; position: absolute; inset: 8px 0; z-index: -1; border-radius: 8px; }
+.lang a:hover, .theme button:hover { color: var(--ink); }
+.lang [aria-current="true"], .theme button[aria-checked="true"] { color: var(--ink); }
+/* The ring carries the state at ≥3:1 (WCAG 1.4.11); the fill alone is about 1.4:1. */
+.lang [aria-current="true"]::before, .theme button[aria-checked="true"]::before { background: color-mix(in srgb, var(--ink) 14%, var(--ground)); box-shadow: inset 0 0 0 1px var(--ink-2); }
+@media (forced-colors: active) { .lang [aria-current="true"]::before, .theme button[aria-checked="true"]::before { outline: 2px solid CanvasText; outline-offset: -2px; } }
+.theme button { padding: 0; width: 44px; }
+.theme svg { display: block; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+
+/* ── Phone and tablet */
+@media (max-width: 860px) {
+  .hero { grid-template-columns: minmax(0, 1fr); padding-block: 2.25rem 3.5rem; }
+  .band { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; padding-block: 3.25rem; }
+  .band-head p { max-width: 34rem; }
+  .rules { grid-template-columns: minmax(0, 1fr); }
+  .rules > div:nth-child(2) { border-top: 1px solid var(--rule); padding-top: 1.1rem; }
+  .defs > div, .features > div { grid-template-columns: minmax(0, 1fr); }
+  .app-row { grid-template-columns: auto minmax(0, 1fr); align-items: start; }
+  .app-row > .act { grid-column: 1 / -1; justify-self: start; }
+  /* Stacked under the text, the promo goes compact so the App Store badge reaches the first screen. */
+  .hero-studio { row-gap: 1.75rem; }
+  .featured { grid-template-columns: 4rem minmax(0, 1fr); gap: 0.75rem 1rem; padding: 1.25rem; }
+  .featured > p:not(.featured-label), .featured > .actions { grid-column: 1 / -1; }
+  .featured .featured-icon { grid-column: 1; grid-row: 1 / span 2; width: 4rem; height: 4rem; }
+  .featured h2 { font-size: 1.375rem; }
+  .doc-head { padding-block: 2.25rem 2rem; }
+  .doc-main { row-gap: 2rem; padding-block: 2.5rem 3.5rem; }
+  .doc-main.has-toc > :not(.toc), .toc { grid-column: 1; }
+  .toc { grid-row: auto; position: static; max-height: none; overflow: visible; }
+}
+/* Short laptop screens (Windows 1280×610 at 150 %): the action has to land in the first screen, so the text stops
+   centring against the right column and starts at the top. */
+@media (min-width: 861px) and (max-height: 720px) { .hero { align-items: start; padding-top: 2.5rem; } }
+/* On a phone the header already shows the app icon 120 px above; the hero drops its copy. */
+@media (max-width: 600px) { .app-icon { display: none; } }
+@media (max-width: 480px) {
+  .lead { font-size: 1rem; }
+  .facts { flex-direction: column; }
+  /* Two columns; a label too long for half the row takes the whole row instead of wrapping (max-content restores the
+     automatic minimum that the 44 px floor above overrides). */
+  .foot-links { column-gap: 1rem; }
+  .foot-links a { flex: 1 0 calc(50% - 0.5rem); min-width: max-content; white-space: nowrap; }
+  .afqt-calc__field { flex-basis: 100%; }
+  /* Tables stack into labelled rows; every cell carries its column name in data-label. */
+  .prose table, .prose tbody, .prose tr, .prose td { display: block; }
+  .prose thead { display: none; }
+  .prose tr { padding-block: 0.75rem; border-bottom: 1px solid var(--rule); }
+  .prose td { padding: 0; border: 0; }
+  .prose td + td { margin-top: 0.25rem; }
+  .prose td::before { content: attr(data-label) ": "; font-weight: 600; }
+}
+@media (max-width: 380px) { h1, .hero-studio h1 { font-size: 2.3rem; } }
+
+/* ── Motion: asvab's AFQT cross draws itself; the theme switch fades the page. Only when motion is welcome. */
+@media (prefers-reduced-motion: no-preference) {
+  .afqt::before { animation: rule-y 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) 0.2s both; }
+  .afqt::after { animation: rule-x 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) 0.35s both; }
+  .theme-fade, .theme-fade * { transition: background-color 480ms ease, color 480ms ease, border-color 480ms ease, fill 480ms ease, stroke 480ms ease, box-shadow 480ms ease !important; }
+}
+@keyframes rule-y { from { transform: scaleY(0); } }
+@keyframes rule-x { from { transform: scaleX(0); } }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+@media (forced-colors: active) {
+  .proof::before, .facts li::before { background: CanvasText; }
+}
