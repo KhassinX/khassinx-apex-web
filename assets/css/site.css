@@ -33,7 +33,6 @@
   font-size: 1.0625rem;
   line-height: 1.5;
 }
-.asvab { --accent: #e5c079; }
 
 :root[data-theme="light"] {
   --ground: #f7f7f4;
@@ -43,7 +42,6 @@
   --rule: #d6d6d0;
   color-scheme: light;
 }
-:root[data-theme="light"] .asvab { --accent: #7f622a; }
 @media (prefers-color-scheme: light) {
   :root:not([data-theme="dark"]) {
     --ground: #f7f7f4;
@@ -53,7 +51,6 @@
     --rule: #d6d6d0;
     color-scheme: light;
   }
-  :root:not([data-theme="dark"]) .asvab { --accent: #7f622a; }
   :root:not([data-theme="dark"]) .on-dark { display: none; }
   :root:not([data-theme="dark"]) .on-light { display: block; }
 }
@@ -152,31 +149,6 @@ p { margin: 0; }
 .store { display: inline-flex; border: 1px solid transparent; border-radius: 10px; }
 .store img { width: 9rem; height: auto; }
 
-/* asvab hero: the nine scores the app covers; the four that make up the AFQT are the large quadrant. */
-.scores { margin: 0; display: grid; gap: 1.5rem; }
-.scores-label { font-size: 0.875rem; font-weight: 600; color: var(--ink-2); margin-bottom: 0.75rem; }
-.afqt, .line { margin: 0; }
-.afqt { display: grid; grid-template-columns: 1fr 1fr; }
-.afqt > div { padding: 0 1.5rem 1.25rem 0; }
-.afqt > div:nth-child(even) { padding-inline: 1.5rem 0; }
-.afqt > div:nth-child(n + 3) { padding-top: 1.25rem; padding-bottom: 0; }
-.afqt > :nth-child(1) { grid-area: 1 / 1; }
-.afqt > :nth-child(2) { grid-area: 1 / 2; }
-.afqt > :nth-child(3) { grid-area: 2 / 1; }
-.afqt > :nth-child(4) { grid-area: 2 / 2; }
-/* The cross is two pseudo-elements, so it can draw itself (asvab's signature); borders, so High Contrast keeps it. */
-.afqt::before, .afqt::after { content: ""; pointer-events: none; }
-.afqt::before { grid-area: 1 / 2 / 3 / 3; border-left: 1px solid var(--rule); }
-.afqt::after { grid-area: 2 / 1 / 3 / 3; border-top: 1px solid var(--rule); }
-.afqt dt { font-size: clamp(1.75rem, 1.6rem + 1.6vw, 3rem); font-weight: 560; letter-spacing: -0.04em; line-height: 1; }
-.afqt dd { margin: 0.45rem 0 0; color: var(--ink-2); font-size: 0.9375rem; line-height: 1.35; }
-/* Five line scores as rows: a grid of three left an empty sixth cell at every width. */
-.line > div { display: grid; grid-template-columns: 2.75rem minmax(0, 1fr); align-items: baseline; gap: 0 0.75rem; padding-block: 0.5rem; border-top: 1px solid var(--rule); }
-.line > div:first-child { border-top: 0; padding-top: 0; }
-.line dt { font-size: 1.0625rem; font-weight: 600; letter-spacing: -0.01em; }
-.line dd { margin: 0; color: var(--ink-2); font-size: 0.9375rem; line-height: 1.35; }
-.scores figcaption { color: var(--ink-2); font-size: 0.9375rem; padding-top: 1.1rem; border-top: 1px solid var(--rule); text-wrap: pretty; }
-
 /* ── Bands: heading left, content right; first lines share a baseline. */
 .band {
   display: grid;
@@ -222,7 +194,7 @@ p { margin: 0; }
 }
 .sign img { width: clamp(3rem, 2rem + 2.6vw, 4rem); height: auto; flex: none; }
 
-/* ASVAB: definitions, feature rows, FAQ. */
+/* App pages: definitions, feature rows, FAQ, policy links. */
 .defs { margin: 0; }
 .defs > div { display: grid; grid-template-columns: 14rem minmax(0, 1fr); align-items: baseline; gap: 0.25rem 1.5rem; padding-block: 0.9rem; border-top: 1px solid var(--rule); }
 .defs > div:first-child { border-top: 0; padding-top: 0; }
@@ -294,22 +266,6 @@ p { margin: 0; }
   overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0;
 }
 
-/* asvab's AFQT calculator, same classes as the published one. */
-.afqt-calc { max-width: var(--measure); margin-block: 2rem; padding: 1.5rem; border-radius: 1.5rem; background: var(--surface); }
-.afqt-calc fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
-.afqt-calc legend { padding: 0; font-weight: 600; }
-.afqt-calc__fields { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem; }
-.afqt-calc__field { display: flex; flex-direction: column; gap: 0.4rem; flex: 1 1 8rem; min-width: 7rem; }
-.afqt-calc__field label { color: var(--ink-2); font-size: 0.875rem; }
-.afqt-calc__field input {
-  margin-top: auto; min-height: 44px; padding: 0.5rem 0.75rem;
-  font: inherit; color: var(--ink); background: var(--ground);
-  border: 1px solid var(--ink-2); border-radius: 0.75rem;
-}
-.afqt-calc__hint { margin-top: 0.75rem; color: var(--ink-2); font-size: 0.875rem; }
-.afqt-calc__result { display: grid; gap: 0.75rem; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--rule); }
-.afqt-calc__result:empty { margin-top: 0; padding-top: 0; border-top: 0; }
-
 /* ── Footer: links on top; entity left, contact + language + theme right. Content on the 1120 column. */
 .foot { border-top: 1px solid var(--rule); padding: 1.25rem var(--edge) 1.5rem; }
 .foot-links { display: flex; flex-wrap: wrap; gap: 0 1.25rem; }
@@ -373,7 +329,6 @@ p { margin: 0; }
      automatic minimum that the 44 px floor above overrides). */
   .foot-links { column-gap: 1rem; }
   .foot-links a { flex: 1 0 calc(50% - 0.5rem); min-width: max-content; white-space: nowrap; }
-  .afqt-calc__field { flex-basis: 100%; }
   /* Tables stack into labelled rows; every cell carries its column name in data-label. */
   .prose table, .prose tbody, .prose tr, .prose td { display: block; }
   .prose thead { display: none; }
@@ -384,14 +339,10 @@ p { margin: 0; }
 }
 @media (max-width: 380px) { h1, .hero-studio h1 { font-size: 2.3rem; } }
 
-/* ── Motion: asvab's AFQT cross draws itself; the theme switch fades the page. Only when motion is welcome. */
+/* ── Motion: the theme switch fades the page, only when motion is welcome. */
 @media (prefers-reduced-motion: no-preference) {
-  .afqt::before { animation: rule-y 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) 0.2s both; }
-  .afqt::after { animation: rule-x 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) 0.35s both; }
   .theme-fade, .theme-fade * { transition: background-color 480ms ease, color 480ms ease, border-color 480ms ease, fill 480ms ease, stroke 480ms ease, box-shadow 480ms ease !important; }
 }
-@keyframes rule-y { from { transform: scaleY(0); } }
-@keyframes rule-x { from { transform: scaleX(0); } }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
 @media (forced-colors: active) {
   .proof::before, .facts li::before { background: CanvasText; }
