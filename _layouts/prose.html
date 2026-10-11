@@ -2,7 +2,10 @@
 layout: base
 ---
 {%- assign ui = site.ui_strings[page.lang] | default: site.ui_strings.en -%}
-<article class="doc wrap">
+{%- assign heads = content | split: '<h2 id="' -%}
+{%- assign toc = false -%}{%- if page.version and heads.size > 2 %}{%- assign toc = true -%}{%- endif %}
+<article class="doc">
+<header class="wrap doc-head">
   <h1>{{ page.title }}</h1>
   {%- if page.version %}
   {%- assign eff = page.effective | default: page.updated -%}
@@ -10,6 +13,8 @@ layout: base
   {%- capture upd %}{% include legal-date.html d=page.updated lang=page.lang %}{% endcapture %}
   <p class="meta">{{ ui.effective }} {{ day }} · {{ ui.version }} {{ page.version }}{% if upd != day %} · {{ ui.last_updated }} {{ upd }}{% endif %}</p>
   {%- endif %}
+</header>
+<div class="wrap band doc-main {% if toc %}has-toc{% else %}no-toc{% endif %}">
   {%- if page.summary %}
   <section class="brief" aria-labelledby="brief-h">
     <h2 id="brief-h">{{ ui.in_short }}</h2>
@@ -20,8 +25,7 @@ layout: base
     </ul>
   </section>
   {%- endif %}
-  {%- assign heads = content | split: '<h2 id="' -%}
-  {%- if page.version and heads.size > 2 %}
+  {%- if toc %}
   <nav class="toc" aria-labelledby="toc-h">
     <h2 id="toc-h">{{ ui.on_this_page }}</h2>
     <ol>
@@ -33,7 +37,7 @@ layout: base
   </nav>
   {%- endif %}
   <div class="doc-body prose">
-{{ content }}
+{{ content | replace: '<table', '<div class="table-wrap"><table' | replace: '</table>', '</table></div>' }}
   </div>
   {%- if page.related %}
   <nav class="related" aria-labelledby="related-h">
@@ -46,4 +50,5 @@ layout: base
     </ul>
   </nav>
   {%- endif %}
+</div>
 </article>
