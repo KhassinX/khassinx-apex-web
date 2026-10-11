@@ -22,7 +22,7 @@ summary:
 
 **No recopilamos datos personales a través de este sitio web.** Sin analítica, sin cookies, sin rastreadores, sin cuentas. Y las apps que creamos son privacy-first por diseño: tus datos permanecen en tu dispositivo y en tu propio iCloud, nunca en nuestros servidores.
 
-**Esta política cubre únicamente `khassinx.com`** — el sitio paraguas del estudio. Cada app de KHASSINX publica su propia política de privacidad en su subdominio (por ejemplo, `asvab.khassinx.com`). Para saber cómo trata tus datos una app concreta, consulta la política de esa app.
+**Esta política cubre únicamente `khassinx.com`**: el sitio paraguas del estudio. Cada app de KHASSINX publica su propia política de privacidad en su subdominio (por ejemplo, `asvab.khassinx.com`). Para saber cómo trata tus datos una app concreta, consulta la política de esa app.
 
 ## Lo que este sitio no hace
 
@@ -34,7 +34,7 @@ summary:
 
 ## Lo que registran nuestros proveedores de alojamiento
 
-**GitHub Pages** (nuestro alojamiento de archivos estáticos) y **Cloudflare** (nuestra capa de red) registran automáticamente metadatos estándar de las solicitudes HTTP —dirección IP, agente de usuario, marca de tiempo y URL solicitada— para servir y proteger el sitio. No obtenemos analítica a nivel de usuario de ninguno de ellos. Sus registros se rigen por la [política de privacidad de GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement) y la [política de privacidad de Cloudflare](https://www.cloudflare.com/privacypolicy/).
+**GitHub Pages** (nuestro alojamiento de archivos estáticos) y **Cloudflare** (nuestra capa de red) registran automáticamente metadatos estándar de las solicitudes HTTP (dirección IP, agente de usuario, marca de tiempo y URL solicitada) para servir y proteger el sitio. No obtenemos analítica a nivel de usuario de ninguno de ellos. Sus registros se rigen por la [política de privacidad de GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement) y la [política de privacidad de Cloudflare](https://www.cloudflare.com/privacypolicy/).
 
 ## Cómo maneja los datos el estudio en nuestras apps
 
@@ -50,7 +50,7 @@ Si escribes a cualquier dirección `@khassinx.com`, recibimos tu mensaje y tu di
 
 ## Tus derechos
 
-Navegar por este sitio no nos da datos personales, así que una visita no deja nada tuyo que consultar o eliminar. Si nos escribiste, puedes pedirnos ver o eliminar esa correspondencia (ver [Contacto por correo](#contacto-por-correo)). Para conocer los derechos que te corresponden según tu legislación local —RGPD (UE/EEE), Reino Unido, la LOPDGDD de España, la CCPA de California, otros estados de EE. UU. y más— y cómo ejercerlos, consulta **[Tus derechos de privacidad](/es/legal/your-rights/)**.
+Navegar por este sitio no nos da datos personales, así que una visita no deja nada tuyo que consultar o eliminar. Si nos escribiste, puedes pedirnos ver o eliminar esa correspondencia (ver [Contacto por correo](#contacto-por-correo)). Para conocer los derechos que te corresponden según tu legislación local, como el RGPD (UE/EEE), Reino Unido, la LOPDGDD de España, la CCPA de California, otros estados de EE. UU. y más, y cómo ejercerlos, consulta **[Tus derechos de privacidad](/es/legal/your-rights/)**.
 
 ## Cambios en esta política
 

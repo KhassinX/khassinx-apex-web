@@ -20,11 +20,11 @@ summary:
   - "Respondemos dentro del plazo que exija tu legislación (por ejemplo, un mes por el RGPD o 45 días por la CCPA) y podemos pedirte que verifiques tu identidad."
 ---
 
-Somos privacy-first por diseño: la mayoría de las solicitudes de derechos sobre datos quedan sin objeto porque no guardamos tus datos personales — viven en tu dispositivo y en tu propio iCloud. Aun así, estos son los derechos que te corresponden según las leyes que puedan aplicarte, y cómo ejercerlos.
+Somos privacy-first por diseño: la mayoría de las solicitudes de derechos sobre datos quedan sin objeto porque no guardamos tus datos personales; viven en tu dispositivo y en tu propio iCloud. Aun así, estos son los derechos que te corresponden según las leyes que puedan aplicarte, y cómo ejercerlos.
 
 Esta página es a nivel del estudio. Para una app concreta, consulta la política de privacidad de esa app en su subdominio, que describe exactamente qué datos trata (si es que trata alguno).
 
-## Unión Europea y Espacio Económico Europeo — RGPD {#eu-eea-gdpr}
+## Unión Europea y Espacio Económico Europeo: RGPD {#eu-eea-gdpr}
 
 Si te encuentras en la UE o el EEE, el Reglamento General de Protección de Datos te da derecho a:
 
@@ -44,15 +44,15 @@ Si te encuentras en la UE o el EEE, el Reglamento General de Protección de Dato
 
 Dado que nuestro tratamiento es mínimo y ocasional, por ahora no designamos un representante en la UE conforme al artículo 27. Lo reevaluamos por app a medida que nuestros productos evolucionan.
 
-## Reino Unido — UK GDPR {#uk-gdpr}
+## Reino Unido: UK GDPR {#uk-gdpr}
 
 Si estás en el Reino Unido, los mismos derechos aplican conforme al UK GDPR y la Data Protection Act 2018. Tu autoridad de control es la **Information Commissioner's Office (ICO)**, ante la que puedes presentar una reclamación.
 
-## España — LOPDGDD {#spain-lopdgdd}
+## España: LOPDGDD {#spain-lopdgdd}
 
 Si resides en España, se aplica el RGPD, complementado por la **LOPDGDD** (Ley Orgánica 3/2018 de Protección de Datos Personales y garantía de los derechos digitales). Tu autoridad de control es la **Agencia Española de Protección de Datos (AEPD)**. La LOPDGDD refuerza tus derechos del RGPD y añade derechos digitales específicos cuando te resulten aplicables.
 
-## California — CCPA / CPRA {#california-ccpa}
+## California: CCPA / CPRA {#california-ccpa}
 
 Si resides en California, la CCPA (modificada por la CPRA) te da derecho a:
 
@@ -71,17 +71,17 @@ Si resides en California, la CCPA (modificada por la CPRA) te da derecho a:
 
 Si vives en Virginia, Colorado, Connecticut, Utah, Texas, Oregón, Florida u otro estado de EE. UU. con una ley integral de privacidad del consumidor, por lo general tienes derecho a acceder a tus datos personales, eliminarlos, corregirlos y obtenerlos en un formato portátil, y a oponerte a la publicidad dirigida, a la venta de tus datos y a ciertas formas de elaboración de perfiles.
 
-La mayoría de estas leyes solo aplican por encima de umbrales de tamaño de empresa que no alcanzamos — pero respetamos estos derechos con independencia de que una ley concreta nos obligue técnicamente.
+La mayoría de estas leyes solo aplican por encima de umbrales de tamaño de empresa que no alcanzamos, pero respetamos estos derechos con independencia de que una ley concreta nos obligue técnicamente.
 
 ## Resto del mundo {#rest-of-world}
 
-Estés donde estés —incluidos Canadá (PIPEDA), Brasil (LGPD), Australia, Japón (APPI) y otros— aplicamos el mismo estándar privacy-first: tus datos se quedan contigo y guardamos lo mínimo posible. Contáctanos y trabajaremos contigo de buena fe para respetar tus derechos locales.
+Estés donde estés, incluidos Canadá (PIPEDA), Brasil (LGPD), Australia, Japón (APPI) y otros, aplicamos el mismo estándar privacy-first: tus datos se quedan contigo y guardamos lo mínimo posible. Contáctanos y trabajaremos contigo de buena fe para respetar tus derechos locales.
 
 ## Cómo ejercer tus derechos {#how-to-exercise}
 
-1. **En la app.** Nuestras apps te permiten eliminar o exportar tus datos directamente — la vía más rápida, ya que ahí es donde viven tus datos.
+1. **En la app.** Nuestras apps te permiten eliminar o exportar tus datos directamente: la vía más rápida, ya que ahí es donde viven tus datos.
 2. **Por correo.** Escribe a [`legal@khassinx.com`](mailto:legal@khassinx.com), indicándonos tu solicitud y a qué app se refiere.
 3. **Identidad.** Para protegerte, podemos pedirte que verifiques tu identidad antes de actuar, de modo que nunca revelemos datos a la persona equivocada.
-4. **Plazos.** Respondemos dentro del plazo que exija tu legislación — por ejemplo, un mes conforme al RGPD o 45 días conforme a la CCPA.
+4. **Plazos.** Respondemos dentro del plazo que exija tu legislación: por ejemplo, un mes conforme al RGPD o 45 días conforme a la CCPA.
 
 También puedes escribirnos a [`hello@khassinx.com`](mailto:hello@khassinx.com) para cualquier otra cosa.

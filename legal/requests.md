@@ -40,7 +40,7 @@ Where a competent authority determines that one of our apps should not be availa
 2. The legal basis: the specific law, regulation, or ruling of that jurisdiction the app is said to infringe.
 3. The app, and the country or territory affected.
 
-**How to send it:** email [`legal@khassinx.com`](mailto:legal@khassinx.com) with the subject `[GEO-REMOVAL] <app> — <country> — <authority>`.
+**How to send it:** email [`legal@khassinx.com`](mailto:legal@khassinx.com) with the subject `[GEO-REMOVAL] <app> - <country> - <authority>`.
 
 **Verification.** Before acting, we confirm the request through the authority's own official published channel. We do not act on the incoming email alone, so that nobody can get an app removed by impersonating a government.
 
