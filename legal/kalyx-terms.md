@@ -62,4 +62,4 @@ These terms are governed by the laws of the State of Florida, United States.
 
 ## Contact
 
-[`legal@khassinx.com`](mailto:legal@khassinx.com){: .more}
+[`legal@khassinx.com`](mailto:legal@khassinx.com){:.act .link}
