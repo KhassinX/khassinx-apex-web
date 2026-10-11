@@ -7,7 +7,7 @@ Source for **[khassinx.com](https://khassinx.com)**, the KHASSINX umbrella site.
 - `index.html`, `es/index.html`: home page in English and Spanish
 - `_layouts/base.html`: head, header, footer and skip link
 - `_layouts/prose.html`: legal, contact and security pages
-- `assets/css/site.css`: the whole design (tokens, light and dark themes, components)
+- `assets/css/site.css`: the whole design (tokens, light and dark themes, components). The same file, byte for byte, on every KHASSINX site; an app site adds its own colour and components in `assets/css/app.css`, loaded after it
 - `assets/js/site.js`: System / Light / Dark theme selector
 - `assets/brand/`: the KHASSINX symbol for the header and the home page
 - `assets/favicons/`: favicons and web app icons
