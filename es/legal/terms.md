@@ -19,7 +19,7 @@ summary:
   - "Se aplica la ley de Florida, las controversias se resuelven en tribunales estatales o federales de Florida, y las preguntas van a legal@khassinx.com."
 ---
 
-**Estos términos cubren únicamente `khassinx.com`** — el sitio paraguas del estudio. Cada app de KHASSINX publica sus propios términos de servicio que rigen el uso de la app, las suscripciones y las compras. Consulta el subdominio de la app para esos términos.
+**Estos términos cubren únicamente `khassinx.com`**: el sitio paraguas del estudio. Cada app de KHASSINX publica sus propios términos de servicio que rigen el uso de la app, las suscripciones y las compras. Consulta el subdominio de la app para esos términos.
 
 ## Aceptación
 
@@ -27,7 +27,7 @@ Al acceder a `khassinx.com`, aceptas estos términos. Si no estás de acuerdo, n
 
 ## Qué es este sitio
 
-`khassinx.com` es el sitio del estudio independiente de software **KHASSINX**, operado por **KHASSINX LLC**, una sociedad de responsabilidad limitada de Florida (Estados Unidos). El sitio presenta nuestras apps y explica nuestro enfoque. No ofrece servicios, cuentas, compras ni descargas directamente — eso ocurre en el App Store o en los subdominios de cada app.
+`khassinx.com` es el sitio del estudio independiente de software **KHASSINX**, operado por **KHASSINX LLC**, una sociedad de responsabilidad limitada de Florida (Estados Unidos). El sitio presenta nuestras apps y explica nuestro enfoque. No ofrece servicios, cuentas, compras ni descargas directamente: eso ocurre en el App Store o en los subdominios de cada app.
 
 ## Uso del sitio
 

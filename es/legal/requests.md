@@ -40,7 +40,7 @@ Si una autoridad competente determina que una de nuestras apps no debe estar dis
 2. La base legal: la ley, el reglamento o la resolución concreta de esa jurisdicción que la app infringiría.
 3. La app, y el país o territorio afectado.
 
-**Cómo enviarla:** escribe a [`legal@khassinx.com`](mailto:legal@khassinx.com) con el asunto `[GEO-REMOVAL] <app> — <país> — <autoridad>`.
+**Cómo enviarla:** escribe a [`legal@khassinx.com`](mailto:legal@khassinx.com) con el asunto `[GEO-REMOVAL] <app> - <país> - <autoridad>`.
 
 **Verificación.** Antes de actuar, confirmamos la solicitud por el canal oficial publicado de la propia autoridad. No actuamos sólo con el correo recibido, para que nadie pueda hacer retirar una app haciéndose pasar por un gobierno.
 

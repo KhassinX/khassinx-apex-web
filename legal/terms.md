@@ -19,7 +19,7 @@ summary:
   - "Florida law governs, disputes go to Florida state or federal courts, and questions go to legal@khassinx.com."
 ---
 
-**These terms cover `khassinx.com` only** — the umbrella marketing site. Each KHASSINX app publishes its own terms of service governing app use, subscriptions, and purchases. See the app's subdomain for those terms.
+**These terms cover `khassinx.com` only**: the umbrella marketing site. Each KHASSINX app publishes its own terms of service governing app use, subscriptions, and purchases. See the app's subdomain for those terms.
 
 ## Acceptance
 
@@ -27,7 +27,7 @@ By accessing `khassinx.com`, you agree to these terms. If you do not agree, plea
 
 ## What the site is
 
-`khassinx.com` is the marketing website for **KHASSINX**, an independent software studio operated by **KHASSINX LLC**, a Florida limited liability company. The site lists our apps and explains our approach. It does not provide services, accounts, purchases, or downloads directly — those happen on the App Store or on per-app subdomains.
+`khassinx.com` is the marketing website for **KHASSINX**, an independent software studio operated by **KHASSINX LLC**, a Florida limited liability company. The site lists our apps and explains our approach. It does not provide services, accounts, purchases, or downloads directly: those happen on the App Store or on per-app subdomains.
 
 ## Use of the site
 

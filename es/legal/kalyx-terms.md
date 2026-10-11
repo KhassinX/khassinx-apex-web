@@ -42,7 +42,7 @@ No reclamamos ninguna propiedad sobre lo que capturas. No podemos verlo: se qued
 
 ## Copias de seguridad
 
-Kalyx está hecha para que una captura sobreviva a que la app se cierre, a que el proceso muera y a que el dispositivo se reinicie, y conserva el texto original de todo incluso después de reescribirlo. Eso no es lo mismo que una copia de seguridad. Mantén tu dispositivo respaldado —por iCloud o por ordenador— y usa **Exportar todo** si quieres una copia fuera de la app.
+Kalyx está hecha para que una captura sobreviva a que la app se cierre, a que el proceso muera y a que el dispositivo se reinicie, y conserva el texto original de todo incluso después de reescribirlo. Eso no es lo mismo que una copia de seguridad. Mantén tu dispositivo respaldado (por iCloud o por ordenador) y usa **Exportar todo** si quieres una copia fuera de la app.
 
 ## Uso aceptable
 

@@ -1,7 +1,7 @@
 ---
 layout: prose
 title: Política de privacidad de Kalyx
-description: Qué hace Kalyx con tus datos. Todo se queda en tu dispositivo y en tu propio iCloud — nosotros no guardamos nada.
+description: "Qué hace Kalyx con tus datos. Todo se queda en tu dispositivo y en tu propio iCloud: nosotros no guardamos nada."
 permalink: /es/legal/kalyx-privacy/
 lang: es
 canonical_en: /legal/kalyx-privacy/
@@ -24,9 +24,9 @@ related:
 
 ## Dónde viven tus datos
 
-Tus capturas —su texto, su historial y las grabaciones de voz— viven en el almacenamiento de Kalyx dentro de tu dispositivo. Si activas la sincronización, viven además en **tu** cuenta de iCloud, bajo tu cuenta de Apple y sujetas a la [política de privacidad de Apple](https://www.apple.com/legal/privacy/). Nunca pasan por servidores nuestros.
+Tus capturas (su texto, su historial y las grabaciones de voz) viven en el almacenamiento de Kalyx dentro de tu dispositivo. Si activas la sincronización, viven además en **tu** cuenta de iCloud, bajo tu cuenta de Apple y sujetas a la [política de privacidad de Apple](https://www.apple.com/legal/privacy/). Nunca pasan por servidores nuestros.
 
-Puedes llevarte todo cuando quieras: en **Ajustes → Exportar todo** se genera un paquete con un archivo de texto que contiene tus capturas —incluido el texto original de cada una— y una carpeta con todas las grabaciones de voz. Si una grabación está referenciada pero falta en el disco, la exportación lo dice en su propio apartado en lugar de omitirla en silencio. Se abre en cualquier editor, con Kalyx o sin él.
+Puedes llevarte todo cuando quieras: en **Ajustes → Exportar todo** se genera un paquete con un archivo de texto que contiene tus capturas (incluido el texto original de cada una) y una carpeta con todas las grabaciones de voz. Si una grabación está referenciada pero falta en el disco, la exportación lo dice en su propio apartado en lugar de omitirla en silencio. Se abre en cualquier editor, con Kalyx o sin él.
 
 ## Notas de voz y transcripción
 
@@ -50,7 +50,7 @@ Kalyx usa la inteligencia en el dispositivo de Apple para sugerir si una captura
 
 ## Compras dentro de la app
 
-Kalyx se paga una sola vez. El pago lo gestiona Apple a través del App Store: **nunca vemos los datos de tu tarjeta**, ni tu nombre, ni tu dirección de facturación. Lo único que sabemos —y nos lo dice Apple, en tu dispositivo— es si esta cuenta de Apple compró el desbloqueo.
+Kalyx se paga una sola vez. El pago lo gestiona Apple a través del App Store: **nunca vemos los datos de tu tarjeta**, ni tu nombre, ni tu dirección de facturación. Lo único que sabemos (y nos lo dice Apple, en tu dispositivo) es si esta cuenta de Apple compró el desbloqueo.
 
 ## Notificaciones
 
@@ -58,15 +58,15 @@ Si permites las notificaciones, Kalyx programa los avisos **localmente en tu dis
 
 ## Cuánto tiempo se conserva, y cómo lo borras
 
-**No conservamos nada, porque nunca se nos entrega nada.** Tus capturas duran lo que tú quieras, en tu dispositivo y —si activaste la sincronización— en tu propia cuenta de iCloud. No hay ninguna copia de nuestro lado que retener ni que borrar.
+**No conservamos nada, porque nunca se nos entrega nada.** Tus capturas duran lo que tú quieras, en tu dispositivo y (si activaste la sincronización) en tu propia cuenta de iCloud. No hay ninguna copia de nuestro lado que retener ni que borrar.
 
 Para borrarlas tú mismo: **Ajustes → Borrar todo**. Elimina tus capturas, sus grabaciones, sus fotos y sus archivos adjuntos de este dispositivo y, si la sincronización está activada, también de tu iCloud, y deja Kalyx como recién instalada. No se puede deshacer, así que exporta antes si quieres conservar una copia.
 
-Desinstalar la app también elimina lo que está en el dispositivo, pero **no** lo que ya viajó a tu iCloud — por eso existe la opción dentro de la app.
+Desinstalar la app también elimina lo que está en el dispositivo, pero **no** lo que ya viajó a tu iCloud: por eso existe la opción dentro de la app.
 
 ## Tus derechos
 
-Los derechos que te dan el RGPD (UE/EEE), el Reino Unido, la LOPDGDD española, la CCPA de California y otras leyes —y cómo ejercerlos— están en [Derechos de privacidad](/es/legal/your-rights/) de KHASSINX. Como no guardamos ningún dato tuyo, la forma práctica de ejercerlos con Kalyx es desde la app: **Ajustes → Exportar todo** te lleva una copia, y **Ajustes → Borrar todo** elimina tus capturas de este dispositivo y de tu iCloud. Para hablar con una persona: [`legal@khassinx.com`](mailto:legal@khassinx.com).
+Los derechos que te dan el RGPD (UE/EEE), el Reino Unido, la LOPDGDD española, la CCPA de California y otras leyes (y cómo ejercerlos) están en [Derechos de privacidad](/es/legal/your-rights/) de KHASSINX. Como no guardamos ningún dato tuyo, la forma práctica de ejercerlos con Kalyx es desde la app: **Ajustes → Exportar todo** te lleva una copia, y **Ajustes → Borrar todo** elimina tus capturas de este dispositivo y de tu iCloud. Para hablar con una persona: [`legal@khassinx.com`](mailto:legal@khassinx.com).
 
 ## Menores
 

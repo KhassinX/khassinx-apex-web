@@ -37,7 +37,7 @@ Your theme choice, at the bottom of the page, is saved on your device under the 
 
 ## Our apps
 
-This page is about the website. Each app explains its own data handling in its privacy policy on its subdomain — and, like the site, our apps are built to keep your data on your device, not on our servers.
+This page is about the website. Each app explains its own data handling in its privacy policy on its subdomain, and, like the site, our apps are built to keep your data on your device, not on our servers.
 
 ## Contact
 

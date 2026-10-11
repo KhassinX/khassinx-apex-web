@@ -1,6 +1,6 @@
 title: KHASSINX
 short_name: KHASSINX   # nombre bajo el icono en Add-to-Home (apple-mobile-web-app-title / manifest short_name) — NO el <title> largo
-description: Independent studio building privacy-first apps for Apple platforms — on-device AI, native across iPhone, iPad, Mac and Apple Watch, zero tracking.
+description: "Independent studio building privacy-first apps for Apple platforms: on-device AI, native across iPhone, iPad, Mac and Apple Watch, zero tracking."
 url: https://khassinx.com
 lang: en
 
@@ -18,8 +18,8 @@ og_site_name: KHASSINX
 og_image: /assets/og/og-image-{lang}.png
 og_image_width: 1200
 og_image_height: 630
-og_image_alt: "KHASSINX — apps that keep your data on your device and in your iCloud"
-og_image_alt_es: "KHASSINX — apps que guardan tus datos en tu dispositivo y en tu iCloud"
+og_image_alt: "KHASSINX: apps that keep your data on your device and in your iCloud"
+og_image_alt_es: "KHASSINX: apps que guardan tus datos en tu dispositivo y en tu iCloud"
 twitter_card: summary_large_image
 
 # Organization (JSON-LD structured data + contact)
