@@ -30,7 +30,7 @@ We grant you a personal, non-transferable license to use Kalyx on your Apple dev
 
 ## Purchases
 
-**Kalyx is a one-time purchase — there is no subscription and nothing to renew.** The free app lets you make your first 50 captures. A single in-app purchase removes that limit for good, on every Apple device signed in to the same Apple Account, and it is shareable with your Family Sharing group.
+**Kalyx is a one-time purchase: there is no subscription and nothing to renew.** The free app lets you make your first 50 captures. A single in-app purchase removes that limit for good, on every Apple device signed in to the same Apple Account, and it is shareable with your Family Sharing group.
 
 The price is shown in the app before you buy, in your own currency. Purchases and refunds are handled by Apple.
 
@@ -42,7 +42,7 @@ We claim no ownership over anything you capture. We cannot see it: it stays on y
 
 ## Backups
 
-Kalyx is built so that a capture survives the app closing, the process dying and the device restarting, and it keeps the original text of everything even after it is rewritten. That is not the same as a backup. Keep your device backed up — through iCloud or a computer — and use **Export everything** if you want a copy outside the app.
+Kalyx is built so that a capture survives the app closing, the process dying and the device restarting, and it keeps the original text of everything even after it is rewritten. That is not the same as a backup. Keep your device backed up (through iCloud or a computer) and use **Export everything** if you want a copy outside the app.
 
 ## Acceptable use
 

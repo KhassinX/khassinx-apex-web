@@ -37,7 +37,7 @@ Tu elección de tema, al pie de la página, se guarda en tu dispositivo con la c
 
 ## Nuestras apps
 
-Esta página trata sobre el sitio web. Cada app explica su propio manejo de datos en su política de privacidad, en su subdominio — y, como el sitio, nuestras apps están construidas para mantener tus datos en tu dispositivo, no en nuestros servidores.
+Esta página trata sobre el sitio web. Cada app explica su propio manejo de datos en su política de privacidad, en su subdominio, y, como el sitio, nuestras apps están construidas para mantener tus datos en tu dispositivo, no en nuestros servidores.
 
 ## Contacto
 

@@ -10,19 +10,19 @@ updated: 2026-10-05
 version: 1
 ---
 
-This page covers the legal terms for **khassinx.com** itself — the umbrella marketing site for KHASSINX, the studio operated by **KHASSINX LLC** (a Florida limited liability company, United States).
+This page covers the legal terms for **khassinx.com** itself: the umbrella marketing site for KHASSINX, the studio operated by **KHASSINX LLC** (a Florida limited liability company, United States).
 
-Each KHASSINX app publishes its **own** privacy policy and terms of service on its own site — those govern the app itself, its data handling, and any purchases or subscriptions. Our [home page](/) links to the site of each app it features.
+Each KHASSINX app publishes its **own** privacy policy and terms of service on its own site: those govern the app itself, its data handling, and any purchases or subscriptions. Our [home page](/) links to the site of each app it features.
 
 ## Documents on this site
 
-- [Privacy Policy](/legal/privacy/) — what data we collect on `khassinx.com` (spoiler: essentially none) and how the studio handles data
-- [Your Privacy Rights](/legal/your-rights/) — GDPR, UK, Spain/LOPDGDD, California/CCPA, other US states, and worldwide rights, and how to exercise them
-- [Terms of Use](/legal/terms/) — terms governing your use of this website
-- [Accessibility](/legal/accessibility/) — our WCAG 2.1 AA commitment and how to report a barrier
-- [Cookies](/legal/cookies/) — why there's no cookie banner here
-- [Infrastructure Providers](/legal/subprocessors/) — every company whose infrastructure serves this site or carries our email
-- [Government & Legal Requests](/legal/requests/) — requests for data, and requests to make an app unavailable in a country
+- [Privacy Policy](/legal/privacy/): what data we collect on `khassinx.com` (spoiler: essentially none) and how the studio handles data
+- [Your Privacy Rights](/legal/your-rights/): GDPR, UK, Spain/LOPDGDD, California/CCPA, other US states, and worldwide rights, and how to exercise them
+- [Terms of Use](/legal/terms/): terms governing your use of this website
+- [Accessibility](/legal/accessibility/): our WCAG 2.1 AA commitment and how to report a barrier
+- [Cookies](/legal/cookies/): why there's no cookie banner here
+- [Infrastructure Providers](/legal/subprocessors/): every company whose infrastructure serves this site or carries our email
+- [Government & Legal Requests](/legal/requests/): requests for data, and requests to make an app unavailable in a country
 
 ## Contact
 

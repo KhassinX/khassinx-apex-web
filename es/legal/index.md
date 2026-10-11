@@ -10,19 +10,19 @@ updated: 2026-10-05
 version: 1
 ---
 
-Esta página cubre los términos legales de **khassinx.com** en sí — el sitio paraguas del estudio KHASSINX, operado por **KHASSINX LLC** (una sociedad de responsabilidad limitada de Florida, Estados Unidos).
+Esta página cubre los términos legales de **khassinx.com** en sí: el sitio paraguas del estudio KHASSINX, operado por **KHASSINX LLC** (una sociedad de responsabilidad limitada de Florida, Estados Unidos).
 
-Cada app de KHASSINX publica su **propia** política de privacidad y términos de servicio en su propio sitio — esos rigen la app, su manejo de datos y cualquier compra o suscripción. Nuestra [página principal](/es/) enlaza al sitio de cada app que presenta.
+Cada app de KHASSINX publica su **propia** política de privacidad y términos de servicio en su propio sitio: esos rigen la app, su manejo de datos y cualquier compra o suscripción. Nuestra [página principal](/es/) enlaza al sitio de cada app que presenta.
 
 ## Documentos de este sitio
 
-- [Política de privacidad](/es/legal/privacy/) — qué datos recopilamos en `khassinx.com` (spoiler: esencialmente nada) y cómo maneja los datos el estudio
-- [Tus derechos de privacidad](/es/legal/your-rights/) — derechos del RGPD, Reino Unido, España/LOPDGDD, California/CCPA, otros estados de EE. UU. y el resto del mundo, y cómo ejercerlos
-- [Términos de uso](/es/legal/terms/) — términos que rigen el uso de este sitio
-- [Accesibilidad](/es/legal/accessibility/) — nuestro compromiso con WCAG 2.1 AA y cómo informar una barrera
-- [Política de cookies](/es/legal/cookies/) — por qué aquí no hay aviso de cookies
-- [Proveedores de infraestructura](/es/legal/subprocessors/) — cada empresa cuya infraestructura sirve este sitio o transporta nuestro correo
-- [Solicitudes de gobiernos y autoridades](/es/legal/requests/) — solicitudes de datos y solicitudes para retirar una app en un país
+- [Política de privacidad](/es/legal/privacy/): qué datos recopilamos en `khassinx.com` (spoiler: esencialmente nada) y cómo maneja los datos el estudio
+- [Tus derechos de privacidad](/es/legal/your-rights/): derechos del RGPD, Reino Unido, España/LOPDGDD, California/CCPA, otros estados de EE. UU. y el resto del mundo, y cómo ejercerlos
+- [Términos de uso](/es/legal/terms/): términos que rigen el uso de este sitio
+- [Accesibilidad](/es/legal/accessibility/): nuestro compromiso con WCAG 2.1 AA y cómo informar una barrera
+- [Política de cookies](/es/legal/cookies/): por qué aquí no hay aviso de cookies
+- [Proveedores de infraestructura](/es/legal/subprocessors/): cada empresa cuya infraestructura sirve este sitio o transporta nuestro correo
+- [Solicitudes de gobiernos y autoridades](/es/legal/requests/): solicitudes de datos y solicitudes para retirar una app en un país
 
 ## Contacto
 
