@@ -276,8 +276,6 @@ p, dd { text-wrap: pretty; }
 .foot-meta p { color: var(--ink-2); font-size: 0.875rem; }
 .foot-meta p a { min-height: 44px; display: inline-flex; align-items: center; }
 .tools { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
-.tools > a { color: var(--ink-2); text-decoration: none; font-size: 0.875rem; min-height: 44px; display: inline-flex; align-items: center; }
-.tools > a:hover { color: var(--ink); }
 .lang, .theme { display: inline-flex; align-items: center; gap: 2px; }
 .lang { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.04em; }
 /* The box is the 44×44 target (UX-9.3); the pill you see is drawn 8px inside it, 28px tall, so neighbours never overlap. */
