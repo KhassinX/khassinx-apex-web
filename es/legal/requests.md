@@ -7,8 +7,8 @@ lang: es
 canonical_en: /legal/requests/
 canonical_es: /es/legal/requests/
 updated: 2026-10-12
-effective: 2026-10-05
-version: 1
+effective: 2026-10-12
+version: 2
 related:
   - /es/legal/your-rights/
   - /es/legal/subprocessors/
