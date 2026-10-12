@@ -6,7 +6,8 @@ permalink: /es/legal/requests/
 lang: es
 canonical_en: /legal/requests/
 canonical_es: /es/legal/requests/
-updated: 2026-10-05
+updated: 2026-10-12
+effective: 2026-10-05
 version: 1
 related:
   - /es/legal/your-rights/
@@ -46,4 +47,4 @@ Si una autoridad competente determina que una de nuestras apps no debe estar dis
 
 **Qué hacemos.** Una vez verificada, restringimos la disponibilidad de la app en ese territorio a través del App Store. Es reversible: si la autoridad retira su postura, la disponibilidad se restablece.
 
-Intentamos acusar recibo de cada solicitud en un plazo de cinco días hábiles.
+Intentamos acusar recibo de cada solicitud en un plazo de siete días hábiles.
