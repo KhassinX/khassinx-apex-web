@@ -98,6 +98,7 @@ h1 { font-size: clamp(2.5rem, 1.2rem + 3.4vw, 4.25rem); letter-spacing: -0.048em
 h2 { font-size: clamp(1.7rem, 1.2rem + 1.4vw, 2.4rem); }
 h3 { font-size: 1.0625rem; letter-spacing: -0.01em; line-height: 1.35; font-weight: 600; }
 p { margin: 0; }
+p, dd { text-wrap: pretty; }
 .lead { color: var(--ink-2); font-size: 1.125rem; max-width: 34rem; text-wrap: pretty; }
 .muted { color: var(--ink-2); }
 
