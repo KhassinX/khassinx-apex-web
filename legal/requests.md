@@ -6,7 +6,8 @@ permalink: /legal/requests/
 lang: en
 canonical_en: /legal/requests/
 canonical_es: /es/legal/requests/
-updated: 2026-10-05
+updated: 2026-10-12
+effective: 2026-10-05
 version: 1
 related:
   - /legal/your-rights/
@@ -46,4 +47,4 @@ Where a competent authority determines that one of our apps should not be availa
 
 **What we do.** Once verified, we restrict the app's availability in that territory through the App Store. This is reversible: if the authority withdraws its position, availability is restored.
 
-We aim to acknowledge every request within five business days.
+We aim to acknowledge every request within seven business days.
