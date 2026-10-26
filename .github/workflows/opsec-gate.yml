@@ -1,0 +1,45 @@
+# Gate OPSEC de KHASSINX en el servidor (red tras --no-verify). El catálogo (solo hashes) y el gate
+# llegan como secretos de Actions (KHX_OPSEC_1..4); nunca están en claro en el repo. Falla cerrado.
+name: opsec-gate
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+concurrency:
+  group: opsec-gate-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  opsec-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Gate OPSEC (commits nuevos)
+        env:
+          P1: ${{ secrets.KHX_OPSEC_1 }}
+          P2: ${{ secrets.KHX_OPSEC_2 }}
+          P3: ${{ secrets.KHX_OPSEC_3 }}
+          P4: ${{ secrets.KHX_OPSEC_4 }}
+          EV: ${{ github.event_name }}
+          PR_BASE: ${{ github.event.pull_request.base.sha }}
+          PR_HEAD: ${{ github.event.pull_request.head.sha }}
+          PUSH_BEFORE: ${{ github.event.before }}
+          PUSH_AFTER: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          umask 077
+          if [ -z "$P1$P2$P3$P4" ]; then echo "::error::Faltan los secretos del gate (fork o Dependabot sin secretos): falla cerrado."; exit 2; fi
+          d="$RUNNER_TEMP/opsec"; mkdir -p "$d"
+          printf '%s' "$P1$P2$P3$P4" | base64 -d | tar -xJ -C "$d"
+          cero=0000000000000000000000000000000000000000
+          if [ "$EV" = "pull_request" ]; then nuevo="$PR_HEAD"; viejo="$PR_BASE"; else nuevo="$PUSH_AFTER"; viejo="${PUSH_BEFORE:-$cero}"; fi
+          git cat-file -e "$viejo^{commit}" 2>/dev/null || viejo="$cero"
+          echo "Midiendo ${nuevo:0:9} sobre ${viejo:0:9} (cero = historial completo)"
+          printf 'refs/heads/ci %s refs/heads/ci %s\n' "$nuevo" "$viejo" | python3 "$d/gate.py" pre-push ""
+          echo "Gate OPSEC limpio."
+          rm -rf "$d"
